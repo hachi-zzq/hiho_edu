@@ -1,0 +1,21 @@
+<?php
+return array (
+  'website_name' => 'HIHO Autotiming!',
+  'website_url' => 'http://hiho.autotiming.com.',
+  'seo_keyword' => 'hiho key',
+  'seo_description' => 'hiho seo des',
+  'admin_email' => 'admin@admin.com',
+  'icp' => '苏Ejjj',
+  'analytics_code' => '""',
+  'register_mode' => 'open',
+  'active_email_title' => '请激活您的{! sitename !}帐号',
+  'active_email_content' => '"Hi, {! nickname !}\\r\\n\\r\\n\\u6b22\\u8fce\\u52a0\\u5165{! sitename !}!\\r\\n\\r\\n\\u8bf7\\u70b9\\u51fb\\u4e0b\\u9762\\u7684\\u94fe\\u63a5\\u5b8c\\u6210\\u6ce8\\u518c\\uff1a\\r\\n\\r\\n{! verifyurl !}\\r\\n\\r\\n\\u5982\\u679c\\u4ee5\\u4e0a\\u94fe\\u63a5\\u65e0\\u6cd5\\u70b9\\u51fb\\uff0c\\u8bf7\\u5c06\\u4e0a\\u9762\\u7684\\u5730\\u5740\\u590d\\u5236\\u5230\\u4f60\\u7684\\u6d4f\\u89c8\\u5668(\\u5982IE)\\u7684\\u5730\\u5740\\u680f\\u4e2d\\u6253\\u5f00\\uff0c\\u8be5\\u94fe\\u63a5\\u5730\\u574024\\u5c0f\\u65f6\\u5185\\u6253\\u5f00\\u6709\\u6548\\u3002\\r\\n\\r\\n\\u611f\\u8c22\\u5bf9{! sitename !}\\u7684\\u652f\\u6301\\uff01\\r\\n\\r\\n{! sitename !} {! siteurl !}\\r\\n\\r\\n(\\u8fd9\\u662f\\u4e00\\u5c01\\u81ea\\u52a8\\u4ea7\\u751f\\u7684email\\uff0c\\u8bf7\\u52ff\\u56de\\u590d\\u3002)"',
+  'send_email' => 'open',
+  'smtp_address' => 'smtp.example.com',
+  'smtp_port' => '25',
+  'smtp_username' => 'swufe@example.com',
+  'smtp_password' => 'test',
+  'school_name' => '西南财经大学',
+  'school_description' => '"\\u897f\\u5357\\u8d22\\u7ecf\\u5927\\u5b66"',
+  'send_message' => 'close',
+);

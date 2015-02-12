@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>西南财经大学－教材资料馆</title>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="js/modernizr.2.8.2.js"></script>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- 头部 -->
+    <header id="header">
+      <div class="brand">
+        <a href="">教材资料馆</a>
+      </div>
+      <!-- 主导航 -->
+      <nav>
+        <ul>
+          <li><a href="">首页</a></li>
+          <li><a href="">视频分类</a></li>
+          <li class="current"><a href="">院系</a></li>
+          <li><a href="">剪集</a></li>
+          <li><a href="">笔记</a></li>
+        </ul>
+      </nav>
+      
+      <!-- 注册和登录 -->
+      <div class="user-box user-login" style="display:none;">
+        <a href="">登录</a>
+        <a href="">注册</a>
+      </div>
+
+      <!-- 用户登录后 -->
+      <div class="user-box">
+        <div class="user-name">
+          <span>Soyjavi</span>
+        </div>
+        <div class="user-avatar">
+          <img src="img/avatar.png" alt="">
+        </div>
+        <div class="user-downarrow">
+          <i class="icon-caret-down"></i>
+        </div>
+
+        <!-- 下拉菜单 -->
+        <div class="user-dropdown">
+          <ul>
+            <li><a href="">我的笔记</a></li>
+            <li><a href="">我的收藏</a></li>
+            <li><a href="">我的分享</a></li>
+            <li><a href="">个人设置</a></li>
+            <li><a href="">退出账户</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 头部搜索框 -->
+      <div class="header-serach">
+        <input type="text">
+        <button><i class="icon-search"></i></button>
+      </div>
+    </header>
+
+    <div class="dept-header">
+      <div class="dept-header-bg">
+        <img src="img/department_header_bg.jpg" alt="">
+      </div>
+      
+      <div class="content-inner">
+        <div class="dept-header-content">
+          <h2>金融学院</h2>
+          <p>西南财经大学金融学院办学历史悠久，办学层次完整，办学实力雄厚，学科优势明显，在中国金融行业和金融教育界享有崇高的威望和影响。</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="main side-main">
+      <div class="content-inner">
+        <!-- 左侧边栏 -->
+        <aside class="left">
+          <!-- 分类过滤 -->
+          <div class="filter-wrap">
+            <div class="filter-group">
+              <div class="filter">
+                <h3 class="color-icon-title">
+                  <i class="color-icon color-icon-cate"></i><span>系分类</span>
+                </h3>
+                <ul class="filter-topic">
+                  <li class="current"><a href="">整个学院</a></li>
+                  <li><a href="">金融系</a></li>
+                  <li><a href="">金融工程系</a></li>
+                  <li><a href="">金融双语教学中心</a></li>
+                  <li><a href="">信用管理系</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- 右侧内容 -->
+        <div class="right">
+          <div class="right-content">
+            <!-- 讲师卡片 -->
+            <div class="teacher-card teacher-card-w">
+              <div class="teacher-avatar">
+                <div class="teacher-avatar-wrap">
+                  <img src="img/avatar-90.png" alt="">
+                </div>
+                <a href="" class="line-button">查看</a>
+              </div>
+              <div class="teacher-info">
+                <!-- 老师视频计数 -->
+                <div class="teacher-video">
+                  <a href=""><i class="icon-video"></i> <span class="count">24</span></a>
+                  <div class="tips tips-video">
+                    <div class="tip-inner">
+                      <ul>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <hgroup>
+                  <h4>易敏利</h4>
+                  <small>经济学院</small><small>世界经济研究所</small>
+                </hgroup>
+                <p>中国科学技术大学生命科学实验中心高级实验师，图书馆高级顾问，中国生命科学大型仪器共享平台联席会发起人兼秘书长。</p>
+
+              </div>
+            </div>
+
+            <!-- 讲师卡片 -->
+            <div class="teacher-card teacher-card-w">
+              <div class="teacher-avatar">
+                <div class="teacher-avatar-wrap">
+                  <img src="img/avatar-90.png" alt="">
+                </div>
+                <a href="" class="line-button">查看</a>
+              </div>
+              <div class="teacher-info">
+                <!-- 老师视频计数 -->
+                <div class="teacher-video">
+                  <a href=""><i class="icon-video"></i> <span class="count">24</span></a>
+                  <div class="tips tips-video">
+                    <div class="tip-inner">
+                      <ul>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <hgroup>
+                  <h4>易敏利</h4>
+                  <small>经济学院</small><small>世界经济研究所</small>
+                </hgroup>
+                <p>中国科学技术大学生命科学实验中心高级实验师，图书馆高级顾问，中国生命科学大型仪器共享平台联席会发起人兼秘书长。</p>
+
+              </div>
+            </div>
+
+            <!-- 讲师卡片 -->
+            <div class="teacher-card teacher-card-w">
+              <div class="teacher-avatar">
+                <div class="teacher-avatar-wrap">
+                  <img src="img/avatar-90.png" alt="">
+                </div>
+                <a href="" class="line-button">查看</a>
+              </div>
+              <div class="teacher-info">
+                <!-- 老师视频计数 -->
+                <div class="teacher-video">
+                  <a href=""><i class="icon-video"></i> <span class="count">24</span></a>
+                  <div class="tips tips-video">
+                    <div class="tip-inner">
+                      <ul>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <hgroup>
+                  <h4>易敏利</h4>
+                  <small>经济学院</small><small>世界经济研究所</small>
+                </hgroup>
+                <p>中国科学技术大学生命科学实验中心高级实验师，图书馆高级顾问，中国生命科学大型仪器共享平台联席会发起人兼秘书长。</p>
+
+              </div>
+            </div>
+
+            <!-- 讲师卡片 -->
+            <div class="teacher-card teacher-card-w">
+              <div class="teacher-avatar">
+                <div class="teacher-avatar-wrap">
+                  <img src="img/avatar-90.png" alt="">
+                </div>
+                <a href="" class="line-button">查看</a>
+              </div>
+              <div class="teacher-info">
+                <!-- 老师视频计数 -->
+                <div class="teacher-video">
+                  <a href=""><i class="icon-video"></i> <span class="count">24</span></a>
+                  <div class="tips tips-video">
+                    <div class="tip-inner">
+                      <ul>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <hgroup>
+                  <h4>易敏利</h4>
+                  <small>经济学院</small><small>世界经济研究所</small>
+                </hgroup>
+                <p>中国科学技术大学生命科学实验中心高级实验师，图书馆高级顾问，中国生命科学大型仪器共享平台联席会发起人兼秘书长。</p>
+
+              </div>
+            </div>
+
+            <!-- 讲师卡片 -->
+            <div class="teacher-card teacher-card-w">
+              <div class="teacher-avatar">
+                <div class="teacher-avatar-wrap">
+                  <img src="img/avatar-90.png" alt="">
+                </div>
+                <a href="" class="line-button">查看</a>
+              </div>
+              <div class="teacher-info">
+                <!-- 老师视频计数 -->
+                <div class="teacher-video">
+                  <a href=""><i class="icon-video"></i> <span class="count">24</span></a>
+                  <div class="tips tips-video">
+                    <div class="tip-inner">
+                      <ul>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <hgroup>
+                  <h4>易敏利</h4>
+                  <small>经济学院</small><small>世界经济研究所</small>
+                </hgroup>
+                <p>中国科学技术大学生命科学实验中心高级实验师，图书馆高级顾问，中国生命科学大型仪器共享平台联席会发起人兼秘书长。</p>
+
+              </div>
+            </div>
+
+            <!-- 讲师卡片 -->
+            <div class="teacher-card teacher-card-w">
+              <div class="teacher-avatar">
+                <div class="teacher-avatar-wrap">
+                  <img src="img/avatar-90.png" alt="">
+                </div>
+                <a href="" class="line-button">查看</a>
+              </div>
+              <div class="teacher-info">
+                <!-- 老师视频计数 -->
+                <div class="teacher-video">
+                  <a href=""><i class="icon-video"></i> <span class="count">24</span></a>
+                  <div class="tips tips-video">
+                    <div class="tip-inner">
+                      <ul>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <hgroup>
+                  <h4>易敏利</h4>
+                  <small>经济学院</small><small>世界经济研究所</small>
+                </hgroup>
+                <p>中国科学技术大学生命科学实验中心高级实验师，图书馆高级顾问，中国生命科学大型仪器共享平台联席会发起人兼秘书长。</p>
+
+              </div>
+            </div>
+
+            <!-- 讲师卡片 -->
+            <div class="teacher-card teacher-card-w">
+              <div class="teacher-avatar">
+                <div class="teacher-avatar-wrap">
+                  <img src="img/avatar-90.png" alt="">
+                </div>
+                <a href="" class="line-button">查看</a>
+              </div>
+              <div class="teacher-info">
+                <!-- 老师视频计数 -->
+                <div class="teacher-video">
+                  <a href=""><i class="icon-video"></i> <span class="count">24</span></a>
+                  <div class="tips tips-video">
+                    <div class="tip-inner">
+                      <ul>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <hgroup>
+                  <h4>易敏利</h4>
+                  <small>经济学院</small><small>世界经济研究所</small>
+                </hgroup>
+                <p>中国科学技术大学生命科学实验中心高级实验师，图书馆高级顾问，中国生命科学大型仪器共享平台联席会发起人兼秘书长。</p>
+
+              </div>
+            </div>
+
+            <!-- 讲师卡片 -->
+            <div class="teacher-card teacher-card-w">
+              <div class="teacher-avatar">
+                <div class="teacher-avatar-wrap">
+                  <img src="img/avatar-90.png" alt="">
+                </div>
+                <a href="" class="line-button">查看</a>
+              </div>
+              <div class="teacher-info">
+                <!-- 老师视频计数 -->
+                <div class="teacher-video">
+                  <a href=""><i class="icon-video"></i> <span class="count">24</span></a>
+                  <div class="tips tips-video">
+                    <div class="tip-inner">
+                      <ul>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <div class="thumb">
+                              <img src="img/thumb_64x40.png" alt="">
+                            </div>
+                            <div class="title">
+                              <h3>计算机辅助翻译原理与实践</h3>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <hgroup>
+                  <h4>易敏利</h4>
+                  <small>经济学院</small><small>世界经济研究所</small>
+                </hgroup>
+                <p>中国科学技术大学生命科学实验中心高级实验师，图书馆高级顾问，中国生命科学大型仪器共享平台联席会发起人兼秘书长。</p>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- 翻页 -->
+          <div class="pagination">
+            <ul class="pagination">
+              <li class="disabled"><span>«</span></li>
+              <li class="active"><span>1</span></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+              <li><a href="#" rel="next">»</a></li> 
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 页脚 -->
+    <footer id="footer">
+      <div class="content-inner">
+        <nav>
+          <a href="">首页</a>
+          <a href="">西南财大视频资源</a>
+          <a href="">TED</a>
+          <a href="">其他院校视频资源</a>
+          <a href="">剪集</a>
+        </nav>
+
+        <div class="copyright">
+          <p>Copyright © 西南财经大学版权所有, Powered by <a href="http://eastiming.com">深圳市东方泰明科技有限公司</a></p>
+          <p>最低浏览屏幕分辨率1200x800px</p>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿@charset "utf-8"; 
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li { margin:0; padding:0;}
+body { font:normal 100%/1.5 Helvetica,Arial,sans-serif; }
+ul, ol { list-style: none;}
+img { display: block; width: 100%; border: 0;}
+a { text-decoration:none;}
+em { font-style: normal;}
+input[type="submit"] { box-sizing: content-box;}
+.hidden { display:none !important;}
+.clear:after {content:"\20"; clear:both; display: block; height: 0; overflow:hidden;}
+
+/*ico*/
+    .ico-download { padding: 0 0 0 3.125rem; background: url("bg/all.png") no-repeat; font-size: 1.5rem; line-height: 2rem; color: #FFF; font-weight: bold;}
+
+/*btn*/
+    .btn-close { position: absolute; width: 2.3125rem; height: 2.3125rem; border-radius: 100rem; background: #FFF url("bg/all.png") no-repeat 0.5625rem -2.4375rem;}
+    .btn-s1,
+    .btn-s2 { display: inline-block; padding: 0 1.125rem; background: #537B09; border-radius: 0.3125rem; color: #FFF; line-height: 3.375rem; font-size: 1.25rem;}
+    .btn-s2 { background: #FA9543;}
+
+/*download-cont*/
+    .download-cont { position: relative; height: 5.25rem; background: #83B329;}
+    .download-cont .ico-download { position: absolute; left: 2.0625rem; top: 1.3125rem;}
+    .download-cont .btn-s1 { position: absolute; right: 5.875rem; top: 0.8125rem;}
+    .download-cont .btn-close { right: 1.5rem; top: 1.375rem;}
+
+/*user-info*/
+    .user-info { position: relative; padding: 1rem 11.875rem 1rem 2.1875rem; min-height: 3.375rem;}
+    .user-info .pic { float: left; width: 3.3125rem; height: 3.3125rem; border-radius: 100rem; overflow: hidden;}
+    .user-info .info { margin: 0 0 0 4.375rem; font-size: 1rem; color: #C9C6C6;}
+    .user-info .info .name { font-size: 1.25rem; color: #000;}
+    .user-info .link { position: absolute; right: 0.9375rem; top: 0.9375rem;}
+
+/*video-cont*/
+    .video-cont .video { height: 31.125rem;}
+    .video-cont video { width: 100%; height: 100%;}
+    .video-title { margin: 1.25rem 3rem; font-size: 1.25rem;}
+    .video-title p {}
+
+    /*loading*/
+    .loading { display: inline-block; width: 6.25rem; height: 6.25rem;}
+    .video-cont .video-loading { padding: 7.5rem 0 0; height: 23.625rem; background: #E0E0E0; font-size: 1.5rem; text-align: center; color: #949497;}
+    .video-cont .video-loading .loading { margin: 0 0 2.625rem;}

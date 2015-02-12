@@ -1,0 +1,37 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义个人中心样式
+ */
+
+.personal-cont { margin: 50px 30px 80px; min-height: 300px;}
+
+/*personal-info*/
+    .user-pic .pic { display: inline-block; margin: 0 20px 0 0; padding: 3px; background: #FFF; border: 1px dotted #C9C9C9; border-radius: 1000px; overflow: hidden;}
+    .user-pic .pic img { width: 140px; height: 140px; border-radius: 1000px; vertical-align: top;}
+    .edit-pic { display: inline-block; margin: 30px 0 0; vertical-align: top;}
+    .edit-pic p { margin: 0 0 5px;}
+    .edit-pic p a { vertical-align: middle;}
+    .user-pic-tips { margin: 30px 0 0;}
+
+/*video-view*/
+    .video-view { margin: 0 100px 0 40px;}
+    .video-view .preview-info { padding: 20px 25px;}
+    .video-view .video-title { margin: 0 0 10px; color: #5E5F60; font-size: 14px;}
+    .video-view .video { margin: 0 0 10px;}
+    .video-view .video-desc { color: #6B696B;}
+
+/*浮层*/
+    /*编辑订阅*/
+    .win-edit-subscriptions { width: 900px; margin: 0 0 0 -450px;}
+    .win-edit-subscriptions .form { margin: 15px 0 30px;}
+    .win-edit-subscriptions .row { padding-left: 220px;}
+    .win-edit-subscriptions .row-label { width: 200px;}
+
+    /*回复*/
+    .win-reply { width: 550px; margin: 0 0 0 -275px;}
+    .win-reply .form { position: relative; margin: 15px 0;}
+    .win-reply .form .row-label { width: 100px;}
+    .win-reply .form .row { padding-left: 120px;}
+    .win-reply .textarea { height: 130px;}
+    .win-reply .reply-num { position: absolute; right: 20px; top: 0; color: #999;}
+    .win-reply .reply-num.warn-color { color: #FF7033;}

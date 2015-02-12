@@ -1,0 +1,137 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义组件共用样式
+ */
+
+/*font-face*/
+    @font-face {
+        font-family: 'titilliumregular';
+        src: url('/static/source/font_face/titillium_regular/titillium-regular-webfont.eot');
+        src: url('/static/source/font_face/titillium_regular/titillium-regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('/static/source/font_face/titillium_regular/titillium-regular-webfont.woff.woff') format('woff'),
+             url('/static/source/font_face/titillium_regular/titillium-regular-webfont.ttf') format('truetype'),
+             url('/static/source/font_face/titillium_regular/titillium-regular-webfont.svg#titilliumregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+/* reset */
+    article, aside, figcaption, figure, footer, header, main, nav, section { display: block; margin: 0; padding: 0;}
+    body, p, ul, ol, li, dd, dl, dt, h1, h2, h3, h4, h5, h6, form, input, textarea, pre { margin: 0; padding: 0;}
+    body { font: 12px/1.5 'Helvetica Neue', msyh, Arial, sans-serif; word-wrap: break-word;}
+    ul, ol { list-style: none;}
+    img { border: 0;}
+    em, i { font-style: normal;}
+    input, textarea, select { font-family: inherit;}
+    input[type="submit"] { box-sizing: content-box;}
+    textarea { overflow-x: hidden; overflow-y: auto; resize: none;}
+    table { border-collapse: collapse; border-spacing: 0;}
+    a { color: #2A84D1; text-decoration: none;}
+    a:hover { text-decoration: underline;}
+    .hidden { display: none !important;}
+    .vhidden { visibility: hidden !important;}
+
+/*清浮动*/
+    .clear:after { display: table; content: ""; clear:both;}
+
+/*浮动*/
+    .float-l { float: left;}
+    .float-r { float: right;}
+
+html { background: #F4F4F4;}
+
+/*布局*/
+    .wrap { padding: 54px 0 0;}
+    .layout-in { margin: 0 auto; width: 1200px;}
+
+/*颜色*/
+    .highlight-color,
+    .warn-color { color: #FD9426;}
+    .succeed-color { color: #1BBF70;}
+
+/*btn*/
+    /*剪辑提交浮层*/
+    .btn-s1,
+    .btn-s2 { display: inline-block; width: 230px; height: 50px; background: #22AEEB; border: none; border-radius: 5px; line-height: 50px; text-align: center; white-space: nowrap; color: #FFF; font-size: 18px; outline: none; cursor: pointer;}
+    .btn-s1:hover,
+    .btn-s2:hover { text-decoration: none;}
+    .btn-s2 { background: #C2C2C2;}
+
+/*ico*/
+    .ico { position: relative;}
+    .ico:before { position: absolute; content: '';}
+
+    /*上一页、下一页*/
+    .ico-prev { padding: 0 0 0 23px;}
+    .ico-next { padding: 0 23px 0 0;}
+    .ico-prev:before,
+    .ico-next:before { top: 50%; margin: -7px 0 0; width: 10px; height: 15px;}
+    .ico-prev:before { left: 0; background: url("bg/ico_prev.png") no-repeat;}
+    .ico-next:before { right: 0; background: url("bg/ico_next.png") no-repeat;}
+
+/*loading*/
+    .loading-s1 { position: absolute; left: 50%; top: 50%; margin: -40px 0 0 -40px; width: 80px; height: 80px; background: url("bg/loading_s1.gif") no-repeat center;}
+    .loading-s2 { margin: 30px 0; height: 26px; background: url("bg/loading_s2.gif") no-repeat center;}
+
+/*paging*/
+    .paging { padding: 30px 0; background: #FFF; text-align: center;}
+    .paging li { display: inline-block; font-size: 16px; font-family: titilliumregular, "Helvetica Neue", msyh, Arial, sans-serif;}
+    .paging li a,
+    .paging li span { display: inline-block; padding: 0 11px; border-radius: 3px; color: #8C989E; line-height: 40px;}
+    .paging li a:hover { background: #EEE; text-decoration: none;}
+    .paging .disabled span { padding: 0;}
+    .paging li .ico-prev { padding: 0 0 0 23px;}
+    .paging li .ico-next { padding: 0 23px 0 0;}
+    .paging li .ico-prev:hover,
+    .paging li .ico-next:hover { background: none;}
+    .paging .ico-prev,
+    .paging .ico-next,
+    .paging .disabled { color: #B7BDC1;}
+    .paging .active span { color: #FF9500;}
+
+/*表单*/
+    /*描述文字在input-txt上面，当input获取焦点时文字隐藏 组件*/
+    .label-input-txt { position: relative; display: inline-block; background: #FFF;}
+    .label-input-txt .label { position: absolute; left: 10px; line-height: 34px; font-size: 16px; white-space: nowrap; color: #C5C3C4; z-index: 0}
+    .label-input-txt .input-txt,
+    .label-input-txt .input { position: relative; background: transparent; outline: none; z-index: 1;}
+    .label-input-txt-focus .label { display: none;}
+
+    /*主表单*/
+    .form { color: #333;}
+    .f-row { position: relative; margin: 0 0 10px; font-size: 14px;}
+    .input-txt { padding: 4px 10px; width: 320px; height: 22px; background: none; border: 1px solid #DDD; line-height: 22px; font-size: 14px; outline: none;}
+    .f-action { margin: 20px 0;}
+
+/*header*/
+    .header { position: absolute; top: 0; left: 0; width: 100%; background: #2ABB9D; z-index: 100;}
+    .header .layout-in { position: relative; height: 54px; font-family: titilliumregular, Helvetica, msyh, Arial, sans-serif;}
+
+    .header .logo { position: absolute; top: 12px; left: 50%; margin: 0 0 0 -48px;}
+    .header .logo a { display: block; width: 96px; height: 29px; background: url("bg/logo.png") no-repeat;}
+
+    .header .nav { float: left;}
+    .header .nav li { float: left; margin: 14px 15px 0 0;}
+    .header .nav a { display: block; width: 24px; height: 25px; overflow: hidden; text-indent: -9999em;}
+    .header .nav-home a { background: url("bg/ico_home.png") no-repeat;}
+
+/*footer*/
+    .footer { background: #2B2B2B;}
+    .footer .layout-in { height: 60px; line-height: 60px;}
+    .footer .copyright { text-align: center; color: #8C989E; text-transform: uppercase;}
+
+/*site-bar*/
+    .site-bar { margin: 0 0 18px; background: #FFF; border-bottom: 1px solid #EEE;}
+    .site-bar .layout-in { height: 72px;}
+
+/*浮层*/
+    .win-pop { position: fixed; left: 50%; top: 120px; background: #FFF; border-radius: 5px; z-index: 20000;}
+    .win-close { position: absolute; right: 10px; top: 10px; width: 29px; height: 29px; background: url("bg/ico_close.png") no-repeat 8px 8px;}
+    .win-hd { padding: 15px 0 0; height: 65px; border-bottom: 1px solid #EEE;}
+    .win-hd h3 { margin: 0 0 0 23px; line-height: 65px; font-weight: normal; font-size: 24px; font-family: titilliumregular, "Helvetica Neue", msyh, Arial, sans-serif; color: #272727; text-align: center;}
+    .win-cont { padding: 15px;}
+
+    /*遮罩层*/
+	.win-mask,
+	.win-mask-iframe { position:fixed; top:0; left:0; width: 100%; height: 100%; background: #0E0E0E; opacity:0.92; filter:alpha(opacity=92); z-index:10001;}
+	.win-mask-iframe { opacity:0; filter:alpha(opacity=0); z-index:10000;}

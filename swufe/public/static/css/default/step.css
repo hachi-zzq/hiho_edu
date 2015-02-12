@@ -1,0 +1,112 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义上传步骤页样式
+ */
+
+/*step-count*/
+    .step-count .bar,
+    .step-count .bar div,
+    .step-count .num { background: url("bg/step.png") no-repeat;}
+
+    .step-count { position: relative; margin: 40px 0 20px; width: 804px;}
+    .step-count ol { position: relative; padding: 5px 0 0; overflow: hidden; z-index: 10;}
+    .step-count li { position: relative; float: left; width: 134px; height: 80px; text-align: center; color: #D1CFCF;}
+    .step-count .num { position: absolute; top: 0; left: 50%; margin: 0 0 0 -17px; width: 32px; height: 33px; background-color: #F1F1F1; font-size: 18px; line-height: 32px; text-align: center; color: #727272;}
+    .step-count .desc { padding: 48px 0 0;}
+    .step-count .bar { position: absolute; left: 67px; right: 67px; top: 20px; height: 7px; overflow: hidden; background-position: 0 -132px; background-repeat: repeat-x; z-index: 0;}
+    .step-count .bar div { height: 7px; overflow: hidden; background-position: 0 -149px; background-repeat: repeat-x;}
+    .step-count .finish,
+    .step-count .current { color: #6B696B;}
+    .step-count .finish .num { background-position: 0 -43px; color: #FFF;}
+    .step-count .current .num { top: -2px; margin: 0 0 0 -18px; width: 36px; height: 36px; line-height: 35px; background-position: 0 -86px; color: #FFF;}
+
+    .step-1-cont .bar div { width: 0;}
+    .step-2-cont .bar div { width: 134px;}
+    .step-3-cont .bar div { width: 268px;}
+    .step-4-cont .bar div { width: 402px;}
+    .step-5-cont .bar div { width: 536px;}
+    .step-6-cont .bar div { width: 670px;}
+
+/*mod-step*/
+    .mod-step { margin: 0 0 50px; background: #FFF; border: 1px solid #E3E3E3;}
+    .mod-step .hd { padding: 0 20px; height: 50px; background: #F9F9F9; border-bottom: 1px solid #E3E3E3; line-height: 50px; color: #6B696B;}
+    .mod-step .bd { padding: 20px;}
+    .mod-step .ft { padding: 15px 20px; border-top: 1px solid #E3E3E3;}
+
+    .mod-step .step-desc { margin: 0 0 40px;}
+
+/*step_1_2*/
+    .step-1-cont.vhidden,
+    .step-2-cont.vhidden { position: absolute;}
+
+/*upload-way-cont*/
+    .upload-way-cont { overflow: hidden}
+    .upload-way-cont .mod-step { float: left; width: 398px;}
+    .upload-way-cont .mod-step .bd { height: 100px;}
+    .upload-way-cont .mod-upload-local,
+    .upload-way-cont .mod-upload-site { border-right: none;}
+
+    .mod-upload-local .desc,
+    .mod-upload-disk .desc { margin: 15px 0 0; color: #C9C9C9;}
+
+    .mod-upload-site .site { margin: 15px 0 0;}
+    .mod-upload-site .input-txt { width: 332px;}
+    .mod-upload-site .site a,
+    .mod-upload-disk .disk a { display: inline-block; margin: 0 13px 0 0; border: 1px solid #E3E2DF;}
+    .mod-upload-site .site a img,
+    .mod-upload-disk .disk a img { vertical-align: top;}
+    .mod-upload-site .site .cur,
+    .mod-upload-disk .disk .cur { border-color: #FF7033;}
+
+/*mod-upload-processes*/
+    .mod-upload-processes .bd { height: 100px;}
+    .mod-upload-processes .ft { text-align: center;}
+    .mod-upload-processes .tips-cont { margin: 0;}
+    .mod-upload-processes .tips-box { padding: 0 0 0 80px;}
+    .mod-upload-processes .upload-component { margin: 0 0 10px; width: 500px; height: 60px;}
+    .mod-upload-processes .upload-tips { top: 10px; bottom: auto;}
+    .mod-upload-processes .uploadify-queue-item { margin: 0; top: 30px; bottom: auto;}
+    .mod-upload-processes .uploadify-queue-item .data { top: -20px; bottom: auto;}
+    .mod-upload-processes .uploadify-queue-item .uploadify-progress { top: 0; bottom: auto; background: #E1E1E1; border: none;}
+    .mod-upload-processes .uploadify-queue-item .uploadify-progress-bar { height: 20px; background: #5D6065;}
+
+/*mod-upload-video-info*/
+    .thumbnail-pic span { display: inline-block; margin: 0 15px 0 0; border: 3px solid #FFF;}
+    .thumbnail-pic .selected { border-color: #FF7033;}
+    .thumbnail-pic span img { vertical-align: top;}
+
+/*mod-upload-subtitle*/
+    .mod-upload-subtitle .upload-component { margin: 0 0 20px; width: 450px;}
+    .mod-upload-subtitle .bd { padding: 0; overflow: hidden;}
+    .mod-upload-subtitle .textarea { width: 500px; height: 300px;}
+    .mod-upload-subtitle .ft { padding-left: 0;}
+
+    .subtitle-form-row { float: left; padding: 30px 0; width: 740px;}
+
+    .video-preview { float: right; margin: 0 0 -9999em; padding: 0 0 9999em; width: 450px; border-left: 1px solid #E3E3E3;}
+    .video-preview .title { height: 50px; border-bottom: 1px solid #E3E3E3; line-height: 50px;}
+    .video-preview .title h4 { margin: 0 20px; color: #6B696B;}
+    .video-preview .preview-info { padding: 20px 25px;}
+    .video-preview .video-title { margin: 0 0 10px; color: #5E5F60;}
+    .video-preview .video { margin: 0 0 10px;}
+    .video-preview .video-desc { color: #6B696B;}
+
+/*mod-upload-timeline*/
+    .mod-upload-timeline .step-desc { margin: 0 0 20px;}
+
+/*match-select-cont*/
+    .match-select-cont .mod-match-way { float: left; width: 400px;}
+
+/*mod-match-way*/
+    .mod-match-way { margin: 0 20px 20px 0; background: #F4F4F4; border: 1px solid #DEDBDB; border-radius: 8px; overflow: hidden;}
+    .mod-match-way .title { height: 40px; background: #F98258; line-height: 40px;}
+    .mod-match-way .title h4 { margin: 0 20px; font-size: 16px; color: #FFF;}
+    .mod-match-way .way-cont { padding: 25px; height: 200px;}
+    .mod-match-way .action { padding: 20px 0 0; border-top: 1px solid #DEDBDB;}
+    .mod-match-way .tips-cont { margin: 50px 0 0;}
+    .mod-match-way .at { margin: 0 0 40px;}
+
+    .mod-match-way-dis .title { background: #7A7D81;}
+
+/*mod-upload-succeed*/
+    .mod-upload-succeed .tips-cont { margin: 30px 0 50px;}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>西南财经大学－教材资料馆</title>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="js/modernizr.2.8.2.js"></script>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- 头部 -->
+    <header id="header">
+      <div class="brand">
+        <a href="">教材资料馆</a>
+      </div>
+      <!-- 主导航 -->
+      <nav>
+        <ul>
+          <li><a href="">首页</a></li>
+          <li><a href="">课程</a></li>
+          <li><a href="">院系</a></li>
+          <li><a href="">剪集</a></li>
+          <li><a href="">笔记</a></li>
+        </ul>
+      </nav>
+      
+      <!-- 注册和登录 -->
+      <div class="user-box user-login" style="display:none;">
+        <a href="">登录</a>
+        <a href="">注册</a>
+      </div>
+
+      <!-- 用户登录后 -->
+      <div class="user-box">
+        <div class="user-name">
+          <span>Soyjavi</span>
+        </div>
+        <div class="user-avatar">
+          <img src="img/avatar.png" alt="">
+        </div>
+        <div class="user-downarrow">
+          <i class="icon-caret-down"></i>
+        </div>
+
+        <!-- 下拉菜单 -->
+        <div class="user-dropdown">
+          <ul>
+            <li><a href="">我的笔记</a></li>
+            <li><a href="">我的收藏</a></li>
+            <li><a href="">我的分享</a></li>
+            <li><a href="">个人设置</a></li>
+            <li><a href="">退出账户</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 头部搜索框 -->
+      <div class="header-serach">
+        <input type="text">
+        <button><i class="icon-search"></i></button>
+      </div>
+    </header>
+
+<!--     <div class="top-title">
+      <div class="content-inner">
+        <h2 class="color-icon-title">
+          <i class="color-icon color-icon-user"></i><span>个人设置</span>
+        </h2>
+      </div>
+    </div> -->
+
+    <div class="main" id="setting-content">
+      <div class="content-inner">
+
+        <div class="setting-wrap">
+          <h2 class="setting-title">个人设置</h2>
+          <div class="form">
+            <div class="form-row form-row-lable">
+              <h3>基本信息</h3>
+            </div>
+
+            <!-- 上传头像 -->
+            <div class="form-row avatar-upload">
+              <div class="avatar-w">
+                <img src="img/avatar_default.png" alt="">
+              </div>
+              <div class="upload-btn">
+                <span>更换头像</span>
+                <input type="file">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <!-- 如果表单验证正确请添加 "input-ok" class  -->
+              <div class="input-field input-text">
+                <input type="text" placeholder="昵称">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <!-- 如果表单验证正确请添加 "input-ok" class  -->
+              <div class="input-field input-text">
+                <input type="email" placeholder="邮箱">
+              </div>
+            </div>
+            
+            <div class="form-row form-row-lable">
+              <h3>修改密码</h3>
+            </div>
+
+            <div class="form-row">
+              <!-- 如果表单验证正确请添加 "input-ok" class  -->
+              <div class="input-field input-text input-error">
+                <input type="password" placeholder="旧密码">
+                <!-- 表单错误提示 -->
+                <p class="info error-info">密码长度不能低于8位</p>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <!-- 如果表单验证正确请添加 "input-ok" class  -->
+              <div class="input-field input-text">
+                <input type="password" placeholder="新密码">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <!-- 如果表单验证正确请添加 "input-ok" class  -->
+              <div class="input-field input-text">
+                <input type="password" placeholder="确认新密码">
+              </div>
+            </div>
+
+            <div class="form-row confirm-btn">
+              <button type="submit">保存</button>
+            </div>
+
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+    <!-- 页脚 -->
+    <footer id="footer">
+      <div class="content-inner">
+        <div class="brand">
+          <a href="">西南财经大学</a>
+        </div>
+        <div class="copyright">
+          <p>Copyright © Hiho.Com. All Rights Reserved .</p>
+        </div>
+        <div class="nav">
+          <nav>
+            <ul>
+              <li><a href="">首页</a></li>
+              <li><a href="">课程</a></li>
+              <li><a href="">院系</a></li>
+              <li><a href="">剪集</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

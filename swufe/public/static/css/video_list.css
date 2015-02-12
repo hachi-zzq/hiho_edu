@@ -1,0 +1,104 @@
+
+/* 清除浮动 */
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+#page_main {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+#page_left {
+    float: left;
+    width: 13%;
+    height: auto;
+    background: #f1f1f1;
+    font-size: 12px;
+    padding: 15px 0 15px 15px;
+}
+
+#page_left span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#page_left ul {
+    list-style: none;
+    margin-top: 15px;
+    width: 120px;
+    padding-left: 10px;
+    line-height: 1.5;
+}
+
+#page_left ul li {
+    margin-bottom: 10px;
+    width: 100px;
+    text-indent: 10px;
+    height: 20px;
+}
+
+.catList {
+    background: #a4a4a4;
+}
+
+#page_right {
+    float: left;
+    margin-left:40px;
+    width: 60%;
+}
+#page_right #nowList {
+    width: 100%;
+    padding: 15px 0 5px 0;
+    background:#f1f1f1;
+}
+#page_right #nowList ul  {
+    width: 90%;
+    padding-left: 20px;
+    list-style: none;
+}
+
+#page_right #nowList ul li {
+    display: inline;
+    margin-right: 5px;
+    font-size: 12px;
+    padding: 3px 5px;
+}
+
+.tit {
+    color: #a3a3a3;
+}
+
+.click {
+    background: #bebebe;
+}
+
+#nowCat {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    width: 10%;
+    background:#f1f1f1 ;
+}
+
+#right_main {
+	padding-left:20px;
+}
+.v-cover{
+	height:180px;
+	width:32%;
+		padding-top:15px;
+	
+}
+ 

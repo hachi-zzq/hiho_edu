@@ -1,0 +1,46 @@
+.line{
+    list-style:none;
+}
+.tags:hover{
+    text-decoration:none;
+}
+.player{background:#DDD;}
+.right{float:none;overflow-y:auto;}
+ol.subtitle{margin:0;padding-left:40px;font-size:14px;line-height:20px;}
+ol.subtitle li{padding:3px 0;}
+.subtitle{padding-left: 10px;}
+span.light{background:#369;color:#FFF;}
+span.click{background:#333;}
+.pd{padding-top: 5px;}
+li.light{background:#EEE;}
+.word{cursor:pointer;}
+#imgSinaShare .share_icon{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+}
+#imgSinaShare .share_icon:hover{
+    background-position-y: 51px;
+}
+#imgSinaShare .share_weibo {
+    background: url("../img/share_icon.png") -99px 26px;
+}
+#imgSinaShare .share_facebook {
+    background: url("../img/share_icon.png") 1px 26px;
+}
+#imgSinaShare .share_gplus {
+    background: url("../img/share_icon.png") -24px 26px;
+}
+#imgSinaShare .share_twitter {
+    background: url("../img/share_icon.png") -249px 26px;
+}
+#imgSinaShare .share_weixin {
+    background: url("../img/share_icon.png") -74px 26px;
+}
+.information {
+    padding-left: 58px;
+    margin-top: -27px;
+}
+#respon{
+    height:570px;
+}

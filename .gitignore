@@ -1,0 +1,35 @@
+dump.rdb
+*.log
+
+# Composer
+composer.phar
+
+# OS and IDE
+.DS_Store
+Thumbs.db
+.idea/
+/nbproject
+
+# Laravel
+/swufe/bootstrap/compiled.php
+/swufe/vendor
+
+# Configuration
+/swufe/app/config/local/*
+
+# Cache
+/swufe/composer.lock
+
+# UserData
+/swufe/public/data/thumbnail/*
+/swufe/public/screenshot/*
+
+# Sass cache
+/html_template/scss/.sass-cache
+/html_template/config.codekit
+/html_template_aug/scss/.sass-cache
+/html_template_aug/config.codekit
+
+/swufe/public/upload/*
+/swufe/.tags
+/swufe/.tags_sorted_by_file

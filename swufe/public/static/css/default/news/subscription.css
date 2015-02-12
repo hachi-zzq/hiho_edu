@@ -1,0 +1,48 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义subscription样式
+ */
+
+/*订阅页的设置*/
+    .ico-setting { display: inline-block; width: 24px; height: 25px; vertical-align: middle; cursor: pointer;}
+    .ico-setting:before { left: 0; top: 0; width: 24px; height: 25px; background-position: -26px -86px;}
+
+/*订阅列表页设置*/
+    .subscribed-setting { position: relative; margin: 25px 0 0 30px; z-index: 50;}
+    .subscribed-setting .status { display: inline-block; margin: 0 0 0 10px; font-size: 14px; color: #828282; vertical-align: middle;}
+    .subscribed-setting:hover .drop-list { display: block;}
+    .subscribed-setting .drop-list { display: none; right: -18px; top: 41px; width: 322px;}
+    .subscribed-setting .drop-list:before { left: auto; right: 20px; margin: 0;}
+    .subscribed-setting .drop-list:after { left: auto; right: 0; top: -65px; width: 65px; height: 70px;}
+    .subscribed-setting .item { margin: 10px 0 5px;}
+    .subscribed-setting .item h4 { margin: 0 14px; padding: 0 0 4px; border-bottom: 1px solid #EEE; font-weight: normal; color: #999;}
+    .subscribed-setting ul { padding: 5px 0 0; overflow: hidden;}
+    .subscribed-setting li { position: relative; float: left; width: 95px; margin: 0 5px; padding: 0 23px 0 33px; border-radius: 3px; line-height: 26px;}
+    .subscribed-setting li:hover { background: #F4F4F4;}
+    .subscribed-setting li p { overflow:hidden; word-wrap:normal; white-space:nowrap; text-overflow:ellipsis; color: #5C5E5F;}
+    .subscribed-setting .selectBox { position: absolute; left: 9px; top: 5px; width: 12px; height: 12px; border: 2px solid #CDCDCD; border-radius: 3px; cursor: pointer;}
+    .subscribed-setting .selected .selectBox { width: 16px; height: 16px; background: url("bg/other.png") no-repeat 0 -191px; border: none;}
+    .subscribed-setting .ico-close-s1 { display: none; right: 1px; top: 1px;}
+    .subscribed-setting li:hover .ico-close-s1 { display: block;}
+    .subscribed-setting .action { padding: 10px; background: #F8F8F8; text-align: center;}
+
+/*video-list-s1*/
+    .hover-play .details-info { position: absolute; right: 10px; top: 10px; cursor: default;}
+    .hover-play .details-info:hover .details { display: block;}
+    .hover-play .details { display: none; position: absolute; top: 31px; right: -29px; width: 322px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, .2); background: #1C1D1E; background: rgba(28, 29, 30, .98); color: #EAEAEA;}
+    .hover-play .details:after { position: absolute; right: 0; top: -40px; width: 100px; height: 40px; content: '';}
+    .hover-play .d-hd { margin: 6px 13px 13px; height: 34px; border-bottom: 1px solid #2F2F2F; line-height: 34px;}
+    .hover-play .d-hd h4 { float: left; font-weight: normal; font-size: 14px; color: #808587;}
+    .hover-play .d-hd .time { float: right;}
+    .hover-play .d-bd { margin: 0 13px 15px; max-height: 170px; overflow: hidden;}
+
+    .video-list-s1 .subtitle-result { height: auto;}
+    .video-list-s1 .subtitle li { float: none; margin: 0; width: auto; color: #EAEAEA;}
+    .video-list-s1 .subtitle .time { top: 3px; background: none; border-color: #5A944A; color: #5A944A;}
+    .video-list-s1 .subtitle .keyword { cursor: pointer;}
+
+    .video-list-s1 .word-tv { float: right; padding: 0 5px; background: #A3A5A6; border-radius: 3px; color: #FFF; white-space: nowrap;}
+    .video-list-s1 .word-tv .split { background: #B5B7B8;}
+    .video-list-s1 .word-tv .word,
+    .video-list-s1 .word-tv .tv { max-width: 90px; overflow: hidden; word-wrap:normal; white-space:nowrap; text-overflow:ellipsis;}
+    .video-list-s1 .word-tv .tv { max-width: 80px;}

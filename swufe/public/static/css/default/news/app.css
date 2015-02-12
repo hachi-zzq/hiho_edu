@@ -1,0 +1,57 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义app样式
+ */
+
+html { background: #FFF;}
+.wrap { padding-top: 0;}
+
+/*header*/
+    .header { position: absolute; background: none; box-shadow: none;}
+    .header .nav a { padding: 0 20px; width: auto; height: 62px; line-height: 62px; font-size: 14px;}
+    .header .nav a:hover { background: none; text-decoration: underline;}
+    .header .nav a:before { display: none;}
+    .header .label-new { right: 13px; top: 18px;}
+
+    .header .user:before { border-color: #D7D9D7 transparent transparent transparent;}
+
+    .header .search-cont { background: none; border: 2px solid #CFD1D1;}
+    .header .search-cont .label { line-height: 32px;}
+    .header .search-cont .input { height: 22px; line-height: 22px;}
+    .header .search-cont .btn-search { height: 32px; background-position: 11px -39px;}
+
+    .header .notice-cont .num { border-color: #FFF;}
+
+/*footer*/
+    .footer { margin: -53px 0 0; background: none;}
+    .footer .layout-in { border-top: 1px solid #525354;}
+
+/*btn*/
+    .btn-download { display: inline-block; position: relative; padding: 0 0 0 60px; width: 176px; height: 76px; background: #6A6945; background: rgba(0, 0, 0, .2); border: 2px solid #FFF; border-radius: 5px; overflow: hidden; color: #FFF; white-space: nowrap; text-transform: uppercase;}
+    .btn-download:hover { text-decoration: none;}
+    .btn-download:before { position: absolute; left: 12px; top: 18px; width: 34px; height: 37px; background: url("bg/app.png") no-repeat; content: '';}
+    .btn-download .desc { margin: 10px 0 0; font-size: 16px;}
+    .btn-download .store { font-size: 23px;}
+
+    .btn-android:before { background-position: 0 -57px;}
+
+/*banner*/
+    .banner-cont { margin: 0 0 30px; background: url("bg/app_banner.jpg")  no-repeat top center;}
+    .banner-cont .layout-in { position: relative; height: 810px;}
+    .banner-cont .banner-desc { position: absolute; left: 0; top: 240px; font-size: 48px; font-weight: normal; color: #FFF;}
+    .banner-cont .download { position: absolute; left: 0; top: 430px;}
+    .banner-cont .btn-iso { margin: 0 18px 0 0;}
+
+/*app-explain*/
+    .app-explain { margin: -61px 0 0; height: 1847px; background: url("bg/app_explain.jpg") no-repeat top center;}
+    .app-explain li { position: relative; height: 450px;}
+    .app-explain .cont { position: absolute; top: 135px;left: 235px; width: 400px;}
+    .app-explain .title { margin: 0 0 10px; font-size: 24px; color: #333;}
+    .app-explain .desc { font-size: 16px; color: #9C9C9C;}
+    .app-explain .odd .cont { top: 152px; left: 645px;}
+    .app-explain .item-reading .cont { top: 180px;}
+
+/*get-app*/
+    .get-app { height: 400px; background: url("bg/app_get_bg.png") top center; border-bottom: 1px solid #515253; text-align: center;}
+    .get-app h3 { padding: 50px 0 90px; font-size: 30px; font-weight: normal; color: #FFF; text-transform: uppercase;}
+    .get-app .btn-download { margin: 0 10px; text-align: left;}

@@ -1,0 +1,90 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义TV样式
+ */
+
+/*tv-list*/
+    .tv-list { margin: 0 0 20px;}
+    .tv-list .bd { margin: 0 -2px 0 0; background: #FFF; border: 1px solid #DDD; border-radius: 5px; overflow: hidden;}
+    .tv-list ul { margin: 0 0 -1px -1px; overflow: hidden;}
+    .tv-list li { float: left; width: 299px; overflow: hidden; border: solid #DDD; border-width: 0 0 1px 1px; line-height: 52px;}
+    .tv-list li a { display: block; height: 52px; color: #2D3031;}
+
+    /*tv-recommend*/
+    .tv-recommend li { display: table;}
+    .tv-recommend li a { display: table-cell; height: 64px; text-align: center; vertical-align: middle;}
+    .tv-recommend li img { vertical-align: middle;}
+
+    /*tv-all*/
+    .tv-all { margin: 0 0 50px;}
+    .tv-all li a { position: relative; padding: 0 30px 0 20px; overflow:hidden; word-wrap:normal; white-space:nowrap; text-overflow:ellipsis;}
+    .tv-all li a:hover { color: #1E9FDB; text-decoration: none;}
+    .tv-all li a:after { display: none; position: absolute; right: 20px; top: 50%; margin: -6px 0 0; width: 7px; height: 11px; background: url("bg/ico.png") no-repeat -43px -276px; content: '';}
+    .tv-all li a:hover:after { display: block;}
+
+/*tv details*/
+    .tv-details-bar { margin: 0;}
+    .tv-details-bar .layout-in { height: 53px; line-height: 53px;}
+
+    .tv-name { float: left;}
+    .tv-name .ico-back-arrow { margin: 0 18px 0 0;}
+    .tv-name .img { margin: 0 10px 0 0;}
+    .tv-name img { height: 25px; vertical-align: middle;}
+    .tv-name .name { display: inline-block; margin: 0 10px 0 0; font-size: 24px; color: #2D3031; vertical-align: middle;}
+    .tv-name .ico-down-arrow { vertical-align: middle;}
+
+    .tv-banner { margin: 0 0 20px; height: 388px; overflow: hidden; background-position: top center; background-repeat: no-repeat; background-size: cover;}
+
+    .focus-pic { margin: 0;}
+    .focus-pic .pic { height: 388px;}
+    .focus-pic .pic .focus-li { width: 1200px;}
+    .focus-pic .num { bottom: 10px;}
+
+    .focus-tv .img { float: left; margin: 37px 0 0;}
+    .focus-tv .tv-info { margin: 45px 0 0 520px; color: #FFF;}
+    .focus-tv .title { overflow:hidden; word-wrap:normal; white-space:nowrap; text-overflow:ellipsis; font-size: 28px;}
+    .focus-tv .title a { color: #FFF;}
+    .focus-tv .status { opacity: .8; filter:alpha(opacity=80);}
+    .focus-tv .status em,
+    .focus-tv .status .split { display: inline-block; vertical-align: middle;}
+    .focus-tv .status .split { margin: 0 10px; width: 1px; height: 10px; background: #E9E9E9;}
+    .focus-tv .hot-keywords { position: relative; margin: 16px 0 0; padding: 20px 0 0; border-top: 1px solid #FFF; border-color: rgba(255, 255, 255, .1);}
+    .focus-tv .keyword-desc { margin: 0 0 15px; font-size: 20px;}
+    .focus-tv .word { position: absolute; right: 0; top: 23px; padding: 0 12px; border: 2px solid #D5D5D5; border-radius: 100px; line-height: 22px; font-size: 14px;}
+    .focus-tv .btn-s2 { width: 178px; height: 46px; line-height: 46px; text-transform: uppercase;}
+
+    .subtitle-result { margin: 0 0 20px; height: 75px;}
+    .subtitle-result .subtitle .time { top: 5px; background: none; font-size: 12px;}
+    .subtitle-result .subtitle li { color: #EAEAEA; font-size: 14px;}
+    .subtitle-result .subtitle .keyword { color: #F56936;}
+
+    /*program list*/
+    .program-list .hd { height: 44px; padding: 0 2px 10px; border-bottom: 1px solid #D9D9D9; font-size: 26px;}
+    .program-list .hd .date { float: left; color: #2D2F31; text-transform: uppercase;}
+    .program-list .hd .desc { display: inline-block; vertical-align: middle;}
+    .program-list .hd .day { display: inline-block; color: #C1C1C1; vertical-align: middle;}
+    .program-list .hd .arrows { display: inline-block; position: relative; width: 11px; height: 20px; vertical-align: middle;}
+    .program-list .hd .ico-up-arrow,
+    .program-list .hd .ico-down-arrow { position: absolute; top: 0; left: 0;}
+    .program-list .hd .ico-down-arrow { top: auto; bottom: 0;}
+    .program-list .hd .explain { float: right; color: #C1C1C1; line-height: 42px;}
+
+    .program-list .item { position: relative; padding: 12px 0 0 129px;}
+    .program-list .item-split { margin: -1px 0 0; border-top: 1px solid #D9D9D9;}
+    .program-list .item:last-child { padding-bottom: 40px;}
+    .program-list .time-cont { position: absolute; left: 3px; top: 0; bottom: 0; width: 90px; border-right: 2px solid #D5D5D5; color: #BBB;}
+    .program-list .time-cont:after { position: absolute; right: -9px; top: 30px; width: 12px; height: 12px; background: #D5D5D5; border: 2px solid #EEEFF0; border-radius: 100px; content: '';}
+    .program-list .time-light:after { background: #22AEEB;}
+    .program-list .time-cont .time { margin: 20px 0 0; font-size: 16px; color: #999;}
+
+    .program-list .program-info { position: relative; padding: 0 0 12px; min-height: 50px; border-bottom: 1px solid #D9D9D9; overflow: hidden;}
+    .program-list .hover-play { position: absolute; left: 0; top: 0;}
+    .program-list .img { width: 92px; height: 50px;}
+    .program-list .program-name { float: left; margin: 10px 0 0 115px; width: 600px; font-size: 18px; color: #222;}
+    .program-list .program-name a { color: #222;}
+
+    .program-list .subscription { float: right; width: 340px; color: #606060; font-size: 14px; text-align: right;}
+    .program-list .word-cont { display: inline-block; position: relative; margin: 0 0 0 5px; padding: 0 15px; min-width: 70px; height: 28px; border: 2px solid #D5D5D5; border-radius: 100px; overflow: hidden; line-height: 28px; white-space: nowrap; text-align: center; cursor: pointer;}
+    .program-list .word-cont:hover { border-color: #FC523C;}
+    .program-list .word-cont .subscribe { display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #F44842; background: rgba(244, 72, 66, .7); color: #FFF; text-transform: uppercase;}
+    .program-list .word-cont:hover .subscribe { display: block;}

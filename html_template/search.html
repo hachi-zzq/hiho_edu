@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>西南财经大学－教材资料馆</title>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="js/modernizr.2.8.2.js"></script>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="search-list">
+  <div class="wrap">
+
+    <!-- 头部 -->
+    <header id="header">
+      <div class="brand">
+        <a href="">教材资料馆</a>
+      </div>
+      <!-- 主导航 -->
+      <nav>
+        <ul>
+          <li><a href="">首页</a></li>
+          <li><a href="">课程</a></li>
+          <li><a href="">院系</a></li>
+          <li class="current"><a href="">剪集</a></li>
+          <li><a href="">笔记</a></li>
+        </ul>
+      </nav>
+      
+      <!-- 注册和登录 -->
+      <div class="user-box user-login" style="display:none;">
+        <a href="">登录</a>
+        <a href="">注册</a>
+      </div>
+
+      <!-- 用户登录后 -->
+      <div class="user-box">
+        <div class="user-name">
+          <span>Soyjavi</span>
+        </div>
+        <div class="user-avatar">
+          <img src="img/avatar.png" alt="">
+        </div>
+        <div class="user-downarrow">
+          <i class="icon-caret-down"></i>
+        </div>
+
+        <!-- 下拉菜单 -->
+        <div class="user-dropdown">
+          <ul>
+            <li><a href="">我的笔记</a></li>
+            <li><a href="">我的收藏</a></li>
+            <li><a href="">我的分享</a></li>
+            <li><a href="">个人设置</a></li>
+            <li><a href="">退出账户</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 头部搜索框 -->
+      <div class="header-serach">
+        <input type="text">
+        <button><i class="icon-search"></i></button>
+      </div>
+    </header>
+
+    <div id="search">
+      <div class="content-inner">
+        <div class="search-input">
+          <input type="text" placeholder="搜索视频内容">
+          <button type="submit"><i class="icon-search"></i></button>
+          <div class="search_autocomplete">
+            <ul>
+              <li><strong>Hello </strong>world</li>
+              <li><strong>Hello </strong>kitty</li>
+              <li><strong>Hello </strong>beautifull</li>
+              <li><strong>Hello </strong>Man</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="content-inner">
+        <div class="search-result">
+          <!-- 搜索结果项 -->
+          <div class="item">
+            <div class="thumb-w">
+              <!-- 视频缩略图 -->
+              <div class="thumb">
+                <a href="">
+                  <img src="img/thumb_210x140.png" alt="">
+                  <time>01:23:23</time>
+                  <div class="thumb-hover">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 搜索内容 -->
+            <div class="info">
+              <div class="title">
+                <h2><a href="">管理信息和高效利用信息逐渐成为人们生存的必备技能</a></h2>
+              </div>
+              <div class="meta">
+                <span><i class="icon-preview"></i><b>29823</b></span>
+                <span><i class="icon-love"></i><b>3244</b></span>
+                <span><i class="icon-time-c"></i><b>234</b></span>
+              </div>
+              <div class="time-line">
+                <span style="left: 32%;"></span>
+              </div>
+              <div class="subtitle-result">
+                <ul>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求着眼于现代人的信息需求</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <!-- 搜索结果项 -->
+          <div class="item">
+            <div class="thumb-w">
+              <!-- 视频缩略图 -->
+              <div class="thumb">
+                <a href="">
+                  <img src="img/thumb_210x140.png" alt="">
+                  <time>01:23:23</time>
+                  <div class="thumb-hover">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 搜索内容 -->
+            <div class="info">
+              <div class="title">
+                <h2><a href="">管理信息和高效利用信息逐渐成为人们生存的必备技能</a></h2>
+              </div>
+              <div class="meta">
+                <span><i class="icon-preview"></i><b>29823</b></span>
+                <span><i class="icon-love"></i><b>3244</b></span>
+                <span><i class="icon-time-c"></i><b>234</b></span>
+              </div>
+              <div class="time-line">
+                <span style="left: 32%;"></span>
+              </div>
+              <div class="subtitle-result">
+                <ul>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析中国科学技术大学开设的文献管理与信息分析</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求着眼于现代人的信息需求</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <!-- 搜索结果项 -->
+          <div class="item">
+            <div class="thumb-w">
+              <!-- 视频缩略图 -->
+              <div class="thumb">
+                <a href="">
+                  <img src="img/thumb_210x140.png" alt="">
+                  <time>01:23:23</time>
+                  <div class="thumb-hover">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 搜索内容 -->
+            <div class="info">
+              <div class="title">
+                <h2><a href="">管理信息和高效利用信息逐渐成为人们生存的必备技能</a></h2>
+              </div>
+              <div class="meta">
+                <span><i class="icon-preview"></i><b>29823</b></span>
+                <span><i class="icon-love"></i><b>3244</b></span>
+                <span><i class="icon-time-c"></i><b>234</b></span>
+              </div>
+              <div class="time-line">
+                <span style="left: 32%;"></span>
+              </div>
+              <div class="subtitle-result">
+                <ul>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求着眼于现代人的信息需求</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <!-- 搜索结果项 -->
+          <div class="item">
+            <div class="thumb-w">
+              <!-- 视频缩略图 -->
+              <div class="thumb">
+                <a href="">
+                  <img src="img/thumb_210x140.png" alt="">
+                  <time>01:23:23</time>
+                  <div class="thumb-hover">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 搜索内容 -->
+            <div class="info">
+              <div class="title">
+                <h2><a href="">管理信息和高效利用信息逐渐成为人们生存的必备技能</a></h2>
+              </div>
+              <div class="meta">
+                <span><i class="icon-preview"></i><b>29823</b></span>
+                <span><i class="icon-love"></i><b>3244</b></span>
+                <span><i class="icon-time-c"></i><b>234</b></span>
+              </div>
+              <div class="time-line">
+                <span style="left: 32%;"></span>
+              </div>
+              <div class="subtitle-result">
+                <ul>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求着眼于现代人的信息需求</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <!-- 搜索结果项 -->
+          <div class="item">
+            <div class="thumb-w">
+              <!-- 视频缩略图 -->
+              <div class="thumb">
+                <a href="">
+                  <img src="img/thumb_210x140.png" alt="">
+                  <time>01:23:23</time>
+                  <div class="thumb-hover">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 搜索内容 -->
+            <div class="info">
+              <div class="title">
+                <h2><a href="">管理信息和高效利用信息逐渐成为人们生存的必备技能</a></h2>
+              </div>
+              <div class="meta">
+                <span><i class="icon-preview"></i><b>29823</b></span>
+                <span><i class="icon-love"></i><b>3244</b></span>
+                <span><i class="icon-time-c"></i><b>234</b></span>
+              </div>
+              <div class="time-line">
+                <span style="left: 32%;"></span>
+              </div>
+              <div class="subtitle-result">
+                <ul>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求着眼于现代人的信息需求</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <!-- 搜索结果项 -->
+          <div class="item">
+            <div class="thumb-w">
+              <!-- 视频缩略图 -->
+              <div class="thumb">
+                <a href="">
+                  <img src="img/thumb_210x140.png" alt="">
+                  <time>01:23:23</time>
+                  <div class="thumb-hover">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 搜索内容 -->
+            <div class="info">
+              <div class="title">
+                <h2><a href="">管理信息和高效利用信息逐渐成为人们生存的必备技能</a></h2>
+              </div>
+              <div class="meta">
+                <span><i class="icon-preview"></i><b>29823</b></span>
+                <span><i class="icon-love"></i><b>3244</b></span>
+                <span><i class="icon-time-c"></i><b>234</b></span>
+              </div>
+              <div class="time-line">
+                <span style="left: 32%;"></span>
+              </div>
+              <div class="subtitle-result">
+                <ul>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求着眼于现代人的信息需求</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <!-- 搜索结果项 -->
+          <div class="item">
+            <div class="thumb-w">
+              <!-- 视频缩略图 -->
+              <div class="thumb">
+                <a href="">
+                  <img src="img/thumb_210x140.png" alt="">
+                  <time>01:23:23</time>
+                  <div class="thumb-hover">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 搜索内容 -->
+            <div class="info">
+              <div class="title">
+                <h2><a href="">管理信息和高效利用信息逐渐成为人们生存的必备技能</a></h2>
+              </div>
+              <div class="meta">
+                <span><i class="icon-preview"></i><b>29823</b></span>
+                <span><i class="icon-love"></i><b>3244</b></span>
+                <span><i class="icon-time-c"></i><b>234</b></span>
+              </div>
+              <div class="time-line">
+                <span style="left: 32%;"></span>
+              </div>
+              <div class="subtitle-result">
+                <ul>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求着眼于现代人的信息需求</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <!-- 搜索结果项 -->
+          <div class="item">
+            <div class="thumb-w">
+              <!-- 视频缩略图 -->
+              <div class="thumb">
+                <a href="">
+                  <img src="img/thumb_210x140.png" alt="">
+                  <time>01:23:23</time>
+                  <div class="thumb-hover">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 搜索内容 -->
+            <div class="info">
+              <div class="title">
+                <h2><a href="">管理信息和高效利用信息逐渐成为人们生存的必备技能</a></h2>
+              </div>
+              <div class="meta">
+                <span><i class="icon-preview"></i><b>29823</b></span>
+                <span><i class="icon-love"></i><b>3244</b></span>
+                <span><i class="icon-time-c"></i><b>234</b></span>
+              </div>
+              <div class="time-line">
+                <span style="left: 32%;"></span>
+              </div>
+              <div class="subtitle-result">
+                <ul>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求着眼于现代人的信息需求</a>
+                  </li>
+                  <li>
+                    <time>00:23:23</time>
+                    <a href="">中国科学技术大学开设的文献管理与信息分析<em>课程</em>着眼于现代人的信息需求</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- 翻页 -->
+        <div class="pagination">
+          <ul class="pagination">
+            <li class="disabled"><span>«</span></li>
+            <li class="active"><span>1</span></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#" rel="next">»</a></li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 页脚 -->
+    <footer id="footer">
+      <div class="content-inner">
+        <div class="brand">
+          <a href="">西南财经大学</a>
+        </div>
+        <div class="copyright">
+          <p>Copyright © Hiho.Com. All Rights Reserved .</p>
+        </div>
+        <div class="nav">
+          <nav>
+            <ul>
+              <li><a href="">首页</a></li>
+              <li><a href="">课程</a></li>
+              <li><a href="">院系</a></li>
+              <li><a href="">剪集</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

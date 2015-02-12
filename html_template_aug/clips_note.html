@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>西南财经大学－教材资料馆</title>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="js/modernizr.2.8.2.js"></script>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- 头部 -->
+    <header id="header">
+      <div class="brand">
+        <a href="">教材资料馆</a>
+      </div>
+      <!-- 主导航 -->
+      <nav>
+        <ul>
+          <li><a href="">首页</a></li>
+          <li><a href="">视频分类</a></li>
+          <li><a href="">院系</a></li>
+          <li class="current"><a href="">剪集</a></li>
+          <li><a href="">笔记</a></li>
+        </ul>
+      </nav>
+      
+      <!-- 注册和登录 -->
+      <div class="user-box user-login" style="display:none;">
+        <a href="">登录</a>
+        <a href="">注册</a>
+      </div>
+
+      <!-- 用户登录后 -->
+      <div class="user-box">
+        <div class="user-name">
+          <span>Soyjavi</span>
+        </div>
+        <div class="user-avatar">
+          <img src="img/avatar.png" alt="">
+        </div>
+        <div class="user-downarrow">
+          <i class="icon-caret-down"></i>
+        </div>
+
+        <!-- 下拉菜单 -->
+        <div class="user-dropdown">
+          <ul>
+            <li><a href="">我的笔记</a></li>
+            <li><a href="">我的收藏</a></li>
+            <li><a href="">我的分享</a></li>
+            <li><a href="">个人设置</a></li>
+            <li><a href="">退出账户</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 头部搜索框 -->
+      <div class="header-serach">
+        <input type="text">
+        <button><i class="icon-search"></i></button>
+      </div>
+    </header>
+
+    <div class="top-title">
+      <div class="content-inner">
+        <h2 class="color-icon-title">
+          <i class="color-icon color-icon-video"></i><span>剪集</span>
+        </h2>
+        <div class="tab">
+          <ul>
+            <li><a href="">短视频</a></li>
+            <li class="active"><a href="">笔记</a></li>
+          </ul>
+        </div>
+        <ul class="sort">
+          <li class="current"><a href="">最新</a></li>
+          <li><a href="">最热</a></li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <div class="main">
+      <div class="content-inner">
+        <div class="card-wrap">
+
+          <!-- 视频卡片-笔记 -->
+          <div class="video-card note-card">
+            <div class="video-thumb">
+              <img src="img/thumb_a.jpg" alt="">
+              <time class="video-time">
+                00:23:22
+              </time>
+              <!-- 鼠标悬浮状态 -->
+              <div class="video-action">
+                <ul class="video-action-btns">
+                  <li><a href=""><i class="icon-info-c"></i></a></li>
+                  <li><a href=""><i class="icon-play-c"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="vidoe-info-wrap">
+              <div class="video-date">
+                <time>2014/5/24</time>
+                <span>6 段视频短片</span>
+              </div>
+              <div class="video-title">
+                <h3><a href="">互联网时代的粉丝经济</a></h3>
+              </div>
+              <div class="video-meta">
+                <span class="num-view"><i class="icon-preview"></i><b>873</b></span>
+                <span class="num-like"><i class="icon-love"></i><b>28</b></span>
+              </div>
+            </div>
+
+            <!-- tips -->
+            <div class="tips tips-note tips-top hidden">
+              <div class="tip-inner">
+                <div class="tip-title">
+                  <a href="" class="close"><i class="icon-times"></i></a>
+                  <h4>6 段视频</h4>
+                </div>
+                <div class="tip-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 视频卡片-笔记 -->
+          <div class="video-card note-card">
+            <div class="video-thumb">
+              <img src="img/video-thumb-1.png" alt="">
+              <time class="video-time">
+                00:23:22
+              </time>
+              <!-- 鼠标悬浮状态 -->
+              <div class="video-action">
+                <ul class="video-action-btns">
+                  <li><a href=""><i class="icon-info-c"></i></a></li>
+                  <li><a href=""><i class="icon-play-c"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="vidoe-info-wrap">
+              <div class="video-date">
+                <time>2014/5/24</time>
+                <span>6 段视频短片</span>
+              </div>
+              <div class="video-title">
+                <h3><a href="">互联网时代的粉丝经济</a></h3>
+              </div>
+              <div class="video-meta">
+                <span class="num-view"><i class="icon-preview"></i><b>873</b></span>
+                <span class="num-like"><i class="icon-love"></i><b>28</b></span>
+              </div>
+            </div>
+
+            <!-- tips -->
+            <div class="tips tips-note tips-top hidden">
+              <div class="tip-inner">
+                <div class="tip-title">
+                  <a href="" class="close"><i class="icon-times"></i></a>
+                  <h4>6 段视频</h4>
+                </div>
+                <div class="tip-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 视频卡片-笔记 -->
+          <div class="video-card note-card">
+            <div class="video-thumb">
+              <img src="img/video-thumb-1.png" alt="">
+              <time class="video-time">
+                00:23:22
+              </time>
+              <!-- 鼠标悬浮状态 -->
+              <div class="video-action">
+                <ul class="video-action-btns">
+                  <li><a href=""><i class="icon-info-c"></i></a></li>
+                  <li><a href=""><i class="icon-play-c"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="vidoe-info-wrap">
+              <div class="video-date">
+                <time>2014/5/24</time>
+                <span>6 段视频短片</span>
+              </div>
+              <div class="video-title">
+                <h3><a href="">互联网时代的粉丝经济</a></h3>
+              </div>
+              <div class="video-meta">
+                <span class="num-view"><i class="icon-preview"></i><b>873</b></span>
+                <span class="num-like"><i class="icon-love"></i><b>28</b></span>
+              </div>
+            </div>
+
+            <!-- tips -->
+            <div class="tips tips-note tips-top hidden">
+              <div class="tip-inner">
+                <div class="tip-title">
+                  <a href="" class="close"><i class="icon-times"></i></a>
+                  <h4>6 段视频</h4>
+                </div>
+                <div class="tip-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 视频卡片-笔记 -->
+          <div class="video-card note-card">
+            <div class="video-thumb">
+              <img src="img/video-thumb-1.png" alt="">
+              <time class="video-time">
+                00:23:22
+              </time>
+              <!-- 鼠标悬浮状态 -->
+              <div class="video-action">
+                <ul class="video-action-btns">
+                  <li><a href=""><i class="icon-info-c"></i></a></li>
+                  <li><a href=""><i class="icon-play-c"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="vidoe-info-wrap">
+              <div class="video-date">
+                <time>2014/5/24</time>
+                <span>6 段视频短片</span>
+              </div>
+              <div class="video-title">
+                <h3><a href="">互联网时代的粉丝经济</a></h3>
+              </div>
+              <div class="video-meta">
+                <span class="num-view"><i class="icon-preview"></i><b>873</b></span>
+                <span class="num-like"><i class="icon-love"></i><b>28</b></span>
+              </div>
+            </div>
+
+            <!-- tips -->
+            <div class="tips tips-note tips-top hidden">
+              <div class="tip-inner">
+                <div class="tip-title">
+                  <a href="" class="close"><i class="icon-times"></i></a>
+                  <h4>6 段视频</h4>
+                </div>
+                <div class="tip-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 视频卡片-笔记 -->
+          <div class="video-card note-card">
+            <div class="video-thumb">
+              <img src="img/video-thumb-1.png" alt="">
+              <time class="video-time">
+                00:23:22
+              </time>
+              <!-- 鼠标悬浮状态 -->
+              <div class="video-action">
+                <ul class="video-action-btns">
+                  <li><a href=""><i class="icon-info-c"></i></a></li>
+                  <li><a href=""><i class="icon-play-c"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="vidoe-info-wrap">
+              <div class="video-date">
+                <time>2014/5/24</time>
+                <span>6 段视频短片</span>
+              </div>
+              <div class="video-title">
+                <h3><a href="">互联网时代的粉丝经济</a></h3>
+              </div>
+              <div class="video-meta">
+                <span class="num-view"><i class="icon-preview"></i><b>873</b></span>
+                <span class="num-like"><i class="icon-love"></i><b>28</b></span>
+              </div>
+            </div>
+
+            <!-- tips -->
+            <div class="tips tips-note tips-top hidden">
+              <div class="tip-inner">
+                <div class="tip-title">
+                  <a href="" class="close"><i class="icon-times"></i></a>
+                  <h4>6 段视频</h4>
+                </div>
+                <div class="tip-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 视频卡片-笔记 -->
+          <div class="video-card note-card">
+            <div class="video-thumb">
+              <img src="img/video-thumb-1.png" alt="">
+              <time class="video-time">
+                00:23:22
+              </time>
+              <!-- 鼠标悬浮状态 -->
+              <div class="video-action">
+                <ul class="video-action-btns">
+                  <li><a href=""><i class="icon-info-c"></i></a></li>
+                  <li><a href=""><i class="icon-play-c"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="vidoe-info-wrap">
+              <div class="video-date">
+                <time>2014/5/24</time>
+                <span>6 段视频短片</span>
+              </div>
+              <div class="video-title">
+                <h3><a href="">互联网时代的粉丝经济</a></h3>
+              </div>
+              <div class="video-meta">
+                <span class="num-view"><i class="icon-preview"></i><b>873</b></span>
+                <span class="num-like"><i class="icon-love"></i><b>28</b></span>
+              </div>
+            </div>
+
+            <!-- tips -->
+            <div class="tips tips-note tips-top hidden">
+              <div class="tip-inner">
+                <div class="tip-title">
+                  <a href="" class="close"><i class="icon-times"></i></a>
+                  <h4>6 段视频</h4>
+                </div>
+                <div class="tip-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 视频卡片-笔记 -->
+          <div class="video-card note-card">
+            <div class="video-thumb">
+              <img src="img/video-thumb-1.png" alt="">
+              <time class="video-time">
+                00:23:22
+              </time>
+              <!-- 鼠标悬浮状态 -->
+              <div class="video-action">
+                <ul class="video-action-btns">
+                  <li><a href=""><i class="icon-info-c"></i></a></li>
+                  <li><a href=""><i class="icon-play-c"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="vidoe-info-wrap">
+              <div class="video-date">
+                <time>2014/5/24</time>
+                <span>6 段视频短片</span>
+              </div>
+              <div class="video-title">
+                <h3><a href="">互联网时代的粉丝经济</a></h3>
+              </div>
+              <div class="video-meta">
+                <span class="num-view"><i class="icon-preview"></i><b>873</b></span>
+                <span class="num-like"><i class="icon-love"></i><b>28</b></span>
+              </div>
+            </div>
+
+            <!-- tips -->
+            <div class="tips tips-note tips-top hidden">
+              <div class="tip-inner">
+                <div class="tip-title">
+                  <a href="" class="close"><i class="icon-times"></i></a>
+                  <h4>6 段视频</h4>
+                </div>
+                <div class="tip-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 视频卡片-笔记 -->
+          <div class="video-card note-card">
+            <div class="video-thumb">
+              <img src="img/video-thumb-1.png" alt="">
+              <time class="video-time">
+                00:23:22
+              </time>
+              <!-- 鼠标悬浮状态 -->
+              <div class="video-action">
+                <ul class="video-action-btns">
+                  <li><a href=""><i class="icon-info-c"></i></a></li>
+                  <li><a href=""><i class="icon-play-c"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="vidoe-info-wrap">
+              <div class="video-date">
+                <time>2014/5/24</time>
+                <span>6 段视频短片</span>
+              </div>
+              <div class="video-title">
+                <h3><a href="">互联网时代的粉丝经济</a></h3>
+              </div>
+              <div class="video-meta">
+                <span class="num-view"><i class="icon-preview"></i><b>873</b></span>
+                <span class="num-like"><i class="icon-love"></i><b>28</b></span>
+              </div>
+            </div>
+
+            <!-- tips -->
+            <div class="tips tips-note tips-top hidden">
+              <div class="tip-inner">
+                <div class="tip-title">
+                  <a href="" class="close"><i class="icon-times"></i></a>
+                  <h4>6 段视频</h4>
+                </div>
+                <div class="tip-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 视频卡片-笔记 -->
+          <div class="video-card note-card">
+            <div class="video-thumb">
+              <img src="img/video-thumb-1.png" alt="">
+              <time class="video-time">
+                00:23:22
+              </time>
+              <!-- 鼠标悬浮状态 -->
+              <div class="video-action">
+                <ul class="video-action-btns">
+                  <li><a href=""><i class="icon-info-c"></i></a></li>
+                  <li><a href=""><i class="icon-play-c"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="vidoe-info-wrap">
+              <div class="video-date">
+                <time>2014/5/24</time>
+                <span>6 段视频短片</span>
+              </div>
+              <div class="video-title">
+                <h3><a href="">互联网时代的粉丝经济</a></h3>
+              </div>
+              <div class="video-meta">
+                <span class="num-view"><i class="icon-preview"></i><b>873</b></span>
+                <span class="num-like"><i class="icon-love"></i><b>28</b></span>
+              </div>
+            </div>
+
+            <!-- tips -->
+            <div class="tips tips-note tips-top hidden">
+              <div class="tip-inner">
+                <div class="tip-title">
+                  <a href="" class="close"><i class="icon-times"></i></a>
+                  <h4>6 段视频</h4>
+                </div>
+                <div class="tip-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 视频卡片-笔记 -->
+          <div class="video-card note-card">
+            <div class="video-thumb">
+              <img src="img/video-thumb-1.png" alt="">
+              <time class="video-time">
+                00:23:22
+              </time>
+              <!-- 鼠标悬浮状态 -->
+              <div class="video-action">
+                <ul class="video-action-btns">
+                  <li><a href=""><i class="icon-info-c"></i></a></li>
+                  <li><a href=""><i class="icon-play-c"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="vidoe-info-wrap">
+              <div class="video-date">
+                <time>2014/5/24</time>
+                <span>6 段视频短片</span>
+              </div>
+              <div class="video-title">
+                <h3><a href="">互联网时代的粉丝经济</a></h3>
+              </div>
+              <div class="video-meta">
+                <span class="num-view"><i class="icon-preview"></i><b>873</b></span>
+                <span class="num-like"><i class="icon-love"></i><b>28</b></span>
+              </div>
+            </div>
+
+            <!-- tips -->
+            <div class="tips tips-note tips-top hidden">
+              <div class="tip-inner">
+                <div class="tip-title">
+                  <a href="" class="close"><i class="icon-times"></i></a>
+                  <h4>6 段视频</h4>
+                </div>
+                <div class="tip-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 视频卡片-笔记 -->
+          <div class="video-card note-card">
+            <div class="video-thumb">
+              <img src="img/video-thumb-1.png" alt="">
+              <time class="video-time">
+                00:23:22
+              </time>
+              <!-- 鼠标悬浮状态 -->
+              <div class="video-action">
+                <ul class="video-action-btns">
+                  <li><a href=""><i class="icon-info-c"></i></a></li>
+                  <li><a href=""><i class="icon-play-c"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="vidoe-info-wrap">
+              <div class="video-date">
+                <time>2014/5/24</time>
+                <span>6 段视频短片</span>
+              </div>
+              <div class="video-title">
+                <h3><a href="">互联网时代的粉丝经济</a></h3>
+              </div>
+              <div class="video-meta">
+                <span class="num-view"><i class="icon-preview"></i><b>873</b></span>
+                <span class="num-like"><i class="icon-love"></i><b>28</b></span>
+              </div>
+            </div>
+
+            <!-- tips -->
+            <div class="tips tips-note tips-top hidden">
+              <div class="tip-inner">
+                <div class="tip-title">
+                  <a href="" class="close"><i class="icon-times"></i></a>
+                  <h4>6 段视频</h4>
+                </div>
+                <div class="tip-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div class="thumb">
+                          <img src="img/thumb_64x40.png" alt="">
+                        </div>
+                        <div class="title">
+                          <h3>计算机辅助翻译原理与实践</h3>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <!-- 翻页 -->
+        <div class="pagination">
+          <ul class="pagination">
+            <li class="disabled"><span>«</span></li>
+            <li class="active"><span>1</span></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#" rel="next">»</a></li> 
+          </ul>
+        </div>
+      
+      </div>
+    </div>
+    
+    <!-- 页脚 -->
+    <footer id="footer">
+      <div class="content-inner">
+        <nav>
+          <a href="">首页</a>
+          <a href="">西南财大视频资源</a>
+          <a href="">TED</a>
+          <a href="">其他院校视频资源</a>
+          <a href="">剪集</a>
+        </nav>
+
+        <div class="copyright">
+          <p>Copyright © 西南财经大学版权所有, Powered by <a href="http://eastiming.com">深圳市东方泰明科技有限公司</a></p>
+          <p>最低浏览屏幕分辨率1200x800px</p>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义首页样式
+ */
+
+.site-bar .layout-in { height: 62px;}
+
+/*过滤*/
+    /*select*/
+    .filter select { margin: 20px 15px 0 0;}
+
+    /*过滤搜索*/
+    .filter-search { display: inline-block; margin: 17px 0 0; vertical-align: middle; line-height: 19px;}
+    .filter-search .input-cont { display: inline-block; position: relative; margin: 0 5px 0 0; border-bottom: 2px solid #BFBFBF; vertical-align: middle;}
+    .filter-search .input-cont input { width: 180px; height: 25px; line-height: 25px; background: none; border: none; outline: none;}
+    .filter-search .btn-submit { width: 23px; height: 23px; background: url("bg/ico_search.png") no-repeat; border: none; vertical-align: middle; text-indent: -9999em; cursor: pointer;}
+
+/*列表*/
+    .video-list .list ul { margin: 0 0 0 -17px; overflow: hidden;}
+    .video-list .list li { float: left; margin: 0 0 17px 17px; width: 284px; background: #FFF; border: 1px solid #ECECEC;}
+    .video-list .img { position: relative; display: block; margin: 0 0 5px; height: 160px;}
+    .video-list .img img { width: 100%; height: 100%; vertical-align: top;}
+    .video-list .time { position: absolute; right: 10px; bottom: 10px; padding: 0 5px; background: #000; background: rgba(0, 0, 0, .6); border-radius: 3px; line-height: 18px; color: #FFF;}
+    .video-list .info { margin: 0 13px 13px;}
+    .video-list .title { margin: 0 0 10px; height: 40px; overflow: hidden; line-height: 20px; font-size: 14px;}
+    .video-list .title a { color: #333;}
+    .video-list .label { height: 21px; overflow: hidden; color: #B7B7B7; font-size: 14px;}
+    .video-list .label span { display: inline-block; margin: 0 8px 0 0; white-space: nowrap;}

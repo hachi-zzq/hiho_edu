@@ -1,0 +1,64 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义BBC demo页的样式
+ * 所有BBC demo页面的重置样式全部写在此文件，不要修改HIHO主站样式文件
+ */
+
+.highlight-color,
+.warn-color,
+.paging .active span { color: #9B0000;}
+
+/*header*/
+    .header .logo { display: none; margin: 11px 20px 0 0;}
+    .header .logo a { width: 91px; height: 26px; background: url("bg/bbc_logo_3.png") no-repeat;}
+
+    .header .nav-home a { padding: 0 0 0 23px; background: url("bg/bbc.png") no-repeat 0 -46px;}
+
+/*搜索框*/
+    .search-page-cont .label-input-txt { border-color: #9B0000;}
+    .search-page-cont .btn-search { background-color: #9B0000;}
+
+/*首页*/
+    .ui-autocomplete .ui-menu-item a { line-height: 1.8;}
+
+    #bbc_index_page,
+    #bbc_enter_page { border-top: 2px solid #9B0000;}
+    #bbc_index_page .search-page-cont { width: 630px; margin: 0 auto;}
+    #bbc_index_page .search-page-cont .search-cont { margin: 0 0 10px; border: 4px solid #F0F0F0; background: #F0F0F0; border-radius: 5px;}
+
+    #bbc_index_page .footer,
+    #bbc_enter_page .footer { position: fixed; bottom: 0; left: 0; width: 100%;}
+
+    /*index-logo*/
+    .index-logo { margin: 120px auto 90px; width: 363px;}
+    .index-logo a { display: block; height: 104px;/* background: url("bg/bbc_logo_1.png") no-repeat;*/}
+
+/*enter*/
+    #bbc_enter_page { position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: url("bg/bbc_enter_bg.jpg") no-repeat top center; background-size: 100% 100%;}
+    /*#bbc_enter_page .index-logo a { background: url("bg/bbc_logo_2.png") no-repeat;}*/
+    #bbc_enter_page .footer { background: none; border: none;}
+
+    .enter-visit { text-align: center;}
+    .enter-visit .label-input-txt { border: solid #9B0000; border-width: 2px 0 2px 2px; border-radius: 5px 0 0 5px;}
+    .enter-visit .label { line-height: 52px;}
+    .enter-visit .input { padding: 5px 10px; width: 306px; height: 42px; border: none; line-height: 42px;}
+    .enter-visit .btn-visit { width: 71px; height: 56px; background: #9B0000 url("bg/bbc.png") no-repeat 22px 13px; border: none; border-radius: 0 5px 5px 0; text-indent: -9999em; cursor: pointer;}
+
+/*search list*/
+    .search-list-cont .time-line span { background: #9B0000;}
+
+/*play*/
+    #bbc_play_page .header .search-cont { float: right;}
+
+    .video-container { padding: 20px 0 30px;}
+    .video-subtitle .subtitle-label { bottom: -80px;}
+    .video-info-cont { margin: 0 350px 0 0;}
+    .video-info-cont .title { padding: 0; border: none; color: #28282A;}
+    .video-status-cont { padding: 0; border: none;}
+    .video-status-cont .ico { color: #8B8F92;}
+
+    .video-share { border: none;}
+
+    /*.share-action-cont .social { display: none;}*/
+    /*.share-action-cont .share-link { display: block; float: left; margin: 8px 0 0 10px; height: 32px; line-height: 32px;}
+    .share-action-cont .share-link input { margin: 0 0 0 5px; padding: 5px 10px; width: 260px; height: 18px; line-height: 18px; color: #999;}*/

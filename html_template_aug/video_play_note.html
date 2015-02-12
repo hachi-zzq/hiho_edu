@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>西南财经大学－教材资料馆</title>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="js/modernizr.2.8.2.js"></script>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/player.css">
+</head>
+<body id="player">
+  <header class="player-header">
+    <!--  返回课程列表 -->
+    <!-- <div class="back">
+      <a href="" title="返回课程列表">
+        <i class="icon-left-c"></i>
+        <span>返回列表</span>
+      </a>
+    </div> -->
+    <!--/  返回课程列表 -->
+    <!-- 返回首页 -->
+    <div class="back back-home">
+      <a href="" title="返回首页">
+        <i class="play-logo"></i>
+        <span>返回首页</span>
+      </a>
+    </div>
+    <!--/ 返回首页 -->
+    <div class="title">
+      <h2>新巴比伦艺术-伊斯塔门和游行之路<a href="" class="btn-line">查看原视频</a><a href="" class="btn-line">添加到笔记</a></h2>
+    </div>
+    <!-- <div class="search"></div> -->
+    <div class="user-signin" style="display:none;">
+      <a href="">登录</a>
+    </div>
+    <div class="user">
+      <div class="avatar">
+        <img src="img/avatar_256.png" alt="">
+      </div>
+      <div class="name">
+        <span>Maggie Lu</span>
+      </div>
+      <div class="user-downarrow">
+        <i class="icon-caret-down"></i>
+      </div>
+      <!-- user dropdown -->
+      <div class="user-dropdown">
+        <ul>
+          <li><a href="">我的笔记</a></li>
+          <li><a href="">我的收藏</a></li>
+          <li><a href="">我的分享</a></li>
+          <li><a href="">个人设置</a></li>
+          <li><a href="">退出账户</a></li>
+        </ul>
+      </div>
+      <!--/ user dropdown -->
+    </div>
+  </header>
+  <!-- 当字幕区域收缩时，请在div.player-container添加"shrinked" class -->
+  <div class="player-container">
+    <div class="video-wrap">
+
+      <div class="video-wrap-inner">
+
+        <div class="video-cont">
+        <!-- origin player here -->
+        </div>
+        <!--预览框-->
+        <div class="video-preview-cont" id="video_preview_cont">
+            <span class="preview-label">预览中</span>
+            <iframe id="video_preview_iframe" name="video_preview_iframe" scrolling="no" src=""
+                    frameborder="0"></iframe>
+        </div>
+        <!--/ 预览框-->
+
+      </div>
+
+    </div>
+    <div class="function-wrap" id="note-list-wrap">
+      <!-- tabs -->
+      <div class="tab-wrap">
+        
+        <div class="shrink-btn">
+          <a href=""></a>
+        </div>
+        <ul class="tab">
+          <li class="current">
+            <p>当前播放第 2/5 个视频 <strong>生命不能承受志强</strong></p>
+          </li>
+        </ul>
+      </div>
+      <!--/ tabs -->
+      
+      <!-- 重点片段 -->
+      <div class="note-wrap tab-content" id="note">
+        <div class="video-note-list">
+          <ul>
+            <!-- 笔记 -->
+            <li class="note-item">
+              <div class="thumb-w">
+                <a href="">
+                  <div class="thumb">
+                    <img src="img/thumb_a.jpg" alt="">
+                    <time>00:32:12</time>
+                    <div class="thumb-hover">
+                      <i class="icon-play-c"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="info">
+                <h3><a href="">生命不能成熟志强</a></h3>
+                <p>感谢产品邦的投递插头设计几十年来因为国际标准而未有变化，实际上现有的三线插头设计是非常笨拙愚蠢的！重新设计的三线插头原理其实很简单</p>
+                <div class="note-btns">
+                  <a href="" alt="加入收藏"><i class="icon-love"></i></a>
+                  <a href="" alt="添加到笔记"><i class="icon-note"></i></a>
+                </div>
+              </div>
+            </li>
+            <!-- 笔记 -->
+            <li class="note-item active">
+              <div class="thumb-w">
+                <a href="">
+                  <div class="thumb">
+                    <img src="img/thumb_210x140.png" alt="">
+                    <time>00:32:12</time>
+                    <div class="thumb-hover">
+                      <i class="icon-play-c"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="info">
+                <h3><a href="">生命不能成熟志强</a></h3>
+                <p>感谢产品邦的投递插头设计几十年来因为国际标准而未有变化，实际上现有的三线插头设计是非常笨拙愚蠢的！重新设计的三线插头原理其实很简单</p>
+                <div class="note-btns">
+                  <a href="" alt="加入收藏"><i class="icon-love"></i></a>
+                  <a href="" alt="添加到笔记"><i class="icon-note"></i></a>
+                </div>
+              </div>
+            </li>
+            <!-- 笔记 -->
+            <li class="note-item">
+              <div class="thumb-w">
+                <a href="">
+                  <div class="thumb">
+                    <img src="img/thumb_210x140.png" alt="">
+                    <time>00:32:12</time>
+                    <div class="thumb-hover">
+                      <i class="icon-play-c"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="info">
+                <h3><a href="">生命不能成熟志强</a></h3>
+                <p>感谢产品邦的投递插头设计几十年来因为国际标准而未有变化，实际上现有的三线插头设计是非常笨拙愚蠢的！重新设计的三线插头原理其实很简单</p>
+                <div class="note-btns">
+                  <a href="" alt="加入收藏"><i class="icon-love"></i></a>
+                  <a href="" alt="添加到笔记"><i class="icon-note"></i></a>
+                </div>
+              </div>
+            </li>
+            <!-- 笔记 -->
+            <li class="note-item">
+              <div class="thumb-w">
+                <a href="">
+                  <div class="thumb">
+                    <img src="img/thumb_210x140.png" alt="">
+                    <time>00:32:12</time>
+                    <div class="thumb-hover">
+                      <i class="icon-play-c"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="info">
+                <h3><a href="">生命不能成熟志强</a></h3>
+                <p>感谢产品邦的投递插头设计几十年来因为国际标准而未有变化，实际上现有的三线插头设计是非常笨拙愚蠢的！重新设计的三线插头原理其实很简单</p>
+                <div class="note-btns">
+                  <a href="" alt="加入收藏"><i class="icon-love"></i></a>
+                  <a href="" alt="添加到笔记"><i class="icon-note"></i></a>
+                </div>
+              </div>
+            </li>
+            <!-- 笔记 -->
+            <li class="note-item">
+              <div class="thumb-w">
+                <a href="">
+                  <div class="thumb">
+                    <img src="img/thumb_210x140.png" alt="">
+                    <time>00:32:12</time>
+                    <div class="thumb-hover">
+                      <i class="icon-play-c"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="info">
+                <h3><a href="">生命不能成熟志强</a></h3>
+                <p>感谢产品邦的投递插头设计几十年来因为国际标准而未有变化，实际上现有的三线插头设计是非常笨拙愚蠢的！重新设计的三线插头原理其实很简单</p>
+                <div class="note-btns">
+                  <a href="" alt="加入收藏"><i class="icon-love"></i></a>
+                  <a href="" alt="添加到笔记"><i class="icon-note"></i></a>
+                </div>
+              </div>
+            </li>
+            <!-- 笔记 -->
+            <li class="note-item">
+              <div class="thumb-w">
+                <a href="">
+                  <div class="thumb">
+                    <img src="img/thumb_210x140.png" alt="">
+                    <time>00:32:12</time>
+                    <div class="thumb-hover">
+                      <i class="icon-play-c"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="info">
+                <h3><a href="">生命不能成熟志强</a></h3>
+                <p>感谢产品邦的投递插头设计几十年来因为国际标准而未有变化，实际上现有的三线插头设计是非常笨拙愚蠢的！重新设计的三线插头原理其实很简单</p>
+                <div class="note-btns">
+                  <a href="" alt="加入收藏"><i class="icon-love"></i></a>
+                  <a href="" alt="添加到笔记"><i class="icon-note"></i></a>
+                </div>
+              </div>
+            </li>
+            <!-- 笔记 -->
+            <li class="note-item">
+              <div class="thumb-w">
+                <a href="">
+                  <div class="thumb">
+                    <img src="img/thumb_210x140.png" alt="">
+                    <time>00:32:12</time>
+                    <div class="thumb-hover">
+                      <i class="icon-play-c"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="info">
+                <h3><a href="">生命不能成熟志强</a></h3>
+                <p>感谢产品邦的投递插头设计几十年来因为国际标准而未有变化，实际上现有的三线插头设计是非常笨拙愚蠢的！重新设计的三线插头原理其实很简单</p>
+                <div class="note-btns">
+                  <a href="" alt="加入收藏"><i class="icon-love"></i></a>
+                  <a href="" alt="添加到笔记"><i class="icon-note"></i></a>
+                </div>
+              </div>
+            </li>
+            <!-- 笔记 -->
+            <li class="note-item">
+              <div class="thumb-w">
+                <a href="">
+                  <div class="thumb">
+                    <img src="img/thumb_210x140.png" alt="">
+                    <time>00:32:12</time>
+                    <div class="thumb-hover">
+                      <i class="icon-play-c"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="info">
+                <h3><a href="">生命不能成熟志强</a></h3>
+                <p>感谢产品邦的投递插头设计几十年来因为国际标准而未有变化，实际上现有的三线插头设计是非常笨拙愚蠢的！重新设计的三线插头原理其实很简单</p>
+                <div class="note-btns">
+                  <a href="" alt="加入收藏"><i class="icon-love"></i></a>
+                  <a href="" alt="添加到笔记"><i class="icon-note"></i></a>
+                </div>
+              </div>
+            </li>
+            <!-- 笔记 -->
+            <li class="note-item">
+              <div class="thumb-w">
+                <a href="">
+                  <div class="thumb">
+                    <img src="img/thumb_210x140.png" alt="">
+                    <time>00:32:12</time>
+                    <div class="thumb-hover">
+                      <i class="icon-play-c"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="info">
+                <h3><a href="">生命不能成熟志强</a></h3>
+                <p>感谢产品邦的投递插头设计几十年来因为国际标准而未有变化，实际上现有的三线插头设计是非常笨拙愚蠢的！重新设计的三线插头原理其实很简单</p>
+                <div class="note-btns">
+                  <a href="" alt="加入收藏"><i class="icon-love"></i></a>
+                  <a href="" alt="添加到笔记"><i class="icon-note"></i></a>
+                </div>
+              </div>
+            </li>
+            <!-- 笔记 -->
+            <li class="note-item">
+              <div class="thumb-w">
+                <a href="">
+                  <div class="thumb">
+                    <img src="img/thumb_210x140.png" alt="">
+                    <time>00:32:12</time>
+                    <div class="thumb-hover">
+                      <i class="icon-play-c"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="info">
+                <h3><a href="">生命不能成熟志强</a></h3>
+                <p>感谢产品邦的投递插头设计几十年来因为国际标准而未有变化，实际上现有的三线插头设计是非常笨拙愚蠢的！重新设计的三线插头原理其实很简单</p>
+                <div class="note-btns">
+                  <a href="" alt="加入收藏"><i class="icon-love"></i></a>
+                  <a href="" alt="添加到笔记"><i class="icon-note"></i></a>
+                </div>
+              </div>
+            </li>
+            <!-- 笔记 -->
+            <li class="note-item">
+              <div class="thumb-w">
+                <a href="">
+                  <div class="thumb">
+                    <img src="img/thumb_210x140.png" alt="">
+                    <time>00:32:12</time>
+                    <div class="thumb-hover">
+                      <i class="icon-play-c"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="info">
+                <h3><a href="">生命不能成熟志强</a></h3>
+                <p>感谢产品邦的投递插头设计几十年来因为国际标准而未有变化，实际上现有的三线插头设计是非常笨拙愚蠢的！重新设计的三线插头原理其实很简单</p>
+                <div class="note-btns">
+                  <a href="" alt="加入收藏"><i class="icon-love"></i></a>
+                  <a href="" alt="添加到笔记"><i class="icon-note"></i></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--/ 重点片段 -->
+    </div> 
+  </div>
+
+  <div class="video-info">
+    <div class="video-avatar-cate">
+      <div class="avatar">
+        <img src="img/avatar.png" alt="">
+      </div>
+      <div class="teacher-info">
+        <span><a href="">周老师</a></span>
+        <span>5/20/2014</span>
+      </div>
+      <ul class="video-meta-base">
+        <li>分类 : <a target="_blank" href="">社会工程学</a><span>></span><a target="_blank" href="">自然</a><span>></span><a target="_blank" href="">公开课</a></li>
+        <li>专业 : <a target="_blank" href="">艺术设计</a></li>
+        <li>语言 : <a target="_blank" href="">中文</a></li>
+      </ul>
+    </div>
+
+    <div class="vidoe-like">
+      <!-- 收藏过的,在 a.like 添加"liked" class -->
+      <a href="" class="like">
+        <div class="like-icon-w">
+          <i class="like-icon"></i>
+          <span>收藏</span>
+        </div>
+        <span class="like-count">168</span>
+      </a>
+    </div>
+    <div class="video-share" style="display:none;">
+      <div class="share-to">
+        <span><b>｜ </b>分享到</span>
+      </div>
+      <!-- JiaThis Button BEGIN -->
+      <div class="jiathis_style_32x32">
+        <a class="jiathis_button_qzone" title="分享到QQ空间"><span class="jiathis_txt jtico jtico_qzone"></span></a>
+        <a class="jiathis_button_googleplus" title="Google+"><span class="jiathis_txt jtico jtico_googleplus"></span></a>
+        <a class="jiathis_button_tsina" title="Sina weibo"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+        <a class="jiathis_button_weixin" title="Weixin"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+      </div>
+      <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script><script type="text/javascript" src="http://v3.jiathis.com/code/plugin.client.js" charset="utf-8"></script><div style="position:absolute;width:0px;height:0px;"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="0" height="0" id="JIATHISSWF" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab"><param name="allowScriptAccess" value="always"><param name="swLiveConnect" value="true"><param name="movie" value="http://www.jiathis.com/code/swf/m.swf"><param name="FlashVars" value="z=a"><embed name="JIATHISSWF" src="http://www.jiathis.com/code/swf/m.swf" flashvars="z=a" width="0" height="0" allowscriptaccess="always" swliveconnect="true" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></object></div>
+      <!-- JiaThis Button END -->
+    </div>
+  </div>
+  
+  <!-- 访问权限 -->
+  <div class="locked" style="display:none;">
+    <div class="lock-img"></div>
+    <h2>抱歉！您无权限访问本视频，您可以<a href="">登录</a>有权限的账户或者<a href="">返回首页</a></h2>
+  </div>
+  <!--/ 访问权限 -->
+
+  <script>
+    // 播放器宽度适应，请前端重写之 :)
+    $(function(){
+      fixWidth();
+      
+      $( window ).resize(function(){
+        fixWidth();
+      });
+
+      function fixWidth(){
+        var subWidth = $('.function-wrap').width();
+        var videoWidth = $(document.body).width();
+        $('.video-wrap').width(videoWidth-subWidth);
+      };
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义设置页、我的订阅列表页样式
+ */
+
+.setting-cont { margin: 0 0 50px; background: #FFF; border: 1px solid #DDD; border-radius: 5px;}
+
+/*My subscription*/
+    /*subscription-list*/
+        .subscription-list { counter-reset: listCounter;}
+        .subscription-list .index:before { content: counter(listCounter); counter-increment: listCounter;}
+
+        .subscription-list table { width: 100%; font-size: 14px; color: #222; text-align: center;}
+        .subscription-list tr:nth-child(2n) { background: #F8FAFB;}
+        .subscription-list th { font-size: 16px; font-weight: normal; line-height: 52px; color: #9D9EA1;}
+        .th-index { width: 80px;}
+        .th-remain { width: 120px;}
+        .th-free { width: 110px;}
+        .th-operate { width: 190px;}
+        .subscription-list td { padding: 8px; border-top: 1px solid #EEE;}
+        .subscription-list .index { display: inline-block; width: 28px; height: 28px; background: #FFF; border: 2px solid #EEE; border-radius: 100px; line-height: 28px;}
+        .label-subscribed,
+        .label-expired { display: inline-block; width: 96px; height: 26px; background: #66B34E; border-radius: 3px; line-height: 26px; font-size: 14px; text-align: center; color: #FFF;}
+        .label-expired { background: #E6594D;}
+
+        .subscription-list .a-renewal,
+        .subscription-list .a-view { text-decoration: underline;}
+        .subscription-list .a-view { margin: 0 0 0 25px;}
+
+/*Account*/
+    /*编辑头像*/
+        .edit-user-pic { position: absolute; left: 447px; top: 85px; margin: 0 0 10px;}
+        .user-pic { position: relative; display: inline-block;}
+        .user-pic .pic { position: relative; z-index: 0;}
+        .user-pic .pic img { width: 80px; height: 80px; border-radius: 1000px; vertical-align: top;}
+        .edit-pic { position: absolute; bottom: 0; left: 0; width: 100%; height: 32px;}
+        .edit-pic .user-pic-tips { position: absolute; bottom: 0; left: 90px; line-height: 32px; font-size: 14px;}
+        .link-file { position: absolute; left: 53px; bottom: 0; width: 28px; height: 28px; background: #F68B00; border: 2px solid #FFF; border-radius: 100px; overflow: hidden; z-index: 10;}
+        .link-file .button { position: relative; z-index: 0;}
+        .link-file input { position: absolute; right: -10px; top: -10px; font-size: 100px; opacity: 0; filter:alpha(opacity=0); cursor: pointer; z-index: 5;}
+
+    /*account-cont / subscription-details*/
+    .account-cont { position: relative;}
+    .account-cont .item { margin: 0 200px 60px;}
+    .account-cont .hd { margin: 30px 0 25px; padding: 0 0 8px; border-bottom: 1px solid #EEE;}
+    .account-cont .hd h4 { font-size: 14px; font-weight: normal; color: #AAA; text-transform: uppercase;}
+
+    .account-cont .bd { margin: 0 0 0 97px;}
+    .user-pic-row { height: 80px;}
+    .user-pic-row .f-label { line-height: 80px;}
+
+    .item-tvs label { display: inline-block; margin: 0 15px 5px 0; width: 150px; overflow: hidden; word-wrap:normal; white-space:nowrap; text-overflow:ellipsis;}
+    .item-tvs .tvs { margin: 0 0 80px;}

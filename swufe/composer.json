@@ -1,0 +1,45 @@
+{
+    "name": "autotiming/hiho/edu",
+    "description": "The HiHo Edu Project.",
+    "require": {
+        "laravel/framework": "4.2.*",
+        "j20/php-uuid": "dev-master",
+        "guzzle/guzzle": "3.9.*",
+        "shuber/curl": "1.0.*",
+        "reprovinci/solr-php-client": "1.0.*",
+        "mobiledetect/mobiledetectlib": "2.8.*",
+        "intervention/image": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "app/commands",
+            "app/controllers",
+            "app/models",
+            "app/libraries",
+            "app/database/migrations",
+            "app/database/seeds",
+            "app/tests/TestCase.php",
+            "app/controllers/Admin"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan clear-compiled",
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "php artisan clear-compiled",
+            "php artisan optimize"
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "minimum-stability": "stable"
+}

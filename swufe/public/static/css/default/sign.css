@@ -1,0 +1,25 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义登录注册页样式
+ */
+
+/*social-sign*/
+    .social-sign { display: inline-block; margin: 0 15px; width: 64px; height: 64px; background: url("bg/social_sign.png") no-repeat;}
+
+    .social-sign-fb:hover { background-position: 0 -84px;}
+    .social-sign-g { background-position: -85px 0;}
+    .social-sign-g:hover { background-position: -87px -84px;}
+    .social-sign-tw { background-position: -169px 0;}
+    .social-sign-tw:hover { background-position: -169px -84px;}
+
+/*sign-cont*/
+    .sign-cont { margin: 30px 0 80px; height: 600px;}
+    .sign-cont .label-input-txt .label { top: 10px;}
+    .sign-cont .input-txt { width: 470px; height: 40px; line-height: 40px;}
+    .sign-cont .form { margin: 40px 0 30px 350px; width: 492px;}
+    .sign-cont .form .row { margin: 0 0 35px;}
+    .sign-cont .btn-s1 { width: 410px; height: 56px; line-height: 56px; font-size: 18px;}
+    .sign-cont .other { font-size: 14px; color: #979595; text-align: center;}
+    .sign-cont .other .social { margin: 20px 0 0;}
+    .sign-cont .argee { margin: 0 0 0 350px; color: #505050;}
+    .sign-cont .form .row .checkbox { margin-top: 0;}

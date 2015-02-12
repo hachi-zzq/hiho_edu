@@ -1,0 +1,1 @@
+{{ 'Get teachers page' }}

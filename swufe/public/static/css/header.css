@@ -1,0 +1,39 @@
+header{
+	height: 48px;
+	background: rgba(0,0,0,.85);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+	line-height: 48px;
+	font-family: Helvetica, Arial, sans-serif;
+	box-shadow: 0 1px 6px rgba(0,0,0,.2);
+}
+
+header > h1 {
+float: left;
+}
+
+header h1 {
+margin-right: 20px;
+}
+header > nav{
+	float: left;
+}
+nav{
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.signin {
+float: right;
+padding-right: 10px;
+}
+ol, ul {
+list-style: none;
+}

@@ -1,0 +1,55 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义首页样式
+ */
+
+/*focus-pic*/
+    .lastupdate{
+        width: 225px;height: 168px;
+    }
+
+/*politics*/
+    .mod-box-politics { margin: 35px 0;}
+
+/*video-list-s1-size1*/
+    .video-list-s1-size1 ul { margin: 0 0 0 -20px;}
+    .video-list-s1-size1 li { margin: 0 0 0 24px; width: 210px;}
+    .video-list-s1-size1 .img img { width: 210px; height: 141px;}
+
+/*mod-box-cont*/
+    .mod-box-cont .mod-box-s1 { float: left; width: 548px;}
+    .mod-box-cont .video-list-s1 ul { margin: 0 0 0 -19px;}
+    .mod-box-cont .video-list-s1 li { margin: 0 0 20px 19px; width: 170px;}
+    .mod-box-cont .video-list-s1 .img img { width: 170px; height: 127px;}
+    .mod-box-cont .mod-box-military { margin: 0 0 0 20px;}
+
+/*video-item-s1*/
+    .video-item-s1 .img img { width: 370px; height: 277px;}
+
+/*mod-hover-desc 鼠标经过时显示描述*/
+    .mod-hover-desc { position: relative; display: block; overflow: hidden;}
+    .mod-hover-desc img { position: relative; vertical-align: top; z-index: 0;}
+    .mod-hover-desc .info { position: absolute; bottom: -75px; left: 0; width: 100%; background: #000; background: rgba(0, 0, 0, .7); z-index: 5; color: #FFF; transition:all .2s ease-in .05s;}
+    .mod-hover-desc:hover .info { bottom: 0;}
+    .mod-hover-desc .info-cont { padding: 15px;}
+    .mod-hover-desc .info .desc { height: 60px; overflow: hidden; line-height: 20px;}
+    .mod-hover-desc .info .name { margin: 0 0 5px; overflow:hidden; word-wrap:normal; white-space:nowrap; text-overflow:ellipsis; font-weight: bold;}
+    .mod-hover-desc .info .status { margin: 0 0 8px; overflow: hidden;}
+    .mod-hover-desc .info .user { float: left; width: 50%; overflow:hidden; word-wrap:normal; white-space:nowrap; text-overflow:ellipsis;}
+    .mod-hover-desc .info .split { margin: 0 3px;}
+    .mod-hover-desc .info .count { float: right;}
+    .mod-hover-desc .info .ico-like-white { margin: 0 0 0 10px;}
+
+    /*显示标题，在显示描述的基础上修改*/
+    .mod-hover-title .info { bottom: -38px;}
+    .mod-hover-title .info .name { margin: 0;}
+    .mod-hover-title .info-cont { padding: 10px;}
+
+/*video-list-s2*/
+    .video-list-s2 ul { margin: 0 0 0 -18px; overflow: hidden;}
+    .video-list-s2 li { float: left; margin: 0 0 11px 18px; width: 178px;}
+    .video-list-s2 .img img { width: 100%; height: 133px;}
+
+/*mod-box-education*/
+    .mod-box-education .video-item-s1 { float: left;}
+    .mod-box-education .video-list-s2 { margin: 0 0 0 392px;}

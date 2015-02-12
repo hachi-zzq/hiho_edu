@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>西南财经大学－教材资料馆</title>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="js/modernizr.2.8.2.js"></script>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/avatar.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- 头部 -->
+    <header id="header">
+      <div class="brand">
+        <a href="">教材资料馆</a>
+      </div>
+      <!-- 主导航 -->
+      <nav>
+        <ul>
+          <li class="current"><a href="">首页</a></li>
+          <li><a href="">西南财大视频资源</a></li>
+          <li><a href="">TED</a></li>
+          <li><a href="">其他院校视频资源</a></li>
+          <li><a href="">剪集</a></li>
+          <li><a href="">笔记</a></li>
+        </ul>
+      </nav>
+      
+      <!-- 注册和登录 -->
+      <div class="user-box user-login" style="display:none;">
+        <a href="">登录</a>
+        <a href="">注册</a>
+      </div>
+
+      <!-- 用户登录后 -->
+      <div class="user-box">
+        <div class="user-name">
+          <span>Soyjavi</span>
+        </div>
+        <div class="user-avatar">
+          <img src="img/avatar.png" alt="">
+        </div>
+        <div class="user-downarrow">
+          <i class="icon-caret-down"></i>
+        </div>
+
+        <!-- 下拉菜单 -->
+        <div class="user-dropdown">
+          <ul>
+            <li><a href="">我的笔记</a></li>
+            <li><a href="">我的收藏</a></li>
+            <li><a href="">我的分享</a></li>
+            <li><a href="">个人设置</a></li>
+            <li><a href="">退出账户</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 头部搜索框 -->
+      <div class="header-serach">
+        <input type="text">
+        <button><i class="icon-search"></i></button>
+      </div>
+    </header>
+
+    <div class="top-title">
+      <div class="content-inner">
+        <h2 class="color-icon-title">
+          <i class="color-icon color-icon-user"></i><span>个人设置</span>
+        </h2>
+      </div>
+      
+    </div>
+
+    <div class="main profile-main">
+      <div class="content-inner">
+        <div class="profile">
+          <div class="form">
+            <div class="form-row">
+              <div class="avatar-upload">
+                <img src="img/avatar_256.png">
+              </div>
+            </div>
+            <div class="form-row form-title">
+              <h3>个人资料</h3>
+            </div>
+
+            <div class="form-row">
+              <div class="input-label">
+                <span>昵称</span>
+              </div>
+              <!-- 如果表单验证正确请添加 "input-ok" class  -->
+              <div class="input-field input-text">
+                <input type="text" value="Evan">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="input-label">
+                <span>邮箱</span>
+              </div>
+              <!-- 如果表单验证正确请添加 "input-ok" class  -->
+              <div class="input-field input-text">
+                <input type="email" value="abc@at.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="input-label">
+                <span>手机号</span>
+              </div>
+              <!-- 如果表单验证正确请添加 "input-ok" class  -->
+              <div class="input-field input-text">
+                <input maxlength="11" type="text" value="182 8983 8981">
+              </div>
+            </div>
+
+            <div class="form-row sms-code">
+              <div class="input-label"></div>
+              <div class="input-field input-text">
+                <input type="text" placeholder="短信验证码">
+              </div>
+              <div class="input-field input-btn">
+                <button class="">获取短信验证码</button>
+                <!-- 添加disable class 禁止点击 -->
+                <!-- <button class="disable">重新获取短信验证码(32)</button> -->
+              </div>
+            </div>
+
+            <div class="form-row form-title">
+              <h3>修改密码</h3>
+            </div>
+            <div class="form-row">
+              <div class="input-label">
+                <span>旧密码</span>
+              </div>
+              <!-- 如果表单验证正确请添加 "input-ok" class  -->
+              <div class="input-field input-text">
+                <input type="text" maxlength="11" placeholder="旧密码">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="input-label">
+                <span>新密码</span>
+              </div>
+              <!-- 如果表单验证正确请添加 "input-ok" class  -->
+              <div class="input-field input-text">
+                <input type="text" maxlength="11" placeholder="新密码">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="input-label">
+                <span>重复新密码</span>
+              </div>
+              <!-- 如果表单验证正确请添加 "input-ok" class  -->
+              <div class="input-field input-text">
+                <input type="text" maxlength="11" placeholder="确认新密码">
+              </div>
+            </div>
+
+            <div class="form-row confirm-btn">
+              <button type="submit">确定</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 页脚 -->
+    <footer id="footer">
+      <div class="content-inner">
+        <nav>
+          <a href="">首页</a>
+          <a href="">西南财大视频资源</a>
+          <a href="">TED</a>
+          <a href="">其他院校视频资源</a>
+          <a href="">剪集</a>
+        </nav>
+
+        <div class="copyright">
+          <p>Copyright © 西南财经大学版权所有, Powered by <a href="http://eastiming.com">深圳市东方泰明科技有限公司</a></p>
+          <p>最低浏览屏幕分辨率1200x800px</p>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+
+  <!-- modal -->
+  <div class="modal-wrap" style="display:none;">
+    <div class="modal new-note">
+      <div class="modal-title">
+        <a href="" class="close"><i class="icon-times"></i></a>
+        <h2>新建笔记</h2>
+      </div>
+      <div class="modal-content">
+        <div class="mc-row">
+          <div class="mc-label">
+            <span>笔记名称</span>
+          </div>
+          <div class="mc-input">
+            <input type="text">
+          </div>
+        </div>
+      </div>
+      <div class="modal-btns">
+        <button class="button">确认</button>
+        <button class="button cancel">取消</button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/avatar.js"></script>
+  <script>
+    new window.AvatarUpload({
+      el: document.querySelector('.avatar-upload'),
+      uploadUrl: '',
+      uploadData: {
+        foo: 'bar',
+        bar: 'baz'
+      },
+      pretendUpload: true
+    })
+  </script>
+</body>
+</html>

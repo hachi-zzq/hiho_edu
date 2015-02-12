@@ -1,0 +1,245 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义播放页样式
+ */
+
+#play_page .nav-items { display: none;}
+#play_page .header .search-cont .input { width: 350px;}
+
+/*视频信息、视频、字幕*/
+    .video-container { background: #353538;}
+
+    .video-info-cont { position: relative; padding: 15px 0 9px;}
+    .video-info-cont .title { padding: 0 300px 0 15px; border-left: 2px solid #FD9426; font-size: 24px; font-weight: normal; color: #EEF1F3; font-family: titilliumregular, Helvetica, msyh, Arial, sans-serif;}
+    .video-info-cont .info { position: absolute; right: 0; top: 24px; color: #C0C0C0;}
+    .video-info-cont .info .user { font-weight: bold; color: #F0F1F2;}
+    .video-info-cont .source { display: inline-block; margin: 0 0 0 7px; padding: 0 5px; border: 1px solid #22AEEF; border-radius: 3px; color: #22AEEF; text-transform: uppercase; vertical-align: middle;}
+    .video-info-cont .source:hover { text-decoration: none;}
+
+/*video-subtitle*/
+    /*播放器*/
+    .fp-context-menu { display: none !important;}
+
+    .video-subtitle { position: relative; height: 503px;}
+
+    .video-subtitle .video-col { position: relative; float: left; width: 670px; height: 100%;}
+    .video-subtitle .video-cont { position: relative; height: 100%; z-index: 0;}
+
+    .video-subtitle .subtitle-col { position: relative; float: right; width: 530px; height: 503px; background: #F8F8F8;}
+    .video-subtitle .subtitle-label { position: absolute; bottom: -55px; right: 10px; padding: 0 0 0 22px; height: 32px; background: url("bg/ico.png") no-repeat -34px -480px; line-height: 32px; color: #999;}
+    .video-subtitle .subtitle-label a { color: #4DABF7; text-decoration: underline;}
+    .video-subtitle .subtitle-cont { position: relative; height: 435px; overflow-y: auto; overflow-x: hidden;}
+    .video-subtitle .subtitle-box { position: relative; padding: 10px 16px;}
+    .video-subtitle .subtitle { font-size: 14px; color: #131313; font-family: titilliumregular, Helvetica, msyh, Arial, sans-serif;}
+    .video-subtitle .line { line-height: 24px;}
+    .video-subtitle .word { display: inline-block; cursor: pointer; vertical-align: top;}
+    .video-subtitle .space { display: inline-block; width: 5px; height: 24px; overflow: hidden; vertical-align: top;}
+    .video-subtitle .current-line { background: #E1E1E1;}
+
+    /*碎片分享模式*/
+    .video-subtitle .clip-subtitle-mode .word { cursor: text;}
+    .video-subtitle .clip-subtitle-mode .current-line { background: none;}
+    .video-subtitle .clip-subtitle-mode .current-word { background: none; color: #131313;}
+
+    .video-subtitle .selected-word,
+    .video-subtitle .selected-space,
+    .video-subtitle .clip-subtitle-mode .selected-word { background: #A4DAF2;}
+    .video-subtitle .current-word { background: #373737; color: #FFF;}
+    .video-subtitle .hl-word/*,
+    .video-subtitle .highlight-area */{ background: #FD9426; border-radius: 3px; color: #FFF;}
+
+    /*碎片分享、搜索*/
+        .video-action { height: 48px; border-bottom: 1px solid #EEE; background: #FFF;}
+
+        /*分享、预览按钮*/
+        .btn-clip-share,
+        .btn-clip-preview { position: relative; float: left; margin: 8px 0 0 8px; padding: 0 10px 0 37px; width: 93px; height: 32px; background: #FF9500; border-radius: 5px; font-size: 16px; font-family: titilliumregular, Helvetica, msyh, Arial, sans-serif; color: #FFF; white-space: nowrap; line-height: 32px;}
+        .btn-clip-share:before,
+        .btn-clip-preview:before { position: absolute; left: 12px; top: 6px; width: 16px; height: 17px; background: url("bg/ico.png") no-repeat -34px -412px; content: '';}
+        .btn-clip-share:hover,
+        .btn-clip-preview:hover { text-decoration: none;}
+
+        .btn-clip-preview { width: auto; background: #4CB1EB;}
+        .btn-clip-preview:before { top: 8px; width: 17px; background-position: -33px -449px;}
+
+        /*搜索框*/
+        .subtitle-search { float: right; position: relative; margin: 8px 8px 0 0; background: #F7F8FA; border: 1px solid #CACACA; border-radius: 5px; overflow: hidden; vertical-align: middle;}
+        .subtitle-search .btn { float: right; width: 42px; height: 30px; background: url("bg/other.png") no-repeat 13px -89px; border: none; overflow: hidden; cursor: pointer; outline: none; text-indent: -9999em;}
+        .subtitle-search .label-input-txt { float: left; margin: 0; background: none;}
+        .subtitle-search .input { padding: 5px 80px 5px 10px; width: 231px; height: 20px; border: none; border-radius: 5px; outline: none; line-height: 20px;}
+        .subtitle-search .label { left: 10px; line-height: 30px; font-size: 12px;}
+        .subtitle-search .num { position: absolute; right: 50px; top: 7px; color: #999;}
+
+        @-webkit-keyframes shareAction {
+            0% { -webkit-transform:scale(0);}
+            100% { -webkit-transform:scale(1);}
+        }
+
+        @-moz-keyframes shareAction {
+            0% { -moz-transform:scale(0);}
+            100% { -moz-transform:scale(1);}
+        }
+
+        @-ms-keyframes shareAction {
+            0% { -ms-transform:scale(0);}
+            100% { -ms-transform:scale(1);}
+        }
+
+        @-o-keyframes shareAction {
+            0% { -o-transform:scale(0);}
+            100% { -o-transform:scale(1);}
+        }
+
+        @keyframes shareAction {
+            0% { transform:scale(0);}
+            100% { transform:scale(1);}
+        }
+
+        @-webkit-keyframes shareActionDestroy {
+            0% { -webkit-transform:scale(1);}
+            100% { -webkit-transform:scale(0);}
+        }
+
+        @-moz-keyframes shareActionDestroy {
+            0% { -moz-transform:scale(1);}
+            100% { -moz-transform:scale(0);}
+        }
+
+        @-ms-keyframes shareActionDestroy {
+            0% { -ms-transform:scale(1);}
+            100% { -ms-transform:scale(0);}
+        }
+
+        @-o-keyframes shareActionDestroy {
+            0% { -o-transform:scale(1);}
+            100% { -o-transform:scale(0);}
+        }
+
+        @keyframes shareActionDestroy {
+            0% { transform:scale(1);}
+            100% { transform:scale(0);}
+        }
+
+        .share-action-cont { position: absolute; top: 0; left: 0; width: 100%; height: 48px; background: #FFF; z-index: 50;
+            -webkit-animation: shareAction .2s ease;
+            -moz-animation: shareAction .2s ease;
+            -ms-animation: shareAction .2s ease;
+            -o-animation: shareAction .2s ease;
+            animation: shareAction .2s ease;
+        }
+        .share-action-cont.destroy {
+            -webkit-animation: shareActionDestroy .3s ease;
+            -moz-animation: shareActionDestroy .3s ease;
+            -ms-animation: shareActionDestroy .3s ease;
+            -o-animation: shareActionDestroy .3s ease;
+            animation: shareActionDestroy .3s ease;
+        }
+        .share-action-cont .social { float: right; margin: 14px 50px 0 0;}
+        .share-action-cont .social .txt { display: inline-block; margin: 0 10px 0 0; color: #333; vertical-align: middle;}
+        .share-action-cont .jiathis_style_32x32 { display: inline-block; vertical-align: middle;}
+        .share-action-cont .ico-close-s2 { position: absolute; right: 0; top: 0; width: 48px; height: 48px; background: #CCC; color: #FFF; line-height: 50px; text-align: center;}
+        .share-action-cont .ico-close-s2:before { top: 50%; left: 50%; margin: -7px 0 0 -6px;}
+        .share-action-cont .ico-close-s2:hover { background: #FF9500;}
+
+        .share-action-cont .clip-time { float: left; margin: 0 0 0 10px; line-height: 48px; font-size: 14px; color: #FF9500;}
+
+        /*bbc demo页用到share-link*/
+        /*.share-action-cont .share-link { display: none;}*/
+
+        .video-preview-cont { position: absolute; left: 0; top: 0; width: 670px; height: 503px; background: rgba(0,0,0,.7); z-index: 10;}
+        .video-preview-cont .video-cont { position: relative; z-index: 0;}
+        .video-preview-cont .label { position: absolute; top: 10px; left: 10px; padding: 0 6px; background: rgba(248, 119, 71, .2); border: 1px solid #FF9500; border-radius: 3px; text-transform: uppercase; line-height: 20px; color: #FD9426; z-index: 5;}
+        .video-preview-cont iframe { position: relative; z-index: 3;}
+
+    /*分享选择杆*/
+    .clip-share-start,
+    .clip-share-end { position: absolute; top: 0; left: -16px; width: 2px; height: 24px; background: #22AEEB; cursor: move;}
+    .clip-share-end { left: 0;}
+    .clip-share-start:before,
+    .clip-share-end:before { position: absolute; left: -4px; top: -9px; width: 10px; height: 10px; background: #22AEEB; border-radius: 100px; content: '';}
+    .clip-share-end:before { top: auto; bottom: -9px;}
+
+    /*分享禁止选择文本*/
+    .disable-select-text { -webkit-user-select: none; -moz-user-select: none; user-select: none;}
+    .clip-mask { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #000; opacity: 0; z-index: 50000;}
+    .lt-ie9 .clip-mask { filter: alpha(opacity=0);}
+
+    /*关键词位置显示条*/
+    .keyword-pos { position: absolute; left: 0; bottom: 0; width: 100%; height: 4px; border-top: 1px solid #DDD; background: #EDEDED; z-index: 0;}
+    .keyword-pos .kw { position: absolute; top: 0; width: 4px; height: 100%; overflow: hidden; background: #FF9500; cursor: pointer;}
+
+    /*范围选择工具条*/
+    .clip-share-bar { position: absolute; left: 0; bottom: 0; width: 100%; height: 18px; background: #EDEDED; border-top: 1px solid #DDD; z-index: 20;}
+    .clip-share-bar .bar { position: absolute; top: 6px; left: 8px; right: 8px; height: 6px; background: #CACACA; border-radius: 3px;}
+    .clip-share-bar .slider { position: absolute; top: -4px;}
+    .clip-share-bar .slider .el { position: relative; display: block; width: 17px; height: 14px; cursor: move; z-index: 5;}
+    .clip-share-bar .slider .el:before { position: absolute; left: -2px; top: 0; width: 21px; height: 19px; background: url("bg/other.png") no-repeat 0 -257px; content: '';}
+    .clip-share-bar .time { position: absolute; left: 50%; top: 25px; margin: 0 0 0 -20px;}
+    .lt-ie9 .clip-share-bar .time { border: 1px solid #F1F1F1;}
+    .clip-share-bar .time span { display: block; padding: 0 5px; height: 17px; background: #FFF; border-radius: 3px; box-shadow: 0 0 5px rgba(0, 0, 0, .3); white-space: nowrap; line-height: 17px; color: #525252;}
+    .clip-share-bar .time:before { position: absolute; top: -6px; left: 50%; margin: 0 0 0 -5px; width: 10px; height: 6px; background: url("bg/other.png") no-repeat -30px -400px; content: '';}
+    #slider_start .time { top: -25px;}
+    #slider_start .time:before { top: auto; bottom: -6px; background-position: 0 -400px;}
+    .clip-share-bar .range { position: absolute; height: 100%; background: #5FC1EC; z-index: 0;}
+
+/*时间、观看数、收藏*/
+    .video-status-cont { padding: 25px 0 15px; border-bottom: 1px solid #EEE;}
+    .video-status-cont .ico { margin: 0 30px 0 0; color: #363B3E; font-size: 18px;}
+    .video-status-cont .ico-fav { cursor: pointer;}
+
+/*分享、说明、评论、列表*/
+    .video-related-cont { margin-bottom: 80px;}
+    .related-col { float: left; width: 670px;}
+    .other-video-col { float: right; width: 490px;}
+
+    /*分享*/
+    .video-share { margin: 0 0 15px; padding: 18px 0; border-bottom: 1px solid #EEE;}
+    .video-share .share-desc { display: inline-block; margin: 0 15px 0 0; font-size: 16px; color: #343434; vertical-align: middle;}
+    .video-share .social { display: inline-block; vertical-align: middle;}
+    .copy-cont { position: relative; display: inline-block; margin: 0 0 0 15px; background: #F4F4F4; border: 1px solid #CCC; border-radius: 3px; overflow: hidden; color: #767676; line-height: 24px; vertical-align: middle;}
+    .copy-cont .txt { display: inline-block; padding: 0 8px; max-width: 274px; overflow: hidden; white-space: nowrap; word-wrap: normal; vertical-align: top;}
+    .copy-cont .btn-s5 { padding: 0 14px; color: #555656; vertical-align: top;}
+
+    /*说明*/
+    .video-explain { margin: 0 0 15px; padding: 0 0 15px; border-bottom: 1px solid #EEE; color: #3B3B3B; font-size: 14px; line-height: 1.8;}
+
+    /*评论*/
+    .comment-col { font-family: titilliumregular, Helvetica, msyh, Arial, sans-serif;}
+    .comment-col .hd { margin: 0 0 20px;}
+    .comment-col .hd h3 { font-size: 14px; text-transform: uppercase; color: #363B3E;}
+
+    .comment-box .textarea { width: 585px; height: 56px; background: #FFF; border-color: #D0D0D0; font-size: 14px;}
+    .comment-box .action { position: relative; margin: 8px 8px 0; overflow: hidden;}
+    .comment-box .comment-num { float: left; color: #8C989E;}
+    .comment-box .btn-s4 { float: right; padding: 0 30px; width: auto; text-transform: uppercase;}
+
+    .comment-cont .img-item { min-height: 32px; margin: 0 0 20px; padding: 0 0 20px; border-bottom: 1px solid #EEE; font-size: 16px; color: #363B3E;}
+    .comment-cont .user-img { float: left;}
+    .comment-cont .user-img img { width: 44px; height: 44px; border-radius: 100px; vertical-align: top;}
+    .comment-cont .item-info { margin: 0 0 0 67px;}
+
+    .comment-cont .more-comment { margin: 50px 0; color: #CDCDCD; font-size: 14px; text-align: center; text-transform: uppercase;}
+    .comment-cont .more-comment a { display: inline-block; color: #CDCDCD;}
+    .comment-cont .more-comment .loading-s1 { display: inline-block;}
+    .comment-cont .no-more { margin: 30px 0; font-size: 16px; text-align: center;}
+
+    .comment-list .item-info { position: relative;}
+    .comment-list .status { margin: 0 0 10px;}
+    .comment-list .user { color: #363B3E;}
+    .comment-list .status .split { display: inline-block; margin: 0 8px; width: 4px; height: 4px; background: #F0F0F0; border-radius: 100px; vertical-align: middle;}
+    .comment-list .day { color: #8C989E;}
+    .comment-list .operate { position: absolute; right: 0; top: 0;}
+    .comment-list .operate a { margin: 0 0 0 15px; font-size: 14px;}
+    .comment-list .desc { margin: 0 0 10px; line-height: 1.8;}
+    .comment-list .reply-box { margin: 15px 0 0;}
+
+    /*列表*/
+    .other-video li { padding: 20px 0; border-top: 1px solid #EEE; overflow: hidden;}
+    .other-video li:first-child { border: none;}
+    .other-video .hover-play { float: left;}
+    .other-video .hover-play .img { width: 116px; height: 80px;}
+    .other-video .item-info { margin: 0 0 0 135px;}
+    .other-video .title { margin: 0 0 20px; height: 36px; overflow: hidden; line-height: 18px; font-size: 14px;}
+    .other-video .title a { color: #363B3E;}
+    .other-video .status .ico { margin: 0 0 0 15px;}
+    .other-video .status .ico:first-child { margin: 0;}

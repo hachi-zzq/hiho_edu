@@ -1,0 +1,33 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义个人中心的样式
+ */
+
+.wrap { padding: 0;}
+.header { position: relative; background: url("bg/profile_hd_bg.png") repeat-x center top;}
+.header .layout-in { height: 190px;}
+
+/*profile-cont(个人中心)*/
+    .ui-datepicker { z-index: 500 !important;}
+    .profile-cont { position: relative; margin: -80px auto 50px; width: 600px; font-family: titilliumregular, Helvetica, msyh, Arial, sans-serif; z-index: 110;}
+
+    /*编辑头像*/
+    .edit-user-pic { margin: 0 0 10px; text-align: center;}
+    .user-pic { position: relative; display: inline-block;}
+    .user-pic .pic { position: relative; z-index: 0;}
+    .user-pic .pic img { width: 160px; height: 160px; border-radius: 1000px; vertical-align: top;}
+    .edit-pic { position: absolute; bottom: 0; left: 0; width: 100%; height: 32px;}
+    .edit-pic .user-pic-tips { position: absolute; bottom: 0; left: 150px; line-height: 32px; font-size: 14px;}
+    .lt-ie9 .edit-pic .user-pic-tips { left: 170px;}
+    .link-file { position: absolute; left: 112px; bottom: 0; width: 28px; height: 28px; background: #F68B00; border: 2px solid #FFF; border-radius: 100px; overflow: hidden; z-index: 10;}
+    .link-file .button { position: relative; z-index: 0;}
+    .link-file input { position: absolute; right: -10px; top: -10px; font-size: 100px; opacity: 0; filter:alpha(opacity=0); cursor: pointer; z-index: 5;}
+
+    /*用户名*/
+    .profile-cont .user-name { margin: 0 0 35px; font-size: 26px; color: #363B3E; text-align: center;}
+
+    /*评论*/
+    .comment-list-s1 { font-family: Helvetica, msyh, Arial, sans-serif;}
+    .comment-list-s1 .list li { margin: 0 0 13px; padding: 0 15px 13px; min-height: 50px; border-bottom: 1px solid #EEE; line-height: 1.8;}
+    .comment-list-s1 .txt { display: inline; font-size: 14px; color: #363B3E;}
+    .comment-list-s1 .day { margin: 0 0 0 20px; color: #A6ADB1;}

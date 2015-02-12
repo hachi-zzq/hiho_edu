@@ -1,0 +1,30 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义首页样式
+ */
+
+/*tvs-list-cont */
+    .tvs-list-cont { margin: 30px 30px 50px; min-height: 700px;}
+    .tvs-list-cont .list-desc { margin: 0 0 30px; font-size: 14px; color: #716E6E;}
+    .tvs-list-cont .list-desc span { margin: 0 30px 0 0;}
+
+    .chart-cont { margin: 0 0 25px; height: 300px;}
+
+    .tv-time-list .item { margin: 0 0 5px; border: 1px solid #ECECEC; border-radius: 3px;}
+    .tv-time-list .item-show .bd { display: block;}
+    .tv-time-list .hd { padding: 0 20px; height: 32px; line-height: 32px; color: #2688C5; cursor: pointer;}
+    .tv-time-list .hd h4 { font-weight: normal;}
+    .tv-time-list .bd { display: none; padding: 20px 0 0; border-top: 1px solid #ECECEC;}
+    .tv-time-list .video-list-s1 li { margin: 0 0 15px 20px; width: 155px;}
+    .tv-time-list .video-list-s1 .img img { width: 155px; height: 117px;}
+    .tv-time-list .video-list-s1 .info .name { font-size: 12px; font-weight: normal;}
+
+/*tvs-old*/
+    .tvs-old { margin: 30px 0; min-height: 300px;}
+    .tvs-old ul { margin: 0 0 20px; padding: 0 0 1px; overflow: hidden;}
+    .tvs-old li { float: left; margin: 0 -1px -1px 0; padding: 25px 0; width: 287px; border: 1px solid #DDD; text-indent: 25px;}
+
+    /*tvs-old-sort*/
+    .tvs-old-sort { margin: 30px 0 50px;}
+    .tvs-old-sort .channels-list-cont { margin: 15px;}
+    .tvs-old-sort .paging { margin: 0 0 25px;}

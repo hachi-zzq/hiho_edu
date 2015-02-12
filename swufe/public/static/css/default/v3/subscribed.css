@@ -1,0 +1,69 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义订阅页样式
+ */
+
+/*订阅列表页设置*/
+    .subscribed-setting { position: relative; margin: 8px 0 0; z-index: 50;}
+    .subscribed-setting .status { display: inline-block; margin: 0 0 0 10px; font-size: 14px; color: #828282; vertical-align: middle;}
+    .subscribed-setting:hover .drop-list { display: block;}
+    .subscribed-setting .drop-list { display: none; left: -153px; top: 41px; width: 330px;}
+    .subscribed-setting .drop-list:after { top: -50px; width: 370px; height: 50px;}
+    .subscribed-setting ul { padding: 10px 0; overflow: hidden;}
+    .subscribed-setting li { position: relative; float: left; width: 99px; margin: 0 5px; padding: 0 23px 0 33px; border-radius: 3px; line-height: 26px;}
+    .subscribed-setting li:hover { background: #F4F4F4;}
+    .subscribed-setting li p { overflow:hidden; word-wrap:normal; white-space:nowrap; text-overflow:ellipsis; color: #5C5E5F;}
+    .subscribed-setting .selectBox { position: absolute; left: 9px; top: 5px; width: 12px; height: 12px; border: 2px solid #CDCDCD; border-radius: 3px; cursor: pointer;}
+    .subscribed-setting .selected .selectBox { width: 16px; height: 16px; background: url("bg/other.png") no-repeat 0 -468px; border: none;}
+    .subscribed-setting .ico-close-s1 { right: 1px; top: 1px;}
+    .subscribed-setting .action { padding: 10px; background: #F8F8F8;}
+
+/*订阅页*/
+    #subscription_page { background: #F2F2F2;}
+
+    /*关键词*/
+    .keywords-cont { margin: 0 0 15px; padding: 20px 0; background: #FFF; text-align: center; font-family: titilliumregular, Helvetica, msyh, Arial, sans-serif;}
+    .keywords-cont .title-s1 .txt { font-size: 20px;}
+    .keywords-cont .keywords { margin: 0 0 30px;}
+    .keywords-cont .keywords span { display: inline-block; margin: 0 6px 6px; padding: 0 8px; background: #F6FAFC; border: 1px solid #DFE6EA; border-radius: 100px; white-space: nowrap; line-height: 28px; color: #68767F; font-size: 16px;}
+
+    .subscription-cont .tips-cont { margin: 0 0 15px; padding: 80px 0; background: #FFF;}
+    .subscription-cont .loading-s3 { margin: 100px 0;}
+
+    /*滚动页面后顶部信息部分fixed*/
+    .subscription-cont.fixed .hd-box { position: fixed; left: 0; top: 52px; width: 100%; background: #FFF; box-shadow: 0 1px 5px rgba(0, 0, 0, .05); z-index: 50;}
+    .subscription-cont.fixed .hd .title-s1 { display: none;}
+    .subscription-cont.fixed .hd .title-s2 { margin: 0; padding: 7px 0;}
+    .subscription-cont.fixed .hd .keywords-cont { margin: 0; padding: 10px 0; border-bottom: 1px solid #EEE; text-align: left;}
+    .subscription-cont.fixed .hd .keywords-cont .layout-in { position: relative; min-height: 40px; overflow: hidden;}
+    .subscription-cont.fixed .hd .keywords {  margin: 4px 300px 0 0;}
+    .subscription-cont.fixed .hd .action { position: absolute; right: 0; top: 0;}
+    .subscription-cont.fixed .hd .action .btn-s2 { padding: 0 12px; width: auto; height: 40px; font-size: 14px; line-height: 40px;}
+    .subscription-cont.fixed .hd .tips-cont { display: none;}
+
+    /*列表*/
+    .subscription-cont .list ul { margin: 0 0 0 -18px; overflow: hidden;}
+    .subscription-cont .list li { float: left; margin: 0 0 18px 18px; width: 590px; background: #FFF; border-radius: 5px; overflow: hidden;}
+
+    .subscription-cont .l-hd { position: relative; padding: 0 130px 0 17px; height: 48px; overflow: hidden; border-bottom: 1px solid #EEE;}
+    .subscription-cont .l-hd h3 { font: normal 21px/48px titilliumregular, Helvetica, msyh, Arial, sans-serif; color: #363B3E;}
+    .subscription-cont .l-hd .operate { position: absolute; right: 17px; top: 10px;}
+
+    .subscription-cont .l-bd { height: 270px;}
+    .subscription-cont .l-bd .item { padding: 13px; overflow: hidden;}
+    .subscription-cont .l-bd .item:hover { background: #F8F8F8;}
+    .subscription-cont .l-bd .hover-play { float: left; border-radius: 5px; overflow: hidden;}
+    .subscription-cont .l-bd .img { width: 100px; height: 64px;}
+    .subscription-cont .l-bd .item-info { margin: 0 0 0 114px;}
+    .subscription-cont .l-bd .title { margin: 0 0 6px; height: 36px; overflow: hidden; line-height: 18px; font-size: 14px;}
+    .subscription-cont .l-bd .title a { color: #363B3E;}
+    .subscription-cont .l-bd .ico { margin: 0 0 0 18px;}
+    .subscription-cont .l-bd .ico:first-child { margin: 0;}
+
+    /*订阅、取消订阅按钮*/
+    .btn-subscribe,
+    .btn-subscribed { position: relative; padding: 0 0 0 20px; width: 88px; height: 26px; line-height: 26px; white-space: nowrap; font-size: 14px; font-family: Helvetica, msyh, Arial, sans-serif;}
+    .btn-subscribe:before,
+    .btn-subscribed:before { position: absolute; left: 10px; top: 0; font-size: 20px; font-weight: bold; content: '+';}
+    .btn-subscribed { color: #959A9D;}
+    .btn-subscribed:before { font-size: 16px; content: '✔';}

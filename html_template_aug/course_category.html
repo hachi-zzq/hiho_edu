@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>西南财经大学－教材资料馆</title>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="js/modernizr.2.8.2.js"></script>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="courses">
+  <div class="wrap">
+
+    <!-- 头部 -->
+    <header id="header">
+      <div class="brand">
+        <a href="">教材资料馆</a>
+      </div>
+      <!-- 主导航 -->
+      <nav>
+        <ul>
+          <li><a href="">首页</a></li>
+          <li class="current"><a href="">西南财大视频资源</a></li>
+          <li><a href="">TED</a></li>
+          <li><a href="">其他院校视频资源</a></li>
+          <li><a href="">剪集</a></li>
+          <li><a href="">笔记</a></li>
+        </ul>
+      </nav>
+      
+      <!-- 注册和登录 -->
+      <div class="user-box user-login" style="display:none;">
+        <a href="">登录</a>
+        <a href="">注册</a>
+      </div>
+
+      <!-- 用户登录后 -->
+      <div class="user-box">
+        <div class="user-name">
+          <span>Soyjavi</span>
+        </div>
+        <div class="user-avatar">
+          <img src="img/avatar.png" alt="">
+        </div>
+        <div class="user-downarrow">
+          <i class="icon-caret-down"></i>
+        </div>
+
+        <!-- 下拉菜单 -->
+        <div class="user-dropdown">
+          <ul>
+            <li><a href="">我的笔记</a></li>
+            <li><a href="">我的收藏</a></li>
+            <li><a href="">我的分享</a></li>
+            <li><a href="">个人设置</a></li>
+            <li><a href="">退出账户</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 头部搜索框 -->
+      <div class="header-serach">
+        <input type="text">
+        <button><i class="icon-search"></i></button>
+      </div>
+    </header>
+
+    <div class="top-title">
+      <div class="content-inner">
+        <ul class="sort">
+          <li class="current"><a href="">最新</a></li>
+          <li><a href="">最热</a></li>
+        </ul>
+        <h2 class="color-icon-title">
+          <i class="color-icon color-icon-book"></i><span>西南财大视频资源</span>
+        </h2>
+      </div>
+      
+    </div>
+
+    <div class="main side-main">
+      <div class="content-inner">
+        <!-- 左侧边栏 -->
+        <aside class="left">
+          <!-- 分类过滤 -->
+          <div class="filter-wrap">
+            <div class="filter-group">
+              <div class="filter">
+                <h3 class="color-icon-title">
+                  <i class="color-icon color-icon-cate"></i><span>栏目分类</span>
+                </h3>
+                <ul class="filter-list">
+                  <li class="current"><a href="">公开课</a></li>
+                  <li><a href="">校园新闻</a></li>
+                  <li><a href="">西财专题</a></li>
+                  <li><a href="">媒体西财</a></li>
+                  <li><a href="">视频公开课</a></li>
+                  <li><a href="">教学资料片</a></li>
+                  <li><a href="">学术讲座</a></li>
+                  <li><a href="">精彩微课</a></li>
+                  <li><a href="">校内教学竞赛</a></li>
+                  <li><a href="">校外教学竞赛</a></li>
+                  <li><a href="">在线直播</a></li>
+                  <li><a href="">记者团招新</a></li>
+                  <li><a href="">学生作品</a></li>
+                  <li><a href="">光华讲坛</a></li>
+                  <li><a href="">校园议事厅</a></li>
+                  <li><a href="">英语品牌课程</a></li>
+                  <!-- <li><a href=""><i class="icon-ellipsis-h"></i></a></li> -->
+                </ul>
+              </div>
+              <div class="filter">
+                <h3 class="color-icon-title">
+                  <i class="color-icon color-icon-book"></i><span>专业分类</span>
+                </h3>
+                <ul class="filter-list">
+                  <li class="current"><a href="">公开课</a></li>
+                  <li><a href="">校园新闻</a></li>
+                  <li><a href="">西财专题</a></li>
+                  <li><a href="">媒体西财</a></li>
+                  <li><a href="">视频公开课</a></li>
+                  <li><a href="">教学资料片</a></li>
+                  <li><a href="">学术讲座</a></li>
+                  <li><a href="">精彩微课</a></li>
+                  <li><a href="">校内教学竞赛</a></li>
+                  <li><a href="">校外教学竞赛</a></li>
+                  <li><a href="">在线直播</a></li>
+                  <li><a href="">记者团招新</a></li>
+                  <li><a href="">学生作品</a></li>
+                  <li><a href="">光华讲坛</a></li>
+                  <li><a href="">校园议事厅</a></li>
+                  <li><a href="">英语品牌课程</a></li>
+                  <!-- <li><a href=""><i class="icon-ellipsis-h"></i></a></li> -->
+                </ul>
+              </div>
+              <div class="filter">
+                <h3 class="color-icon-title">
+                  <i class="color-icon color-icon-user"></i><span>授课老师</span>
+                </h3>
+                <ul class="filter-list">
+                  <li><a href="">王老师</a></li>
+                  <li><a href="">李老师</a></li>
+                  <li><a href="">李老师</a></li>
+                  <li><a href="">李老师</a></li>
+                  <li><a href="">李老师</a></li>
+                  <li><a href="">李老师</a></li>
+                  <li><a href="">李老师</a></li>
+                  <li><a href="">李老师</a></li>
+                </ul>
+              </div>
+              <div class="filter">
+                <h3 class="color-icon-title">
+                  <i class="color-icon color-icon-flag"></i><span>语言分类</span>
+                </h3>
+                <ul class="filter-list">
+                  <li class="current"><a href="">全部</a></li>
+                  <li><a href="">中文</a></li>
+                  <li><a href="">英语</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ad -->
+          <div class="side-ad">
+            <a href="" target="_blank"><img src="http://placehold.it/280x280" alt=""></a>
+          </div>
+          <!--/ ad -->
+        </aside>
+        <!-- 右侧内容 -->
+        <div class="right">
+          <div class="right-content">
+            <!-- 没有内容 -->
+            <div class="no-video" style="display:none;">
+              <p>暂无视频</p>
+            </div>
+            <!-- 横板视频卡片 -->
+            <div class="video-card-l">
+              <div class="thumb">
+                <a href="">
+                  <img src="http://placehold.it/250x148" alt="">
+                  <div class="hover">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="content">
+                <span class="time">5/20/2014</span>
+                <h3><a href="">导航是用户体验中至关重要的一环</a></h3>
+                <p>本课程对妇女健康和权益进行综述，从婴儿阶段、儿童时期，再到青少年、生育年龄到老年阶段均有涉及。</p>
+                <div class="meta">
+                  <div class="teacher-avatar">
+                    <img src="img/avatar.png" alt="">
+                  </div>
+                  <div class="meta-info">
+                    <span>王老师</span>
+                    <span>院校名</span>
+                    <span>专业名</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 横板视频卡片 -->
+            <div class="video-card-l">
+              <div class="thumb">
+                <a href="">
+                  <img src="http://placehold.it/250x148" alt="">
+                  <div class="hover">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="content">
+                <span class="time">5/20/2014</span>
+                <h3><a href="">导航是用户体验中至关重要的一环</a></h3>
+                <p>本课程对妇女健康和权益进行综述，从婴儿阶段、儿童时期，再到青少年、生育年龄到老年阶段均有涉及。</p>
+                <div class="meta">
+                  <div class="teacher-avatar">
+                    <img src="img/avatar.png" alt="">
+                  </div>
+                  <div class="meta-info">
+                    <span>王老师</span>
+                    <span>院校名</span>
+                    <span>专业名</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 横板视频卡片 -->
+            <div class="video-card-l">
+              <div class="thumb">
+                <a href="">
+                  <img src="http://placehold.it/250x148" alt="">
+                  <div class="hover">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="content">
+                <span class="time">5/20/2014</span>
+                <h3><a href="">导航是用户体验中至关重要的一环</a></h3>
+                <p>本课程对妇女健康和权益进行综述，从婴儿阶段、儿童时期，再到青少年、生育年龄到老年阶段均有涉及。</p>
+                <div class="meta">
+                  <div class="teacher-avatar">
+                    <img src="img/avatar.png" alt="">
+                  </div>
+                  <div class="meta-info">
+                    <span>王老师</span>
+                    <span>院校名</span>
+                    <span>专业名</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 横板视频卡片 -->
+            <div class="video-card-l">
+              <div class="thumb">
+                <a href="">
+                  <img src="http://placehold.it/250x148" alt="">
+                  <div class="hover">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="content">
+                <span class="time">5/20/2014</span>
+                <h3><a href="">导航是用户体验中至关重要的一环</a></h3>
+                <p>本课程对妇女健康和权益进行综述，从婴儿阶段、儿童时期，再到青少年、生育年龄到老年阶段均有涉及。</p>
+                <div class="meta">
+                  <div class="teacher-avatar">
+                    <img src="img/avatar.png" alt="">
+                  </div>
+                  <div class="meta-info">
+                    <span>王老师</span>
+                    <span>院校名</span>
+                    <span>专业名</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 横板视频卡片 -->
+            <div class="video-card-l">
+              <div class="thumb">
+                <a href="">
+                  <img src="http://placehold.it/250x148" alt="">
+                  <div class="hover">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="content">
+                <span class="time">5/20/2014</span>
+                <h3><a href="">导航是用户体验中至关重要的一环</a></h3>
+                <p>本课程对妇女健康和权益进行综述，从婴儿阶段、儿童时期，再到青少年、生育年龄到老年阶段均有涉及。</p>
+                <div class="meta">
+                  <div class="teacher-avatar">
+                    <img src="img/avatar.png" alt="">
+                  </div>
+                  <div class="meta-info">
+                    <span>王老师</span>
+                    <span>院校名</span>
+                    <span>专业名</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 横板视频卡片 -->
+            <div class="video-card-l">
+              <div class="thumb">
+                <a href="">
+                  <img src="http://placehold.it/250x148" alt="">
+                  <div class="hover">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="content">
+                <span class="time">5/20/2014</span>
+                <h3><a href="">导航是用户体验中至关重要的一环</a></h3>
+                <p>本课程对妇女健康和权益进行综述，从婴儿阶段、儿童时期，再到青少年、生育年龄到老年阶段均有涉及。</p>
+                <div class="meta">
+                  <div class="teacher-avatar">
+                    <img src="img/avatar.png" alt="">
+                  </div>
+                  <div class="meta-info">
+                    <span>王老师</span>
+                    <span>院校名</span>
+                    <span>专业名</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="" class="load-more">加载更多</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- 页脚 -->
+    <footer id="footer">
+      <div class="content-inner">
+        <nav>
+          <a href="">首页</a>
+          <a href="">西南财大视频资源</a>
+          <a href="">TED</a>
+          <a href="">其他院校视频资源</a>
+          <a href="">剪集</a>
+        </nav>
+
+        <div class="copyright">
+          <p>Copyright © 西南财经大学版权所有, Powered by <a href="http://eastiming.com">深圳市东方泰明科技有限公司</a></p>
+          <p>最低浏览屏幕分辨率1200x800px</p>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

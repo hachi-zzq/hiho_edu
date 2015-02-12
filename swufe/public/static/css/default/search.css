@@ -1,0 +1,52 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义搜索页样式
+ */
+
+.wrap { padding-top: 50px;}
+
+/*header*/
+    .header .layout-in { height: 50px;}
+    .header .logo { margin-top: 9px;}
+    .header .nav { line-height: 50px;}
+    .header .info { line-height: 50px;}
+    .header .user .arrow-s1 { top: 24px;}
+    .header .drop-list { top: 50px;}
+    .header .search-cont {display: none;}
+
+/*search-page-cont*/
+    .search-page-cont .layout-in { padding: 20px 0; height: auto; line-height: 1.8;}
+    .search-page-cont .search-cont { margin: 0 0 8px;}
+    .search-page-cont .label-input-txt { margin: 0; height: 38px; background: #FFF; border: solid #D5D2D2; border-width: 1px 0 1px 1px; border-radius: 5px 0 0 5px; line-height: 38px; vertical-align: top;}
+    .search-page-cont .input { padding: 5px 10px; width: 600px; height: 28px; border: none; line-height: 28px; outline: none; font-size: 14px;}
+    .search-page-cont .btn-s1 { background-image: url("bg/all.png"); background-position: 31px -339px; background-repeat: no-repeat; border-radius: 0 5px 5px 0; text-indent: -9999em; vertical-align: top;}
+
+    .hot-keyword { padding: 0 10px; color: #C9C9C9;}
+    .hot-keyword span { margin: 0 10px 0 0;}
+    .hot-keyword a { margin: 0 20px 0 0; color: #BAB9B9;}
+
+/*filter-cont*/
+    .mod-box-s1.filter-cont { margin: 20px 0;}
+
+/*search-list-cont*/
+    .search-list-cont .item { margin: 0 0 20px; padding: 0 0 20px; border-bottom: 1px solid #E0DFDF; overflow: hidden;}
+    .search-list-cont .img { float: left;}
+    .search-list-cont .img img { width: 206px; height: 154px;}
+    .search-list-cont .info-cont { margin: 0 0 0 226px; line-height: 1.8; color: #9C9C9C;}
+    .search-list-cont .info-cont .info { margin: 0 0 10px;}
+    .search-list-cont .info-cont .name { margin: 0 40px 0 0; font-size: 14px; font-weight: normal; color: #5E5f60;}
+    .search-list-cont .info-cont .info .ico-s { margin: 0 20px 0 0; color: #9C9C9C;}
+    .search-list-cont .subtitle .time { margin: 0 10px 0 0; background: #F1F1F1;}
+    .search-list-cont .keyword { cursor: pointer;}
+    .search-list-cont .item .loading { margin: 50px 0 0 70px; width: 32px;}
+
+/*search-index*/
+    #search_index_page { padding: 0; height: 100%; background: #FFF;}
+    #search_index_page .footer { position: fixed; bottom: 0; left: 0; width: 100%;}
+    .search-index-cont { height: 430px; background: #FFF;}
+    .search-index-cont .logo { padding: 200px 0 30px; text-align: center;}
+    .search-index-cont .search-page-cont { margin: 0 auto; width: 720px;}
+
+    .last-update-cont { padding: 25px 0 80px; background: #F1F1F1;}
+    .last-update-cont .video-list-s1 ul { margin: 0 0 0 -18px;}
+    .last-update-cont .video-list-s1 li { margin: 0 0 0 18px;}

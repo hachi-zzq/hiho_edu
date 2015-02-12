@@ -1,0 +1,362 @@
+﻿@charset "utf-8"; 
+/*
+ * HIHO News 共用样式
+ */
+
+/*font-face*/
+    @font-face {
+        font-family: 'titilliumregular';
+        src: url('/static/source/font_face/titillium_regular/titillium-regular-webfont.eot');
+        src: url('/static/source/font_face/titillium_regular/titillium-regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('/static/source/font_face/titillium_regular/titillium-regular-webfont.woff.woff') format('woff'),
+             url('/static/source/font_face/titillium_regular/titillium-regular-webfont.ttf') format('truetype'),
+             url('/static/source/font_face/titillium_regular/titillium-regular-webfont.svg#titilliumregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+html { background: #EEEFF0;}
+
+/* reset */
+    article, aside, figcaption, figure, footer, header, main, nav, section { display: block; margin: 0; padding: 0;}
+    body, p, ul, ol, li, dd, dl, dt, h1, h2, h3, h4, h5, h6, form, input, textarea { margin: 0; padding: 0;}
+    body { font: 12px/1.5 "Helvetica Neue", msyh, Arial, sans-serif; word-wrap: break-word;}
+    ul, ol { list-style: none;}
+    img { border: 0;}
+    em, i { font-style: normal;}
+    input, textarea, select { font-family: inherit;}
+    input[type="submit"] { box-sizing: content-box;}
+    textarea { overflow-x: hidden; overflow-y: auto; resize: none;}
+    table { border-collapse: collapse; border-spacing: 0;}
+    a { color: #2A84D1; text-decoration: none;}
+    a:hover { text-decoration: underline;}
+    .hidden { display: none !important;}
+    .vhidden { visibility: hidden !important;}
+
+/*清浮动*/
+    .clear:after { display: table; content: ""; clear:both;}
+
+/*浮动*/
+    .float-l { float: left;}
+    .float-r { float: right;}
+
+/*布局*/
+    .wrap { padding: 62px 0 0;}
+    .layout-in { margin: 0 auto; width: 1200px;}
+
+/*颜色*/
+    .highlight-color,
+    .warn-color { color: #CC191F;}
+    .succeed-color { color: #1BBF70;}
+
+/*ico*/
+    .ico { position: relative;}
+    .ico:before { position: absolute; background: url("bg/ico.png") no-repeat; content: '';}
+
+    .ico-notice { display: block; width: 62px; height: 62px;}
+    .ico-notice:before { left: 50%; top: 50%; margin: -13px 0 0 -11px; width: 21px; height: 25px; background-position: -29px 0;}
+
+    .ico-fav { display: inline-block; padding: 0 0 0 25px; color: #B6C3CB; font-size: 16px;}
+    .ico-fav:before { left: 0; top: 50%; margin: -7px 0 0; width: 16px; height: 15px; background-position: -34px -307px;}
+
+    .ico-down-arrow,
+    .ico-up-arrow { display: inline-block; width: 11px; height: 7px;}
+    .ico-down-arrow:before,
+    .ico-up-arrow:before { left: 0; top: 0; width: 11px; height: 7px; background-position: -39px -183px;}
+
+    .ico-up-arrow { height: 6px;}
+    .ico-up-arrow:before { height: 6px; background-position: -39px -210px;}
+
+    /*返回箭头 (tv详情页)*/
+    .ico-back-arrow { display: inline-block; width: 12px; height: 20px; vertical-align: middle;}
+    .ico-back-arrow:before { left: 0; top: 0; width: 12px; height: 20px; background-position: -38px -236px;}
+
+    /*上一页、下一页*/
+    .ico-prev { padding: 0 0 0 23px;}
+    .ico-next { padding: 0 23px 0 0;}
+    .ico-prev:before,
+    .ico-next:before { top: 50%; margin: -7px 0 0; width: 10px; height: 15px; background-position: -40px -374px;}
+    .ico-prev:before { left: 0;}
+    .ico-next:before { right: 0; background-position: -40px -409px;}
+
+    /*关闭（订阅页的设置）*/
+    .ico-close-s1 { position: absolute; width: 23px; height: 23px; cursor: pointer;}
+    .ico-close-s1:before { top: 5px; left: 5px; width: 13px; height: 13px; background-position: -37px -341px;}
+
+    /*信息（订阅列表页）*/
+    .ico-info { display: inline-block; width: 21px; height: 21px;}
+    .ico-info:before { left: 0; top: 0; width: 21px; height: 21px; background-position: -29px -45px;}
+
+    /*编辑*/
+    .ico-edit { display: inline-block; width: 28px; height: 28px;}
+    .ico-edit:before { top: 6px; left: 6px; width: 16px; height: 16px; background-position: -34px -503px;}
+
+    /*日历（tv详情页）*/
+    .ico-calendar { padding: 0 0 0 45px;}
+    .ico-calendar:before { left: 0; top: 50%; margin: -16px 0 0; width: 32px; height: 32px; background-position: -18px -131px;}
+
+/*btn*/
+    .btn-s1,
+    .btn-s2,
+    .btn-s3 { display: inline-block; width: 294px; height: 44px; background: #0DADF2; border: none; border-radius: 5px; line-height: 44px; text-align: center; white-space: nowrap; color: #FFF; font-size: 16px; outline: none; cursor: pointer;}
+    .btn-s1:hover,
+    .btn-s2:hover,
+    .btn-s3:hover { text-decoration: none;}
+
+    /*设置订阅关键词列表*/
+    .btn-s1 { font-family: titilliumregular, "Helvetica Neue", msyh, Arial, sans-serif;}
+
+    /*账户设置页*/
+    .btn-s2 { width: 280px; height: 68px; line-height: 68px; font-size: 18px;}
+
+    /*搜索列表页 订阅浮层*/
+    .btn-s3 { width: 246px; height: 54px; background: #F44842; line-height: 54px; font-size: 18px;}
+
+/*tab*/
+    .tab-s1 { line-height: 76px;}
+    .tab-s1 a { display: inline-block; position: relative; margin: 0 30px 0 0; color: #2D3031; font-size: 20px;}
+    .tab-s1 a:hover { text-decoration: none;}
+    .tab-s1 .current { color: #E6594B;}
+    .tab-s1 .current:after { position: absolute; left: 0; bottom: -1px; width: 100%; height: 4px; background: #E6594D; content: '';}
+
+/*drop-list*/
+    .drop-list { position: absolute; background: #FFF; border: 1px solid #DCDCDC; border-radius: 5px; box-shadow: 0 0 15px rgba(0, 0, 0, .15);}
+    .drop-list:before { position: absolute; left: 50%; top: -12px; margin: 0 0 0 -10px; width: 20px; height: 12px; overflow: hidden; background: url("bg/other.png") no-repeat 0 -227px; content: '';}
+    .drop-list:after { position: absolute; left: 0; top: -30px; width: 100%; height: 30px; content: '';}
+
+/*loading*/
+    .loading-s1 { padding: 0 0 0 20px; height: 21px; background: url("bg/loading_s1.gif") no-repeat left center; line-height: 21px;}
+    .loading-s2 { position: absolute; left: 50%; top: 50%; margin: -40px 0 0 -40px; width: 80px; height: 80px; background: url("bg/loading_s2.gif") no-repeat center;}
+    .loading-s3 { margin: 30px 0; height: 26px; background: url("bg/loading_s3.gif") no-repeat center;}
+
+/*hover-play(鼠标滑过视频预览图片出现播放的背景、图标、信息)*/
+    .hover-play .play { display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #000; background: rgba(55, 54, 61, .7); z-index: 2;}
+    .hover-play .play:before { position: absolute; left: 50%; top: 50%; margin: -24px 0 0 -24px; width: 48px; height: 48px; background: url("bg/other.png") no-repeat 0 -259px; content: '';}
+    .hover-play .play-time { position: absolute; right: 5px; bottom: 5px; padding: 0 5px; background: #000; background: rgba(0, 0, 0, .6); color: #FFF; line-height: 16px; z-index: 5;}
+    .hover-play .img { display: block; position: relative;}
+    .hover-play .img img { position: relative; width: 100%; height: 100%; vertical-align: top; z-index: 0;}
+    .hover-play .img img,
+    .hover-play .img .play { border-radius: 3px;}
+    .hover-play .play-info { display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 5;}
+    .hover-play .ico-fav { top: 8px; left: 15px;}
+    .hover-play .words { position: absolute; left: 18px; right: 18px; bottom: 0; overflow: hidden; border-top: 1px solid #FFF; border-color: rgba(255, 255, 255, .5); color: #FFF;}
+    .hover-play .words p { text-align: center; line-height: 30px; white-space: nowrap;}
+    .hover-play .words p span { margin: 0 8px;}
+
+    .hover-play:hover .play,
+    .hover-play:hover .play-info {display: block;}
+
+    /*hover-play-s1 播放的图标相对小*/
+    .hover-play-s1 .play:before { margin: -16px 0 0 -16px; width: 32px; height: 32px; background-position: 0 -328px;}
+
+/*paging*/
+    .paging { padding: 30px 0; background: #FFF; text-align: center;}
+    .paging li { display: inline-block; font-size: 16px; font-family: titilliumregular, "Helvetica Neue", msyh, Arial, sans-serif;}
+    .paging li a,
+    .paging li span { display: inline-block; padding: 0 11px; border-radius: 3px; color: #8C989E; line-height: 40px;}
+    .paging li a:hover { background: #EEE; text-decoration: none;}
+    .paging .disabled span { padding: 0;}
+    .paging li .ico-prev { padding: 0 0 0 23px;}
+    .paging li .ico-next { padding: 0 23px 0 0;}
+    .paging li .ico-prev:hover,
+    .paging li .ico-next:hover { background: none;}
+    .paging .ico-prev,
+    .paging .ico-next,
+    .paging .disabled { color: #B7BDC1;}
+    .paging .active span { color: #FF9500;}
+
+/*提示*/
+    .tips-cont { margin: 50px 0; text-align: center;}
+    .tips-cont .tips-box { display: inline-block; position: relative; padding: 0 0 0 57px;}
+    .tips-cont .tips-box:before { position: absolute; top: 3px; left: 0; width: 32px; height: 29px; background: url("bg/other.png") no-repeat; content: '';}
+    .tips-cont .tips-info { text-align: left; font-size: 18px; color: #777D8C;}
+
+    /*为空*/
+    .tips-cont-empty .tips-box:before { background-position: 0 -380px;}
+
+/*filter*/
+    .filter {}
+    .filter a { display: inline-block; color: #2C9EE6; vertical-align: middle; text-transform: uppercase;}
+    .filter .current { color: #8C989E;}
+    .filter .split { display: inline-block; margin: 0 15px; width: 1px; height: 10px; background: #E9E9E9; vertical-align: middle;}
+
+/*title*/
+    /*tv页、收藏列表页、订阅列表页*/
+    .title-s1 h3 { display: inline-block; margin: 0 10px 0 0; font-weight: normal; font-size: 26px; color: #2D3031; vertical-align: middle;}
+    .title-s1 .num { display: inline-block; padding: 0 12px; background: #B3B7BD; border-radius: 13px; font-size: 18px; color: #FFF; line-height: 26px; vertical-align: middle;}
+
+    /*tv页*/
+    .title-s2 { margin: 0 0 15px;}
+    .title-s2 h3 { font-size: 16px; font-weight: normal; color: #8C989E; text-transform: uppercase;}
+
+/*表单*/
+    /*描述文字在input-txt上面，当input获取焦点时文字隐藏 组件*/
+    .label-input-txt { position: relative; display: inline-block; background: #FFF;}
+    .label-input-txt .label { position: absolute; left: 10px; line-height: 34px; font-size: 16px; white-space: nowrap; color: #C5C3C4; z-index: 0}
+    .label-input-txt .input-txt,
+    .label-input-txt .input { position: relative; background: transparent; outline: none; z-index: 1;}
+    .label-input-txt-focus .label { display: none;}
+
+    /*主表单*/
+    .checkbox,
+    .radio { display: inline-block; margin: 8px 15px 0 0;}
+    .checkbox input,
+    .radio input { margin: 0 5px 0 0;}
+
+    .form { color: #333;}
+    .f-row { position: relative; margin: 0 0 10px; padding: 0 0 0 150px; font-size: 14px;}
+    .f-row .f-label { position: absolute; left: 0; top: 0; width: 140px; line-height: 32px; color: #949494;}
+    .input-txt { padding: 4px 10px; width: 320px; height: 22px; background: none; border: 1px solid #DDD; border-radius: 3px; line-height: 22px; font-size: 14px; outline: none;}
+    .f-action { margin: 30px 0;}
+    .f-row select { position: relative; top: 5px; margin: 0 0 5px;}
+    .form .f-txt { line-height: 32px;}
+
+/*浮层*/
+    .win-pop { position: fixed; left: 50%; top: 120px; background: #FFF; border-radius: 5px; z-index: 20000;}
+    .win-close { position: absolute; right: 10px; top: 10px; width: 29px; height: 29px; background: url("bg/ico.png") no-repeat -29px -333px;}
+    .win-hd { padding: 15px 0 0; height: 65px; border-bottom: 1px solid #EEE;}
+    .win-hd h3 { margin: 0 0 0 23px; line-height: 65px; font-weight: normal; font-size: 24px; font-family: titilliumregular, "Helvetica Neue", msyh, Arial, sans-serif; color: #272727; text-align: center;}
+    .win-cont { padding: 15px;}
+
+    /*遮罩层*/
+	.win-mask,
+	.win-mask-iframe { position:fixed; top:0; left:0; width: 100%; height: 100%; background: #0E0E0E; opacity:0.92; filter:alpha(opacity=92); z-index:10001;}
+	.win-mask-iframe { opacity:0; filter:alpha(opacity=0); z-index:10000;}
+
+/*header*/
+    .header { position: fixed; top: 0; left: 0; width: 100%; background: #2E3033; box-shadow: 0 2px 2px rgba(0, 0, 0, .1); z-index: 100;}
+    .header .layout-in { height: 62px;}
+
+    .header .logo { float: left; margin: 11px 20px 0 0;}
+    .header .logo a { display: block; width: 57px; height: 39px; background: url("bg/logo.png") no-repeat;}
+
+    .header .nav { float: left;}
+    .header .nav li { float: left; position: relative;}
+    .header .nav a { position: relative; display: block; padding: 38px 0 0; width: 90px; height: 24px; text-align: center; color: #E9ECEE; font-family: titilliumregular, "Helvetica Neue", msyh, Arial, sans-serif; text-transform: uppercase; white-space: nowrap;}
+    .header .nav a:before { position: absolute; top: 10px; height: 23px; background: url("bg/nav.png") no-repeat; content: '';}
+    .header .nav-tvs a { text-transform: none;}
+    .header .label-new { position: absolute; right: 25px; top: 7px; width: 6px; height: 6px; background: #F55C4C; border-radius: 100px;}
+
+    .header .nav a:hover,
+    #index_page .nav-home a,
+    #subscription_page .nav-subscription a,
+    #fav_page .nav-fav a,
+    #tv_stations_page .nav-tvs a,
+    #tv_details_page .nav-tvs a { background: #232427; text-decoration: none;}
+
+    .header .nav-home a:before { left: 33px; width: 24px;}
+    .header .nav-tvs a:before { left: 35px; width: 21px; background-position: 0 -43px;}
+    .header .nav-subscription a:before { left: 33px; width: 23px; background-position: 0 -86px;}
+    .header .nav-fav a:before { left: 34px; width: 22px; height: 24px; background-position: 0 -129px;}
+    .header .nav-apps a:before { left: 37px; width: 16px; height: 24px; background-position: 0 -173px;}
+
+    .header .search-cont { float: right; margin: 13px 0 0; background: #45494F; border-radius: 100px;}
+    .header .search-cont .label-input-txt { background: none;}
+    .header .search-cont .label { left: 13px; color: #FFF; line-height: 36px; opacity: .3; filter:alpha(opacity=30);}
+    .header .search-cont .input { padding: 5px 13px; width: 110px; height: 26px; background: none; border: none; line-height: 26px; font-size: 16px; color: #FFF; vertical-align: top;}
+    .header .search-cont .btn-search { width: 40px; height: 36px; background: url("bg/other.png") no-repeat 11px -37px; border: none; text-indent: -9999em; vertical-align: top; cursor: pointer;}
+
+    .header .info { float: right;}
+    .header .user-info { position: relative; display: inline-block; padding: 15px 0 0; min-width: 150px; height: 47px; vertical-align: top;}
+    .header .user { position: relative; padding: 0 25px 0 12px; overflow: hidden;}
+    .header .user:before { position: absolute; right: 6px; top: 15px; width: 0; height: 0; border: 5px solid; border-color: #888F97 transparent transparent transparent; overflow: hidden; content: '';}
+    .header .user .img { float: left; margin: 0 15px 0 0; vertical-align: middle;}
+    .header .user .img img { width: 32px; height: 32px; border-radius: 100px; vertical-align: middle;}
+    .header .user .name { float: left; max-width: 130px; overflow:hidden; word-wrap:normal; white-space:nowrap; text-overflow:ellipsis; font-size: 16px; color: #D6DEE6; line-height: 32px;}
+
+    .drop-list-news-user ul { padding: 3px 0; font-size: 14px;}
+    .drop-list-news-user li { margin: 3px 0;}
+    .drop-list-news-user li a { display: block; line-height: 28px; color: #5F6365; text-indent: 24px;}
+    .drop-list-news-user li a:hover { background: #F0F0F0; text-decoration: none;}
+    .drop-list-news-user .drop-list { display: none; top: 63px; margin: 0 0 0 -63px; width: 180px;}
+    .drop-list-news-user .drop-list:after { top: -64px; left: 60px; width: 150px; height: 64px;}
+    .drop-list-news-user:hover .drop-list { display: block;}
+
+    .header .notice-cont { position: relative; display: inline-block; vertical-align: top;}
+    .header .notice-cont .num { position: absolute; top: 8px; right: 10px; width: 20px; height: 20px; background: #D74331; border: 2px solid #2C2E31; border-radius: 100px; line-height: 20px; color: #FFF; text-align: center; white-space: nowrap;}
+
+    /*.drop-list-notice .drop-list { display: none; top: 63px; margin: 0 0 0 -130px; width: 320px; background: #F4F5F6;}
+    .drop-list-notice .drop-list:after { top: -64px; left: 50%; margin: 0 0 0 -31px; width: 62px; height: 64px;}
+    .drop-list-notice:hover .drop-list { display: block;}
+    .drop-list-notice .tab { height: 42px; background: #FFF; border-bottom: 1px solid #DDD;}
+    .drop-list-notice .tab a { position: relative; float: left; width: 160px; line-height: 42px; color: #7F8284; font-size: 14px; text-align: center;}
+    .drop-list-notice .tab a:first-child:before { position: absolute; right: 0; top: 50%; margin: -7px 0 0; width: 1px; height: 13px; background: #EEE; content: '';}
+    .drop-list-notice .tab .current:after { position: absolute; left: 0; bottom: -1px; width: 100%; height: 2px; background: #0DADF2; content: '';}
+
+    .drop-list-notice .item { max-height: 299px; overflow-y: auto; overflow-x: hidden;}
+    .drop-list-notice ul { margin: 0 15px;}
+    .drop-list-notice li { position: relative; padding: 10px 0 10px 77px; border-top: 1px solid #DDD;}
+    .drop-list-notice li:first-child { border: none;}
+    .drop-list-notice li a:hover { text-decoration: none;}
+    .drop-list-notice .label { position: absolute; left: 3px; top: 17px; padding: 0 5px; width: 52px; background: #F9671E; border-radius: 11px; color: #FFF; line-height: 22px; font-size: 16px;}
+    .drop-list-notice .desc { width: 100%; font-size: 14px; color: #626262;}
+    .drop-list-notice .time { color: #BDBDBD;}
+    .drop-list-notice .label,
+    .drop-list-notice .desc { overflow:hidden; word-wrap:normal; white-space:nowrap; text-overflow:ellipsis;}
+    .drop-list-notice .item-subscription li { padding: 0 88px 0 77px; height: 45px; line-height: 45px;}
+    .drop-list-notice .item-subscription .label { top: 13px;}
+    .drop-list-notice .item-subscription .time { position: absolute; right: 0; top: 0; width: 80px;}*/
+
+    .header .sign { margin: 14px 0 0; font-size: 14px;}
+    .header .sign a { display: inline-block; margin: 0 0 0 10px; width: 76px; height: 34px; background: #41454B; border-radius: 3px; line-height: 34px; text-align: center; color: #FFF;}
+    .header .sign a:hover { text-decoration: none;}
+    .header .sign .sign-up { background: #D74331;}
+
+/*footer*/
+    .footer { background: #3B3D3E;}
+    .footer .layout-in { height: 53px; line-height: 53px;}
+    .footer .copyright { text-align: center; color: #8C989E; text-transform: uppercase;}
+
+/*site-bar*/
+    .site-bar { margin: 0 0 20px; border-bottom: 1px solid #DDD; background: #FFF;}
+    .site-bar .layout-in { height: 76px;}
+    .site-bar .title-s1 { float: left; margin: 19px 0 0;}
+    .site-bar .filter { line-height: 76px;}
+
+    .filter-search { display: inline-block; vertical-align: middle; line-height: 19px;}
+    .filter-search .input-cont { display: inline-block; position: relative; margin: 0 5px 0 0; border-bottom: 2px solid #BFBFBF; vertical-align: middle;}
+    .filter-search .input-cont input { width: 116px; height: 19px; line-height: 19px; background: none; border: none; outline: none;}
+    .filter-search .btn-submit { width: 19px; height: 19px; background: url("bg/other.png") no-repeat 0 -84px; border: none; vertical-align: middle; text-indent: -9999em; cursor: pointer;}
+
+/*页面搜索组件*/
+    .search-page-cont .search-cont { position: relative; display: inline-block; border: 4px solid #46474A; border-color: rgba(240, 240, 240, .05); background: rgba(240, 240, 240, .05); border-radius: 5px;}
+    .search-page-cont .label-input-txt { background: #FFF; border-radius: 5px 0 0 5px;}
+    .search-page-cont .label { line-height: 48px; color: #A6ADB1;}
+    .search-page-cont .input { padding: 5px 10px; width: 500px; height: 38px; background: none; border: none; font-size: 16px; line-height: 38px; vertical-align: top;}
+    .search-page-cont .btn-search { width: 100px; height: 48px; background: #D74331 url("bg/other.png") no-repeat 37px 11px; border: none; border-radius: 0 5px 5px 0; cursor: pointer; text-indent: -9999em; vertical-align: top;}
+    .search-page-cont .hot-keyword { margin: 15px 0 0; padding: 0 0 0 15px; color: #A6ADB1;}
+    .search-page-cont .hot-keyword a { margin: 0 10px 0 5px; color: #22AEEF;}
+
+/*焦点图 （首页、TVs详情页）*/
+    .focus-pic { position: relative; margin: 0 0 11px;}
+    .focus-pic .pic { position: relative; width: 100%; height: 670px; overflow: hidden;}
+    .focus-pic .pic .focus-ul { position: absolute; top: 0; left: 0; width: 10000px; height: 100%;}
+    .focus-pic .pic .focus-li { float: left; position: relative; width: 927px; height: 100%; overflow: hidden;}
+
+    .focus-pic .num { position: absolute; left: 0; bottom: 23px; width: 100%; text-align: center; z-index: 5;}
+    .focus-pic .num span { display: inline-block; margin: 0 5px; width: 8px; height: 8px; border-radius: 100px; background: #CECECE;cursor: pointer;}
+    .focus-pic .num .cur { background: #888;}
+
+    .focus-pic .l,
+    .focus-pic .r { position: absolute; bottom: 25px; width: 17px; height: 13px; background: url("bg/other.png") no-repeat 0 -123px; cursor: pointer; z-index: 10;}
+    .focus-pic .l { left: 0;}
+    .focus-pic .r { right: 0; background-position: 0 -157px;}
+
+/*视频列表*/
+    /*s1 = style1 （首页、订阅列表、收藏列表、分享页）*/
+    .video-list-s1 .list { margin: 0 0 0 -20px;}
+    .video-list-s1 .list li { float: left; margin: 0 0 35px 20px; width: 285px;}
+    .video-list-s1 .img { margin: 0 0 10px; height: 188px;}
+    .video-list-s1 .title { margin: 0 0 10px; height: 44px; overflow: hidden; line-height: 22px; font-size: 16px;}
+    .video-list-s1 .title a { color: #222;}
+    .video-list-s1 .title a:hover { color: #2C9EE6; text-decoration: none;}
+    .video-list-s1 .status { color: #999;}
+    .video-list-s1 .status span { display: inline-block; vertical-align: middle;}
+    .video-list-s1 .status .split { display: inline-block; margin: 0 6px; width: 1px; height: 10px; background: #E9E9E9; vertical-align: middle;}
+
+/*搜索结果 字幕*/
+    .subtitle-result { position: relative; height: 63px; overflow: hidden;}
+    .subtitle-all .subtitle-result { height: auto;}
+    .subtitle-result .subtitle li { position: relative; padding: 0 0 0 61px; line-height: 1.8; color: #555;}
+    .subtitle-result .subtitle .time { position: absolute; left: 0; top: 4px; width: 50px; background: #E9F1E7; border: 1px solid #66B34E; border-radius: 3px; line-height: 12px; color: #66B34E; white-space: nowrap;}
+    .subtitle-result .subtitle .keyword { cursor: pointer;}

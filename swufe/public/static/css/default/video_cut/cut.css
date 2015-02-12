@@ -1,0 +1,113 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义剪辑页样式
+ */
+
+/*视频标题*/
+.video-title { overflow: hidden; color: #515151; font-weight: normal; font-size: 20px; line-height: 72px; white-space: nowrap;}
+
+/*字幕*/
+    .video-subtitle { position: relative; margin: 20px 0 50px;}
+
+    .video-subtitle .subtitle-col { position: relative; float: left; padding: 0 0 18px; width: 822px; background: #FFF; border: 1px solid #DDD;}
+    .subtitle-col .subtitle-cont { position: relative; padding: 0 0 0 67px; height: 610px; overflow-y: auto; overflow-x: hidden;}
+    .subtitle-col .subtitle-box { position: relative; padding: 10px 16px;}
+    .subtitle-col .subtitle { font-size: 14px; color: #131313; font-family: titilliumregular, Helvetica, msyh, Arial, sans-serif;}
+    .subtitle-col .line { line-height: 24px;}
+    .subtitle-col .word { display: inline-block; vertical-align: top;}
+    .subtitle-col .space { display: inline-block; width: 5px; height: 24px; overflow: hidden; vertical-align: top;}
+    .subtitle-col .selected-word,
+    .subtitle-col .selected-space { background: #A4DAF2;}
+
+    /*时间轴*/
+    .time-line { position: absolute; left: -67px; top: 0; bottom: 0; width: 62px; background: #FAFAFA; border-right: 1px solid #EEE;}
+    .time-line .item-time { position: absolute; padding: 0 7px 0 0; width: 55px; white-space: nowrap; text-align: right; line-height: 24px; color: #6E6E6E;}
+    .time-line .item-time:after { position: absolute; bottom: -1px; right: 0; width: 18px; height: 1px; background: #DDD; content: '';}
+
+    /*确定、预览层*/
+    .win-clip-action { position: absolute; width: 102px; height: 50px; background: url("bg/win_clip.png") no-repeat; z-index: 50;}
+    .btn-clip-ok,
+    .btn-preview { position: absolute; top: 13px; left: 13px; width: 29px; height: 25px; overflow: hidden; text-indent: -9999em;}
+    .btn-preview { left: 56px;}
+
+/*预览*/
+    .video-preview-cont { position: relative; height: 205px; background: #F1F1F1;}
+
+    /*视频图片*/
+    .video-pic { position: relative; height: 100%; z-index: 0;}
+    .video-pic img { width: 100%; height: 100%;}
+
+    /*视频*/
+    .video-preview { position: absolute; top: 0; left: 0; background: rgba(0,0,0,.7); width: 100%; height: 100%; z-index: 10;}
+    .video-preview .label { position: absolute; top: 10px; left: 10px; padding: 0 6px; background: rgba(248, 119, 71, .2); border: 1px solid #FF9500; border-radius: 3px; text-transform: uppercase; line-height: 20px; color: #FD9426; z-index: 5;}
+    .video-preview iframe { position: relative; z-index: 3;}
+
+/*分享选择杆*/
+.clip-share-start,
+.clip-share-end { position: absolute; top: 0; left: -16px; width: 2px; height: 24px; background: #22AEEB; cursor: move;}
+.clip-share-end { left: 0;}
+.clip-share-start:before,
+.clip-share-end:before { position: absolute; left: -4px; top: -9px; width: 10px; height: 10px; background: #22AEEB; border-radius: 100px; content: '';}
+.clip-share-end:before { top: auto; bottom: -9px;}
+
+/*分享禁止选择文本*/
+.disable-select-text { -webkit-user-select: none; -moz-user-select: none; user-select: none;}
+.clip-mask { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #000; opacity: 0; z-index: 50000;}
+.lt-ie9 .clip-mask { filter: alpha(opacity=0);}
+
+/*范围选择工具条*/
+.clip-share-bar { position: absolute; left: 0; bottom: 0; width: 100%; height: 18px; background: #EDEDED; border-top: 1px solid #DDD; z-index: 20;}
+.clip-share-bar .bar { position: absolute; top: 6px; left: 8px; right: 8px; height: 6px; background: #CACACA; border-radius: 3px;}
+.clip-share-bar .slider { position: absolute; top: -4px;}
+.clip-share-bar .slider .el { position: relative; display: block; width: 17px; height: 14px; cursor: move; z-index: 5;}
+.clip-share-bar .slider .el:before { position: absolute; left: -2px; top: 0; width: 21px; height: 19px; background: url("bg/cut.png") no-repeat 0 -27px; content: '';}
+.clip-share-bar .time { position: absolute; left: 50%; top: 25px; margin: 0 0 0 -20px;}
+.lt-ie9 .clip-share-bar .time { border: 1px solid #F1F1F1;}
+.clip-share-bar .time span { display: block; padding: 0 5px; height: 17px; background: #FFF; border-radius: 3px; box-shadow: 0 0 5px rgba(0, 0, 0, .3); white-space: nowrap; line-height: 17px; color: #525252;}
+.clip-share-bar .time:before { position: absolute; top: -6px; left: 50%; margin: 0 0 0 -5px; width: 10px; height: 6px; background: url("bg/cut.png") no-repeat -31px 0; content: '';}
+#slider_start .time { top: -25px;}
+#slider_start .time:before { top: auto; bottom: -6px; background-position: 0 0;}
+.clip-share-bar .range { position: absolute; height: 100%; background: #5FC1EC; z-index: 0;}
+
+/*浮层*/
+    .win-clip-submit { margin: 0 0 0 -271px; width: 542px;}
+    .win-clip-submit .win-cont { padding: 28px 28px 0;}
+    .win-clip-submit .win-close { display: none;}
+    .win-clip-submit .clip-info { margin: 0 0 30px; padding: 0 0 16px; border-bottom: 1px solid #EEE; overflow: hidden;}
+    .win-clip-submit .clip-info .img { float: left;}
+    .win-clip-submit .clip-info .img img { width: 116px; height: 65px; vertical-align: top;}
+    .win-clip-submit .clip-info .info { margin: 0 0 0 130px;}
+    .win-clip-submit .clip-info .title { margin: 0 0 8px; max-height: 40px; overflow: hidden; line-height: 20px; font-size: 14px;}
+    .win-clip-submit .clip-info .title a { color: #333;}
+    .win-clip-submit .clip-info .time { color: #FD9426;}
+    .win-clip-submit .label-input-txt .label { line-height: 42px;}
+    .win-clip-submit .label-input-txt .input-txt { width: 464px; height: 32px; line-height: 32px;}
+    .win-clip-submit .f-action { margin: 0 -28px; height: 98px; background: #F8F8F8; border-top: 1px solid #E6E6E6; border-radius: 0 0 5px 5px; text-align: center;}
+    .win-clip-submit .btn-s1,
+    .win-clip-submit .btn-s2 { margin: 23px 10px 0;}
+
+    .win-clip-succeed { margin: 0 0 0 -271px; width: 542px;}
+    .win-clip-succeed .win-cont { padding: 28px 28px 0;}
+    .win-clip-succeed .win-close { display: none;}
+    .win-clip-succeed .tips { position: relative; padding: 64px 0 56px; text-align: center;}
+    .win-clip-succeed .icon { display: inline-block; width: 49px; height: 48px; background: url("bg/tips_succeed.png") no-repeat; vertical-align: middle;}
+    .win-clip-succeed .desc { display: inline-block; margin: 0 0 0 15px; color: #68B253; line-height: 48px; font-size: 24px; vertical-align: middle;}
+    .win-clip-succeed .action { margin: 0 -28px; height: 98px; background: #F8F8F8; border-top: 1px solid #E6E6E6; border-radius: 0 0 5px 5px; text-align: center;}
+    .win-clip-succeed .btn-s1 { margin: 23px 0 0;}
+
+ /*视频、历史 列*/
+    .video-subtitle .video-col { float: right; width: 366px; background: #FFF; border: 1px solid #DDD;}
+
+    /*剪辑历史*/
+    .clip-history { margin: 5px 13px 15px;}
+    .clip-history .hd { margin: 0 0 11px; border-bottom: 1px solid #EEE;}
+    .clip-history h3 { font-weight: normal; font-size: 16px; color: #8D8C8C; line-height: 31px;}
+    .clip-history .bd { height: 360px; overflow-x: hidden; overflow-y: auto;}
+    .clip-history li { margin: 0 0 22px; overflow: hidden;}
+    .clip-history .img { float: left;}
+    .clip-history .img img { width: 116px; height: 65px; vertical-align: top;}
+    .clip-history .info { margin: 0 0 0 130px;}
+    .clip-history .title { margin: 0 0 5px; height: 42px; overflow: hidden; line-height: 21px; font-size: 14px;}
+    .clip-history .title a { color: #333;}
+    .clip-history .time { color: #C0C0C0;}
+    .clip-history .empty { margin: 30px 0; font-size: 14px; color: #666; text-align: center;}

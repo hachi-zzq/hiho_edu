@@ -1,0 +1,53 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义首页样式
+ */
+
+html { background: #FFF;}
+.wrap { padding-top: 0;}
+
+/*header*/
+    .header { position: absolute; background: none; background: rgba(0, 0, 0, .01); box-shadow: none;}
+    .header .nav a { padding: 0 20px; width: auto; height: 62px; line-height: 62px; font-size: 14px;}
+    .header .nav a:before { display: none;}
+    .header .label-new { right: 13px; top: 18px;}
+
+/*布局*/
+    .main-box { background: url("bg/index_aside_y.png") repeat-y right top;}
+    .main { float: left; width: 100%;}
+    .main-cont { padding: 0 250px 0 0;}
+    .aside { float: left; margin: 0 0 0 -250px; width: 250px;}
+
+/*页面搜索组件*/
+    .news-search-cont { height: 285px; background: #38383B url("bg/index_banner.jpg") no-repeat top center; background-size: cover;}
+    .search-page-cont { margin: 0 auto; padding: 110px 0 0; width: 628px;}
+    .search-page-cont .desc { margin: 0 0 20px; text-transform: uppercase; font-size: 14px; color: #FFF; opacity: .8; filter: alpha(opacity=80); text-align: center;}
+
+/*mod 模块*/
+    .mod-s1 .hd { margin: 0 0 12px; height: 50px;}
+    .mod-s1 .hd h3 { float: left; font-size: 26px; font-weight: normal; color: #2D3031;}
+    .mod-s1 .hd .filter { line-height: 39px;}
+
+    /*Most Popular*/
+    .mod-popular { margin: 20px 0 30px;}
+    .mod-popular .hd { padding: 0 23px 0 0;}
+    .mod-popular .bd { padding: 0 23px 0 0; height: 670px;}
+
+    .mod-recommend { margin: 20px 0 30px 20px;}
+    .mod-recommend .hd { margin: 0 0 8px;}
+
+/*video-list-s1*/
+    .video-list-s1 .list { margin: 0 0 0 -16px;}
+    .video-list-s1 .list li { margin: 0 0 35px 16px; width: 298px;}
+    .video-list-s1 .img { height: 195px;}
+
+/*recommend-list*/
+    .recommend-list .item { position: relative; margin: 16px 0 0; padding: 14px 0 0; border-top: 1px solid #EEE;}
+    .recommend-list .item:first-child { margin: 0; padding: 0; border: none;}
+    .recommend-list .item:first-child .subscribe { top: 3px;}
+    .recommend-list .item-word { margin: 0 75px 14px 0; font-size: 18px; color: #939393;}
+    .recommend-list ul { margin: 0 0 0 -19px; overflow: hidden;}
+    .recommend-list li { float: left; margin: 0 0 0 19px;}
+    .recommend-list .img { width: 64px; height: 64px;}
+    .recommend-list .subscribe { position: absolute; right: 0; top: 17px; padding: 0 4px; background: #FFF; border: 1px solid #F74438; border-radius: 3px; font-size: 14px; color: #F4463F; line-height: 18px;}
+    .recommend-list .subscribe:hover { text-decoration: none;}

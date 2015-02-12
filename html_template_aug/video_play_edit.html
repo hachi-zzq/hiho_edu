@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>西南财经大学－教材资料馆</title>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="js/modernizr.2.8.2.js"></script>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/player.css">
+</head>
+<body id="player">
+  <header class="player-header">
+    <!--  返回课程列表 -->
+    <!-- <div class="back">
+      <a href="" title="返回课程列表">
+        <i class="icon-left-c"></i>
+        <span>返回列表</span>
+      </a>
+    </div> -->
+    <!--/  返回课程列表 -->
+    <!-- 返回首页 -->
+    <div class="back back-home">
+      <a href="" title="返回首页">
+        <i class="play-logo"></i>
+        <span>返回首页</span>
+      </a>
+    </div>
+    <!--/ 返回首页 -->
+    <div class="title">
+      <h2>新巴比伦艺术-伊斯塔门和游行之路<a href="" class="btn-line">查看原视频</a></h2>
+    </div>
+    <!-- <div class="search"></div> -->
+    <div class="user-signin" style="display:none;">
+      <a href="">登录</a>
+    </div>
+    <div class="user">
+      <div class="avatar">
+        <img src="img/avatar_256.png" alt="">
+      </div>
+      <div class="name">
+        <span>Maggie Lu</span>
+      </div>
+      <div class="user-downarrow">
+        <i class="icon-caret-down"></i>
+      </div>
+      <!-- user dropdown -->
+      <div class="user-dropdown">
+        <ul>
+          <li><a href="">我的笔记</a></li>
+          <li><a href="">我的收藏</a></li>
+          <li><a href="">我的分享</a></li>
+          <li><a href="">个人设置</a></li>
+          <li><a href="">退出账户</a></li>
+        </ul>
+      </div>
+      <!--/ user dropdown -->
+    </div>
+  </header>
+  <!-- 当字幕区域收缩时，添加"shrinked" class -->
+  <div class="player-container">
+    <div class="video-wrap">
+      <div class="video-wrap-inner">
+        <div class="video-cont">
+        <!-- origin player here -->
+        </div>
+        
+        <!-- 问题浮层－题目 -->
+        <div class="quiz">
+          <div class="quiz-inner">
+            <h2 class="question">马克思主义的精髓是什么马克思主义的精髓是什么马克思主义的精髓是什么?</h2>
+            <ul class="choice">
+              <li><a href=""><span class="choice-label">A</span>事实求是</a></li>
+              <li><a href=""><span class="choice-label">B</span>改革开放</a></li>
+              <li><a href=""><span class="choice-label">C</span>共产主义</a></li>
+              <li><a href=""><span class="choice-label">D</span>缩小贫富差距</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- 问题浮层－回答正确 -->
+        <div class="quiz quiz-ok" style="display:none;">
+          <div class="quiz-inner">
+            <div class="title">
+              <h2><i class="icon-ok-c"></i><span>恭喜,回答正确</span></h2>
+              <p>视频将继续为您播放</p>
+            </div>
+          </div>
+        </div>
+        <!-- 问题浮层－回答错误 -->
+        <div class="quiz quiz-wrong quiz-wrong-a" style="display:none;">
+          <div class="quiz-inner">
+            <div class="title">
+              <h2><i class="icon-del-c"></i><span>抱歉,回答错误</span></h2>
+              <p>请查看提示后重新答题</p>
+            </div>
+            <div class="quiz-tips">
+              <h3>提示：</h3>
+              <p>但是完全卖不出去完全卖不出去 但是我们在座的同学知道这个牛奶卖不出去 我们能不能跟牛说一声明天就不要生产牛奶啦那是不行的是不是</p>
+            </div>
+            <div class="action">
+              <button class="button">返回重新答题</button>
+            </div>
+          </div>
+        </div>
+        <!-- 问题浮层－回答错误 -->
+        <div class="quiz quiz-wrong quiz-wrong-b" style="display:none;">
+          <div class="quiz-inner">
+            <div class="title">
+              <h2><i class="icon-del-c"></i><span>抱歉,回答错误</span></h2>
+              <p>请重新观看相关片段</p>
+            </div>
+            <div class="quiz-tips">
+              <div class="video">
+                <a href="">
+                  <img src="http://placehold.it/720x576" alt="">
+                  <div class="video-play">
+                    <i class="icon-play-c"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 问题浮层－回答错误 -->
+        <div class="quiz quiz-wrong quiz-wrong-c" style="display:none;">
+          <div class="quiz-inner">
+            <div class="title">
+              <h2><i class="icon-del-c"></i><span>抱歉,回答错误</span></h2>
+            </div>
+            <div class="action">
+              <button class="button">继续播放视频</button>
+            </div>
+          </div>
+        </div>
+
+        <!--预览框-->
+        <div class="video-preview-cont hidden" id="video_preview_cont">
+            <span class="preview-label">预览中</span>
+            <iframe id="video_preview_iframe" name="video_preview_iframe" scrolling="no" src=""
+                    frameborder="0"></iframe>
+        </div>
+        <!--/ 预览框-->
+
+      </div>
+
+    </div>
+    
+    <div class="function-wrap learn-mode ">
+      <!-- tabs -->
+      <div class="tab-wrap">
+        <div class="shrink-btn">
+          <a href=""></a>
+        </div>
+        <ul class="tab">
+          <li><a class="current" href="">字幕</a></li>
+          <li><a class="disable" href="">重点片段</a></li>
+          <li><a href="">附录</a></li>
+          <li><a href="">附件</a></li>
+        </ul>
+        <div class="learn-mode-switch">
+          <span class="switch-label">学习模式</span>
+          <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked="">
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <!--/ tabs -->
+      
+      <!-- 字幕 -->
+      <div class="subtitle-wrap tab-content" id="subtitle" >
+
+        <!-- 剪辑前的actionbar -->
+        <div class="subtitle-action sa-preview">
+          <div class="btn-w">
+            <a href="" class="btn-line btn-line-green"><i class="icon-video"></i><span>视频剪辑</span></a>
+          </div>
+          <div class="search-w">
+            <div class="search">
+              <input type="text">
+              <button><i class="icon-search"></i></button>
+              <span class="key-count">找到 3 个关键字</span>
+            </div>
+          </div>
+        </div>
+        <!--/ 剪辑前的actionbar -->
+
+        <!-- 剪辑后的actionbar -->
+        <div class="subtitle-action sa-edit">
+          <div class="btn-w">
+            <a href="" class="btn-line"><i class="icon-play"></i><span>预览</span></a>
+            <a href="" class="btn-line"><i class="icon-note"></i><span>添加到笔记</span></a>
+          </div>
+          <div class="share-w">
+            <ul class="share-list">
+              <li><a href="" class="qzone">Qzone</a></li>
+              <li><a href="" class="google">Google+</a></li>
+              <li><a href="" class="weibo">Weibo</a></li>
+              <li><a href="" class="wechat">Wechat</a></li>
+            </ul>
+          </div>
+          <div class="close-w">
+            <a href="" class="close"><i class="icon-times"></i></a>
+          </div>
+        </div>
+        <!--/ 剪辑后的actionbar -->
+        
+        <div class="subtitle-content subtitle-edit">
+          <!-- 字幕剪辑区域 -->
+          <div class="subtitle-box">
+            <ul class="subtitle">
+              <li class="line current-line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word current-word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">哈</span><span class="word">哈</span><span class="word">。</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word selected-word">文</span><span class="word selected-word">老</span><span class="word selected-word">师</span><span class="word selected-word">热</span><span class="word selected-word">点</span><span class="word selected-word">课</span><span class="word selected-word">程</span><span class="word selected-word">，</span><span class="word selected-word">你</span><span class="word selected-word">语</span><span class="word selected-word">文</span><span class="word selected-word">老</span><span class="word selected-word">师</span><span class="word selected-word">热</span><span class="word selected-word">点</span><span class="word selected-word">课</span><span class="word selected-word">程</span><span class="word selected-word">，</span><span class="word selected-word">你</span><span class="word selected-word">语</span><span class="word selected-word">好</span><span class="word selected-word">，</span><span class="word selected-word">哈</span><span class="word selected-word">哈</span><span class="word selected-word">。</span><span class="word selected-word">你</span><span class="word selected-word">是</span><pre class="space selected-word">&nbsp;</pre><span class="word selected-word">好</span><span class="word selected-word">人</span>
+              </li>
+              <li class="line">
+                <span class="word selected-word">语</span><span class="word selected-word">文</span><span class="word selected-word">老</span><span class="word selected-word">师</span><span class="word selected-word">热</span><span class="word selected-word">点</span><span class="word selected-word">课</span><span class="word selected-word">程</span><span class="word selected-word">，</span><span class="word selected-word">你</span><span class="word selected-word">语</span><span class="word selected-word">好</span><span class="word selected-word">，</span><span class="word selected-word">点</span><span class="word selected-word">课</span><span class="word selected-word">程</span><span class="word selected-word">，</span><span class="word selected-word">你</span><span class="word selected-word">语</span><span class="word selected-word">好</span><span class="word selected-word">，</span><span class="word selected-word">点</span><span class="word selected-word">课</span><span class="word selected-word">程</span><span class="word selected-word">，</span><span class="word selected-word">你</span><span class="word selected-word">语</span><span class="word selected-word">好</span><span class="word selected-word">，</span><span class="word selected-word">哈</span><span class="word selected-word">哈</span><span class="word selected-word">。</span><span class="word selected-word">你</span><span class="word selected-word">是</span><pre class="space selected-word">&nbsp;</pre><span class="word selected-word">好</span><span class="word selected-word">人</span>
+              </li>
+              <li class="line">
+                <span class="word selected-word">语</span><span class="word selected-word">文</span><span class="word selected-word">老</span><span class="word selected-word">师</span><span class="word selected-word">热</span><span class="word selected-word">点</span><span class="word selected-word">课</span><span class="word selected-word">程</span><span class="word selected-word">，</span><span class="word selected-word">你</span><span class="word selected-word">语</span><span class="word selected-word">好</span><span class="word selected-word">，</span><span class="word selected-word">点</span><span class="word selected-word">课</span><span class="word selected-word">程</span><span class="word selected-word">，</span><span class="word selected-word">你</span><span class="word selected-word">语</span><span class="word selected-word">好</span><span class="word selected-word">，</span><span class="word selected-word">点</span><span class="word selected-word">课</span><span class="word selected-word">程</span><span class="word selected-word">，</span><span class="word selected-word">你</span><span class="word selected-word">语</span><span class="word selected-word">好</span><span class="word selected-word">，</span><span class="word selected-word">哈</span><span class="word selected-word">哈</span><span class="word selected-word">。</span><span class="word selected-word">你</span><span class="word selected-word">是</span><pre class="space selected-word">&nbsp;</pre><span class="word selected-word">好</span><span class="word selected-word">人</span>
+              </li>
+              <li class="line">
+                <span class="word selected-word">语</span><span class="word selected-word">文</span><span class="word selected-word">老</span><span class="word selected-word">师</span><span class="word selected-word">热</span><span class="word selected-word">点</span><span class="word selected-word">课</span><span class="word selected-word">程</span><span class="word selected-word">，</span><span class="word selected-word">你</span><span class="word selected-word">语</span><span class="word selected-word">文</span><span class="word selected-word">老</span><span class="word selected-word">师</span><span class="word selected-word">热</span><span class="word selected-word">点</span><span class="word selected-word">课</span><span class="word selected-word">程</span><span class="word selected-word">，</span><span class="word selected-word">你</span><span class="word selected-word">语</span><span class="word selected-word">好</span><span class="word selected-word">，</span><span class="word selected-word">哈</span><span class="word selected-word">哈</span><span class="word selected-word">。</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">哈</span><span class="word">哈</span><span class="word">。</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">哈</span><span class="word">哈</span><span class="word">。</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">哈</span><span class="word">哈</span><span class="word">。</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">哈</span><span class="word">哈</span><span class="word">。</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">哈</span><span class="word">哈</span><span class="word">。</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word comment">你</span><span class="word comment">语</span><span class="word comment">好</span><span class="word comment">，</span><span class="word comment">点</span><span class="word comment">课</span><span class="word comment">程</span><span class="word comment">你</span><span class="word comment">是</span><pre class="space comment">&nbsp;</pre><span class="word comment">好</span><span class="word comment">人</span>
+              </li>
+              <li class="line">
+                <span class="word comment">语</span><span class="word comment">文</span><span class="word comment">老</span><span class="word comment">师</span><span class="word comment">热</span><span class="word comment">点</span><span class="word comment">课</span><span class="word comment">程</span><span class="word comment">，</span><span class="word comment">你</span><span class="word comment">语</span><span class="word comment">好</span><span class="word comment">，</span><span class="word comment">点</span><span class="word comment">课</span><span class="word comment">程</span><span class="word comment">，</span><span class="word comment">你</span><span class="word comment">语</span><span class="word comment">好</span><span class="word comment">，</span><span class="word comment">哈</span><span class="word comment">哈</span><span class="word comment">。</span><span class="word comment">你</span><span class="word comment">是</span><pre class="space comment">&nbsp;</pre><span class="word comment">好</span><span class="word comment">人</span>
+              </li>
+              <li class="line">
+                <span class="word comment">语</span><span class="word comment">文</span><span class="word comment">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><a href=""><span class="word link">课</span><span class="word link">程</span></a><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">哈</span><span class="word">哈</span><span class="word">。</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">哈</span><span class="word">哈</span><span class="word">。</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">哈</span><span class="word">哈</span><span class="word">。</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+              <li class="line">
+                <span class="word">语</span><span class="word">文</span><span class="word">老</span><span class="word">师</span><span class="word">热</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">，</span><span class="word">你</span><span class="word">语</span><span class="word">好</span><span class="word">，</span><span class="word">点</span><span class="word">课</span><span class="word">程</span><span class="word">你</span><span class="word">是</span><pre class="space">&nbsp;</pre><span class="word">好</span><span class="word">人</span>
+              </li>
+            </ul>
+            <!-- 字幕选择拖动手柄 -->
+            <span class="clip-share-start" id="select_start" title="Clip start" style="left: 26px; top: 32px;"></span>
+            <span class="clip-share-end" id="select_end" title="Clip end" style="left: 326px; top: 106px;"></span>
+            <!--/ 字幕选择拖动手柄 -->
+          </div>
+          <!--/ 字幕剪辑区域 -->
+        </div>
+        <!-- 字幕范围选择器 -->
+        <div class="clip-share-bar" id="clip_share_bar">
+          <div class="bar">
+            <div class="slider" id="slider_start" style="left: 32px;">
+              <span class="el" title="slider start"></span>
+              <span class="time"><span>0' 20"</span></span>
+            </div>
+            <div class="slider" id="slider_end" style="left: 200px;">
+              <span class="el" title="slider end"></span>
+              <span class="time"><span>0' 53"</span></span>
+            </div>
+            <span class="range" id="slider_range" style="left: 32px; width: 168px;"></span>
+          </div>
+        </div>
+        <!--/ 字幕范围选择器 -->
+        <!-- 字幕注释浮层 -->
+        <div class="sub-comment">
+          <div class="sub-comment-inner">
+            <a href="" class="close"><i class="icon-times"></i></a>
+            <div class="content">
+              <p>博弈，词语解释是局戏、围棋、赌博。现代数学中有博弈论，亦名“对策论”、“赛局理论”，属应用数学的一个分支， 表示在多决策主体之间行为具有相互作用时，各主体根据所掌握信息及对自身能力的认知，做出有利于自己的决策的一种行为理论。目前在生物学、经济学、国际关系、计算机科学、政治学、军事战略和其他很多学科都有广泛的应用。博弈论主要研究公式化了的激励结构间的相互作用。是研究具有斗争或竞争性质现象的数学理论和方法。也是运筹学的一个重要学科。图书《博弈》介绍了博弈的发展。</p>
+              <img src="http://placehold.it/350x150" alt="">
+              <div class="links">
+                <h4>参考链接</h4>
+                <ul>
+                  <li><a href="">http://zh.wikipedia.org/wiki/博弈</a></li>
+                  <li><a href="">http://baike.baidu.com/subview/150886/10816205.htm</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--/ 字幕注释浮层 --> 
+      </div>
+      <!--/ 字幕 -->
+      
+      <!-- 重点片段 -->
+      <div class="emphasis-wrap tab-content" id="emphasis" style="display:none;">
+        <ul class="emphasis-list">
+          <li class="emphasis-item">
+            <a href="">
+              <div class="number">
+                <span>1</span>
+              </div>
+              <div class="thumb">
+                <img src="http://placehold.it/72x48" alt="">
+              </div>
+              <div class="content">
+                <h4>所有的决策的博弈都是在成本和收益之间进行博弈</h4>
+                <time>03:21:32 - 03:43:12</time>
+              </div>
+            </a>
+          </li>
+          <li class="emphasis-item">
+            <a href="">
+              <div class="number">
+                <span>2</span>
+              </div>
+              <div class="thumb">
+                <img src="http://placehold.it/72x48" alt="">
+              </div>
+              <div class="content">
+                <h4>所有的决策的博弈都是在成本和收益之间进行博弈</h4>
+                <time>03:21:32 - 03:43:12</time>
+              </div>
+            </a>
+          </li>
+          <li class="emphasis-item">
+            <a href="">
+              <div class="number">
+                <span>88</span>
+              </div>
+              <div class="thumb">
+                <img src="http://placehold.it/72x48" alt="">
+              </div>
+              <div class="content">
+                <h4>所有的决策的博弈都是在成本和收益之间进行博弈</h4>
+                <time>03:21:32 - 03:43:12</time>
+              </div>
+            </a>
+          </li>
+          <li class="emphasis-item">
+            <a href="">
+              <div class="number">
+                <span>4</span>
+              </div>
+              <div class="thumb">
+                <img src="http://placehold.it/72x48" alt="">
+              </div>
+              <div class="content">
+                <h4>所有的决策的博弈都是在成本和收益之间进行博弈</h4>
+                <time>03:21:32 - 03:43:12</time>
+              </div>
+            </a>
+          </li>
+          <li class="emphasis-item emphasis-lock">
+            <a href="">
+              <div class="number">
+                <span>5</span>
+              </div>
+              <div class="thumb">
+                <img src="http://placehold.it/72x48" alt="">
+              </div>
+              <div class="content">
+                <h4>所有的决策的博弈都是在成本和收益之间进行博弈</h4>
+                <time>03:21:32 - 03:43:12</time>
+              </div>
+            </a>
+          </li>
+          <li class="emphasis-item emphasis-lock">
+            <a href="">
+              <div class="number">
+                <span>6</span>
+              </div>
+              <div class="thumb">
+                <img src="http://placehold.it/72x48" alt="">
+              </div>
+              <div class="content">
+                <h4>所有的决策的博弈都是在成本和收益之间进行博弈</h4>
+                <time>03:21:32 - 03:43:12</time>
+              </div>
+            </a>
+          </li>
+          <li class="emphasis-item emphasis-lock">
+            <a href="">
+              <div class="number">
+                <span>7</span>
+              </div>
+              <div class="thumb">
+                <img src="http://placehold.it/72x48" alt="">
+              </div>
+              <div class="content">
+                <h4>所有的决策的博弈都是在成本和收益之间进行博弈</h4>
+                <time>03:21:32 - 03:43:12</time>
+              </div>
+            </a>
+          </li>
+          <li class="emphasis-item emphasis-lock">
+            <a href="">
+              <div class="number">
+                <span>8</span>
+              </div>
+              <div class="thumb">
+                <img src="http://placehold.it/72x48" alt="">
+              </div>
+              <div class="content">
+                <h4>所有的决策的博弈都是在成本和收益之间进行博弈</h4>
+                <time>03:21:32 - 03:43:12</time>
+              </div>
+            </a>
+          </li>
+          <li class="emphasis-item emphasis-lock">
+            <a href="">
+              <div class="number">
+                <span>9</span>
+              </div>
+              <div class="thumb">
+                <img src="http://placehold.it/72x48" alt="">
+              </div>
+              <div class="content">
+                <h4>所有的决策的博弈都是在成本和收益之间进行博弈</h4>
+                <time>03:21:32 - 03:43:12</time>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--/ 重点片段 -->
+      
+      <!-- 附录 -->
+      <div class="appendix-wrap tab-content" id="appendix" style="display:none;">
+        <div class="appendix-content">
+          <h3>参考文献</h3>
+          <ul class="reference">
+            <li><a href="">《马克思主义基本原理》</a></li>
+            <li><a href="">《马克思主义哲学》</a></li>
+            <li><a href="">《马克思主义理论概论论文》</a></li>
+            <li><a href="">《马克思主义基本原理》</a></li>
+            <li><a href="">《马克思主义哲学》</a></li>
+            <li><a href="">《马克思主义理论概论论文》</a></li>
+            <li><a href="">《马克思主义基本原理》</a></li>
+            <li><a href="">《马克思主义哲学》</a></li>
+            <li><a href="">《马克思主义理论概论论文》</a></li>
+            <li><a href="">《马克思主义基本原理》</a></li>
+            <li><a href="">《马克思主义哲学》</a></li>
+            <li><a href="">《马克思主义理论概论论文》</a></li>
+            <li><a href="">《马克思主义基本原理》</a></li>
+            <li><a href="">《马克思主义哲学》</a></li>
+            <li><a href="">《马克思主义理论概论论文》</a></li>
+            <li><a href="">《马克思主义基本原理》</a></li>
+            <li><a href="">《马克思主义哲学》</a></li>
+            <li><a href="">《马克思主义理论概论论文》</a></li>
+          </ul>
+          <h3>作者信息</h3>
+          <h4 class="name">周小粥</h4>
+          <p>
+            微博: <a href="">@zhouxiaozhou</a> <br>
+            博客: <a href="">http://zhouxiozhou.com/blog</a>  
+          </p>
+        </div>
+      </div>
+      <!--/ 附录 -->
+
+      <!-- 附件 -->
+      <div class="attach-wrap tab-content" id="attach" style="display:none;">
+        <ul class="attach-list">
+          <li><i class="file-icon file-icon-ppt"></i><a href="">马克思主义基本原理.ppt</a><span>(23mb)</span></li>
+          <li><i class="file-icon file-icon-pic"></i><a href="">马克思主义基本原理.jpg</a><span>(23mb)</span></li>
+          <li><i class="file-icon file-icon-video"></i><a href="">马克思主义基本原理.mp4</a><span>(23mb)</span></li>
+          <li><i class="file-icon file-icon-doc"></i><a href="">马克思主义基本原理.doc</a><span>(23mb)</span></li>
+          <li><i class="file-icon file-icon-excel"></i><a href="">马克思主义基本原理.xls</a><span>(23mb)</span></li>
+          <li><i class="file-icon file-icon-audio"></i><a href="">马克思主义基本原理.mp3</a><span>(23mb)</span></li>
+          <li><i class="file-icon file-icon-code"></i><a href="">马克思主义基本原理.html</a><span>(23mb)</span></li>
+          <li><i class="file-icon file-icon-zip"></i><a href="">马克思主义基本原理.zip</a><span>(23mb)</span></li>
+        </ul>
+      </div>
+      <!--/ 附件 -->
+    </div> 
+  </div>
+  <div class="video-info">
+    <div class="video-avatar-cate">
+      <div class="avatar">
+        <img src="img/avatar.png" alt="">
+      </div>
+      <div class="teacher-info">
+        <span><a href="">周老师</a></span>
+        <span>5/20/2014</span>
+      </div>
+      <ul class="video-meta-base">
+        <li>分类 : <a target="_blank" href="">社会工程学</a><span>></span><a target="_blank" href="">自然</a><span>></span><a target="_blank" href="">公开课</a></li>
+        <li>专业 : <a target="_blank" href="">艺术设计</a></li>
+        <li>语言 : <a target="_blank" href="">中文</a></li>
+      </ul>
+    </div>
+    <div class="vidoe-like">
+      <!-- 收藏过的,在 a.like 添加"liked" class -->
+      <a href="" class="like">
+        <div class="like-icon-w">
+          <i class="like-icon"></i>
+          <span>收藏</span>
+        </div>
+        <span class="like-count">168</span>
+      </a>
+    </div>
+    <div class="video-share" style="display:none;">
+      <div class="share-to">
+        <span><b>｜ </b>分享到</span>
+      </div>
+      <!-- JiaThis Button BEGIN -->
+      <div class="jiathis_style_32x32">
+        <a class="jiathis_button_qzone" title="分享到QQ空间"><span class="jiathis_txt jtico jtico_qzone"></span></a>
+        <a class="jiathis_button_googleplus" title="Google+"><span class="jiathis_txt jtico jtico_googleplus"></span></a>
+        <a class="jiathis_button_tsina" title="Sina weibo"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+        <a class="jiathis_button_weixin" title="Weixin"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+      </div>
+      <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script><script type="text/javascript" src="http://v3.jiathis.com/code/plugin.client.js" charset="utf-8"></script><div style="position:absolute;width:0px;height:0px;"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="0" height="0" id="JIATHISSWF" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab"><param name="allowScriptAccess" value="always"><param name="swLiveConnect" value="true"><param name="movie" value="http://www.jiathis.com/code/swf/m.swf"><param name="FlashVars" value="z=a"><embed name="JIATHISSWF" src="http://www.jiathis.com/code/swf/m.swf" flashvars="z=a" width="0" height="0" allowscriptaccess="always" swliveconnect="true" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></object></div>
+      <!-- JiaThis Button END -->
+    </div>
+  </div>
+  
+  <!-- 访问权限 -->
+  <div class="locked" style="display:none;">
+    <div class="lock-img"></div>
+    <h2>抱歉！您无权限访问本视频，您可以<a href="">登录</a>有权限的账户或者<a href="">返回首页</a></h2>
+  </div>
+  <!--/ 访问权限 -->
+
+  <!-- modal -->
+  <div class="modal-wrap hidden">
+    <div class="modal new-note">
+      <div class="modal-title">
+        <a href="" class="close"><i class="icon-times"></i></a>
+        <h2>新建笔记</h2>
+      </div>
+      <div class="modal-content">
+        <div class="mc-row">
+          <div class="mc-label">
+            <span>添加到</span>
+          </div>
+          <div class="mc-input mc-input-select">
+            <select name="" id="">
+              <option value="">语文高考热点视频精选</option>
+              <option value="">语文高考热点视频精选</option>
+              <option value="">语文高考热点视频精选</option>
+              <option value="">语文高考热点视频精选</option>
+            </select>
+            <a href="" class="new-note">新建笔记本</a>
+          </div>
+        </div>
+        <div class="mc-row">
+          <div class="mc-label">
+            <span>标题</span>
+          </div>
+          <div class="mc-input">
+            <input type="text">
+          </div>
+        </div>
+        <div class="mc-row">
+          <div class="mc-label">
+            <span>描述</span>
+          </div>
+          <div class="mc-input">
+            <textarea name=""></textarea>
+          </div>
+        </div>
+        <div class="mc-row">
+          <div class="mc-label">
+            <span>标签</span>
+          </div>
+          <div class="mc-input">
+            <input type="text">
+            <p>使用逗号隔开不同的标签</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-btns">
+        <button class="button">确认</button>
+        <button class="button cancel">取消</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- notification -->
+  <!-- 成功 -->
+  <div class="notification success">
+    <div class="inner">
+      <div class="notify-icon"><i class="icon-ok-c"></i></div>
+      <h2>提示通知</h2>
+      <p>5 秒后将自动跳转到首页(其他描述信息) <a href="">立即跳转</a></p>
+      <a href="" class="close"><i class="icon-times"></i></a>
+    </div>
+  </div>
+  <!--  错误 -->
+<!--   <div class="notification error">
+    <div class="inner">
+      <div class="notify-icon"><i class="icon-del-c"></i></div>
+      <h2>注册失败</h2>
+      <p>5 秒后将自动跳转到首页(其他描述信息) <a href="">立即跳转</a></p>
+      <a href="" class="close"><i class="icon-times"></i></a>
+    </div>
+  </div> -->
+
+</body>
+</html>

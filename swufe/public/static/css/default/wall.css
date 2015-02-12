@@ -1,0 +1,42 @@
+﻿@charset "utf-8"; 
+/*
+ * 定义wall样式
+ */
+
+.mod-box-s1.filter-cont { margin: 20px 0;}
+
+/*wall-list*/
+    .wall-cont { margin: 0 0 50px;}
+    .wall-list-cont { margin: 20px 0 50px -24px;}
+    .wall-list-cont .item { float: left; margin: 0 0 0 24px; width: 282px;}
+    .wall-list-cont li { float: none; margin: 0 0 25px; width: auto; background: #FFF; border: 1px solid #E1E1DE;}
+    .wall-list-cont .video-info { padding: 28px 28px 20px;}
+    .wall-list-cont .video-info .desc { color: #6B696B;}
+    .wall-list-cont .video-info .status { margin: 8px 0 0;}
+    .wall-list-cont .info .count { float: none;}
+    .wall-list-cont .info .count .ico-s { margin: 0 15px 0 0; color: #B7B6B6;}
+    .share-cont { padding: 16px 28px; border-top: 1px solid #F1F1F1;}
+    .share-cont .share-intro { margin: 0 0 15px; overflow: hidden;}
+    .share-cont .user-pic { float: left; border-radius: 100px; overflow: hidden;}
+    .share-cont .user-pic img { width: 50px; height: 50px; vertical-align: top;}
+    .share-cont .share-info { margin: 8px 0 0 60px;}
+
+/*win-wall*/
+    .video-comment .video-col { float: left; width: 580px;}
+    .video-comment .comment-col { float: right; width: 455px; border: 1px solid #D6D6D6;}
+
+    .win-wall { top: 100px; width: 1100px; margin: 0 0 0 -550px;}
+    .win-wall .win-cont { padding: 20px;}
+
+    .win-wall .share-cont { padding: 15px; border: none; border-bottom: 1px solid #D6D6D6; color: #6B696B;}
+    .win-wall .share-cont .share-intro { margin: 0;}
+    .win-wall .share-cont .share-info { margin: 0 0 0 78px;}
+    .win-wall .share-cont .user-pic img { width: 60px; height: 60px;}
+    .win-wall .count { margin: 5px 0 7px;}
+    .win-wall .count .ico-s { margin: 0 15px 0 0; color: #B7B6B6;}
+
+    .win-wall .video-cont { margin: 0 0 10px;}
+    .win-wall .video-info { margin: 0 0 15px;}
+    .win-wall .video-info .title { margin: 0 0 8px; font-size: 14px;}
+
+    .win-wall .comment-list { height: 400px; background: #F7F7F7; overflow-x: hidden; overflow-y: auto;}
